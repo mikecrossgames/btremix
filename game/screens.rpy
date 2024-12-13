@@ -307,10 +307,7 @@ screen navigation(from_screen):
 
         if main_menu:
 
-            if not can_start():
-                textbutton _("Log in") action ShowMenu("mcap_authorize")
-            else:
-                textbutton _("Start") action Start()
+            textbutton _("Start") action Start()
 
         else:
 
@@ -318,20 +315,12 @@ screen navigation(from_screen):
 
             textbutton _("Save") action ShowMenu("save")
 
-        if can_start():
-            textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
             textbutton _("End Replay") action EndReplay(confirm=True)
-        elif not main_menu:
-            textbutton _("Scenes") action ShowMenu("gallery_screen")
-            if developer_mode():
-                textbutton _("Debug info") action ShowMenu("debug_info_screen")
-        else:
-            if can_start():
-                textbutton _("Gallery") action ShowMenu("gallery_screen")
 
         if not main_menu and not _in_replay:
             textbutton _("Main Menu") action MainMenu()
@@ -507,10 +496,6 @@ screen game_menu(title, scroll=None, yinitial=0.0, show_scene_text=None):
     hbox:
         xminimum config.screen_width - 60
         label title
-        if show_scene_text == "gallery":
-            use gallery_scene_textbox        
-        elif show_scene_text == "galleryalt":
-            use gallery_scene_textbox_alt  
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")

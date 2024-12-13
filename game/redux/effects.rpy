@@ -50,14 +50,6 @@ define fastdissolve = Dissolve(0.1)
 define middissolve = Dissolve(0.25)
 define slowdissolve = Dissolve(1.0)
 
-label RemoveFromInventory(item):
-    $ inventory.remove(item)
-    return
-
-label AddToInventory(item):
-    $ inventory.append(item)
-    return
-
 style default:
     outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
