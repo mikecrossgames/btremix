@@ -90,4 +90,11 @@ label PlayDay2:
         if player_location != "Town":
             jump BarDay2
     # river 2
+    $ player_location = "Town"
+    call TownMeetAlexa_0 from _call_TownMeetAlexa_0
+    label ReturnToAlexa:
+        if player_location != "River2":
+            call TownNPCwoman_2 from _call_TownNPCwoman_2
+            jump ReturnToAlexa
+    call River2ThisPlaceIsBeautiful from _call_River2ThisPlaceIsBeautiful
     return
