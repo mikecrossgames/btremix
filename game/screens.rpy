@@ -586,7 +586,7 @@ screen about():
 
             null height 20
 
-            text _("Bawdy Traditions Unofficial Ren'Py created by {a=https://www.patreon.com/mikecrossgames}Mike Cross (michaelcros){/a}. Support this and other development on {a=https://www.patreon.com/mikecrossgames}Patreon{/a}.")
+            text _("Ren'Py engine created by {a=https://www.patreon.com/mikecrossgames}Mike Cross Games (michaelcros){/a}. Support this and other development on {a=https://www.patreon.com/mikecrossgames}Patreon{/a}.")
 
             null height 40
 
