@@ -18,6 +18,6 @@ label HotSpringsBathroomeventoenseatrabajo:
     $ leyna_work = 9
     scene black with dissolve
     # TransferPlayer: "Reception"
-    hide black with dissolve
+    # fade in
     return
 

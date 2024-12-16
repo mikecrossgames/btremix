@@ -38,57 +38,57 @@ label Casinohombredelasuerte:
     OldWoman "Hohoho..."
     OldMan "Interesting ... a tourist as a lucky person ... Well, you know how this is going guys"
     pause 0.24
-    $ show_picture(1, "suerte1")
+    scene suerte1
     Worker "Well, I already have a year of good luck"
     Leyna "Oh my ... Just this? I was scared..."
-    $ show_picture(2, "suerte2")
+    scene suerte2
     Worker "Well, people get a little anxious sometimes.. but that happened more years ago, now we are less people and they will take it more calmly"
     Johan "Good to know, I don't feel very comfortable with all these people touching my wife"
     Worker "Relax, it's just a tradition"
     Johan "(Another tradition huh?) Yeah...."
-    $ show_picture(3, "suerte3")
+    scene suerte3
     Villager "Hey! A year of good luck to me"
     Leyna "...!"
-    $ show_picture(4, "suerte4")
+    scene suerte4
     Villager2 "And for me!"
     "Villager3: Don't leave me behind, I want too!"
-    $ show_picture(5, "suerte5")
+    scene suerte5
     Leyna "Wa-wait"
-    $ show_picture(6, "suerte6")
+    scene suerte6
     Johan "Hey easy going guys!"
     "Villager4: Luck is running out!"
-    $ show_picture(7, "suerte7")
+    scene suerte7
     Leyna "He-hey..."
-    $ show_picture(8, "suerte9")
+    scene suerte9
     Leyna "(They're touching me in ...)"
     pause
-    $ show_picture(9, "suerte8")
+    scene suerte8
     Leyna "Be careful guys ..."
     pause
     if switch("ate_the_fruit"):
-        $ show_picture(10, "suerte10")
+        scene suerte10
         Leyna "(This ... this is turning me on a bit ... I can't let Johan know, I have to pretend)"
     "Villager5: Let's see if I win the lottery this year!"
     Johan "I think that's enough"
     Villager "... Yeah yeah.... sorry dude"
     pause
-    $ show_picture(11, "suerte11")
+    scene suerte11
     Johan "Are you okay?"
     Leyna "Yes, I'm okay"
     if switch("ate_the_fruit"):
         Leyna "(Definitely, the fruit that I've eaten before is affecting...)"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(9)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(10)
-    $ erase_picture(11)
+    hide suerte1
+    hide suerte2
+    hide suerte3
+    hide suerte4
+    hide suerte5
+    hide suerte6
+    hide suerte8
+    hide suerte7
+    hide suerte9
+    hide suerte10
+    hide suerte11
     pause 0.22
     pause 0.22
     pause 0.22
@@ -99,7 +99,7 @@ label Casinohombredelasuerte:
     pause 0.22
     pause 0.22
     pause 0.22
-    hide black with dissolve
+    # fade in
     OldMan "Well guys! You have to spread the word about the lucky girl!"
     pause 0.2
     Villager "That's done boss!"

@@ -1,21 +1,25 @@
 label Receptionrecepcion_2:
     Receptionist "Hi honey, how can I help you?"
-    $ show_transparent(1, "plano_mujer_sorpresa_lado", width=1600, height=900)
+    show plano_mujer_sorpresa_lado:
+        xsize 1600
+        ysize 900
     Leyna "Hi! See, the people in town told me that you need a receptionist for these days and I'm looking a part-time job.."
     Receptionist "Ahhh! Thank goodness you came. I'm very busy with the festival and I would not like to have to close these days, with so many customers"
     Receptionist "I'm looking for someone to cover for me while during the event. You would only have to attend to the people and have the place clean, prepare towels... well"
     "There are several things I would have to teach you first, if you are interested, of course"
-    $ erase_picture(1)
-    $ show_transparent(2, "plano_mujer_sonrisa", width=1600, height=900)
+    hide plano_mujer_sorpresa_lado
+    show plano_mujer_sonrisa:
+        xsize 1600
+        ysize 900
     Leyna "Of course!"
     Receptionist "You see, people come here to relax. It always smells good and the atmosphere is warm, I put in the water some plants that grow near the festival"
     Receptionist "You know, the flowers of the fruit that is usually taken...  at the festival hehehe.."
-    $ erase_picture(2)
+    hide plano_mujer_sonrisa
     Leyna "I see..."
     if switch("ate_the_fruit"):
-        $ show_transparent(3, "expresion_gota")
+        show expresion_gota
         Leyna "(damn fruit)..."
-        $ erase_picture(3)
+        hide expresion_gota
     Receptionist "I've run out and would need you to get a few to show you how I prepare hotsprings for people"
     Receptionist "Come see me when you have the flowers, you can get them in a field that is close to the festival"
     Leyna "That's done, I'll be right back"
@@ -30,93 +34,95 @@ label Receptionrecepcion_4:
     Receptionist "Well, then let's see what the work consists of"
     scene black with dissolve
     # TransferPlayer: "HotSpringsBathroom"
-    hide black with dissolve
+    # fade in
     return
 
 label Receptioneventohotsprings_0:
     pause 0.22
-    $ show_transparent(1, "plano_mujer_sonrisa", width=1600, height=900)
+    show plano_mujer_sonrisa:
+        xsize 1600
+        ysize 900
     Leyna "Hello,  I've been told that the hot springs are already open"
     Receptionist "Yes, we were closed for renovations"
     Leyna "Great! So can I come in?"
     Receptionist "Yes, on my left you have the women's wardrobe. There you have clean towels, when you finish you can leave it in the basket and we will take care of it"
-    $ erase_picture(1)
-    $ show_transparent(1, "expresion_ilusion_mujer", width=1600, height=900)
+    hide plano_mujer_sonrisa
+    show expresion_ilusion_mujer:
+        xsize 1600
+        ysize 900
     Leyna "Cool, it's been years since I've come to a place like this"
     Receptionist "Enjoy!"
-    $ erase_picture(1)
+    hide expresion_ilusion_mujer
     pause 0.44
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     pause 0.6
     # TransferPlayer: "HotSpringsBathroom"
-    hide black with dissolve
+    # fade in
     pause 0.24
     Leyna "There's nobody, I have the place for myself!"
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     pause 0.6
     # TransferPlayer: "HotSpringsBathroom"
-    hide black with dissolve
+    # fade in
     pause 0.6
     Leyna "Aaah... good... and the water is perfect how relaxing!"
     scene black with dissolve
     play sound "audio/Liquid.ogg" volume 0.9 noloop
     pause 0.6
-    $ show_picture(1, "onsen1")
-    hide black with dissolve
+    show onsen1 with dissolve
     "(5 MINUTES LATER...)"
     Leyna "I'm soooo chill right now..."
     Leyna "I could fall asleep here, but I don't have to abuse either. I can get dizzy from the heat.."
     Leyna "Well... closing my eyes for a few minutes won't hurt"
     scene black with dissolve
-    $ erase_picture(1)
+    hide onsen1
     # TransferPlayer: "HotSprings"
-    hide black with dissolve
+    # fade in
     return
 
 label ReceptionDamn_0:
     pause 0.2
     Leyna "Damn..."
-    $ show_picture(1, "trabajo1")
+    scene trabajo1
     Leyna "Is this serious? What a uniform... this is too provocative, she goes with normal clothes.. Why do I have to put on this kind of clothing?"
     Leyna "You can see everything ..."
     WomansVoice "Leyna? what are you doing here?"
-    $ show_picture(2, "trabajo2")
+    scene trabajo2
     Leyna "???"
     Leyna "(I can't believe she's here without her husband, well, it was to be expected)"
-    $ show_picture(3, "trabajo3")
+    scene trabajo3
     Leyna "Wow Alexa, I didn't expect to see you here... alone"
     Leyna "You know that the hotsprings are mixed, right?"
     Alexa "I know..."
     Alexa "My husband is with the friends who accompany us in the trip and I didn't want to be alone"
-    $ show_picture(4, "trabajo4")
+    scene trabajo4
     Leyna "I see... although you never stay alone for long..."
     Alexa "I like to be accompanied, what can I say... hehehe"
-    $ show_picture(5, "trabajo5")
+    scene trabajo5
     Alexa "Well... and you? What are you doing here alone?"
     Leyna "I've started working here today so I will prepare your bath, I hope you enjoy it"
     Alexa "I'm sure I will hehehe"
     scene black with dissolve
-    $ show_picture(6, "trabajo6")
-    hide black with dissolve
+    show trabajo6 with dissolve
     "A FEW MOMENTS LATER"
     Leyna "Alexa? I leave you here a few dry towe..."
-    $ show_picture(7, "trabajo7")
+    scene trabajo7
     Leyna "(what's going on here? where did these people come from?... I can't believe it, doing this in public again)"
-    $ show_picture(8, "trabajo8")
+    scene trabajo8
     Alexa "Right there, you're going to break me in half"
     Villager "What a dirty bitch"
-    $ show_picture(9, "trabajo9")
+    scene trabajo9
     Leyna "(They don't worry that somebody can see them? somebody could enter at any moment)"
-    $ show_picture(10, "trabajo10")
+    scene trabajo10
     Alexa "Fuck me, come on!"
     Villager2 "This bitch is crazy"
     Villager "I know... It's great, we have to take advantage of this unique opportunity in life, dude"
     Alexa "we don't have much time, fuck me before someone comes"
-    $ show_picture(11, "trabajo11")
+    scene trabajo11
     Leyna "(I... am I getting turned on? by this? What kind of person I' m becoming?)"
-    $ show_picture(12, "trabajo12")
+    scene trabajo12
     play bgs "audio/audio follar.ogg" loop volume 0.9
     Villager "Do you like it bitch?"
     Alexa "I love it! FUCK ME PLEASE! HARDER!"
@@ -124,14 +130,14 @@ label ReceptionDamn_0:
     Alexa "DON'T CUM YET! KEEP FUCKING ME PLEASE!!"
     stop bgs fadeout 1
     play music "audio/Town1.ogg" loop volume 0.9
-    $ show_picture(13, "trabajo13")
+    scene trabajo13
     Leyna "(... I think anyone can't see me from here. They don't even know I'm here)"
     Leyna "(I have to get it off my chest, it will only take a second)"
-    $ show_picture(14, "trabajo14")
+    scene trabajo14
     Leyna "Ahhhh"
     Leyna "(Shit, I have to be quiet or they might discover me and that... would be a problem)"
     Leyna "(Yes, I would be in serious trouble, I could get caught and between them two...)"
-    $ show_picture(15, "trabajo15")
+    scene trabajo15
     Leyna "Hmmmmm"
     Leyna "(I would be caught between the two of them and... fuck me through every hole in my body, using me)"
     $ flash_screen([255,255,255,170], 60, True)
@@ -140,29 +146,29 @@ label ReceptionDamn_0:
     Leyna "I'm... I'm ..."
     $ flash_screen([255,255,255,170], 60, True)
     Leyna "Hmmmmmaaa..."
-    $ show_picture(16, "trabajo16")
+    scene trabajo16
     Leyna "Shit, I hope the didn't notice"
     Leyna "That... was very good, but I shouldn't have done it... just thinking about it, again I'm ... I'm not being myself, I should go back"
     pause
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
-    $ erase_picture(10)
-    $ erase_picture(11)
-    $ erase_picture(12)
-    $ erase_picture(13)
-    $ erase_picture(14)
-    $ erase_picture(15)
-    $ erase_picture(16)
+    hide trabajo1
+    hide trabajo2
+    hide trabajo3
+    hide trabajo4
+    hide trabajo5
+    hide trabajo6
+    hide trabajo7
+    hide trabajo8
+    hide trabajo9
+    hide trabajo10
+    hide trabajo11
+    hide trabajo12
+    hide trabajo13
+    hide trabajo14
+    hide trabajo15
+    hide trabajo16
     # TransferPlayer: "Reception"
-    hide black with dissolve
+    # fade in
     pause 0.26
     pause 0.2
     Leyna "(Alexa... how can you do this kind of thing?... I... shouldn't have done it...)"
@@ -176,7 +182,7 @@ label ReceptionDamn_0:
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     # TransferPlayer: "HotSpringsExterior"
-    hide black with dissolve
+    # fade in
     pause 0.22
     $ leyna_work = 10
     return
@@ -186,16 +192,20 @@ label Receptionhotspringsjuntos_0:
     pause 0.2
     Receptionist "Leyna! thank goodness you are here! our hotsprings are full, it seems that the whole town has agreed to come today!"
     Receptionist "Please change quickly and help, they need someone in there to take care of them"
-    $ show_transparent(1, "plano_mujer_ojos_blanco_negro", width=1600, height=900)
+    show plano_mujer_ojos_blanco_negro:
+        xsize 1600
+        ysize 900
     Leyna "RI-RIGHT! I'll be right there, I'm sorry Johan, it looks like I won't be able to keep an eye on you"
     Johan "It's normal don't worry! I'll be over here taking a bath, try not to get nervous and I'm sure everything will be fine!"
-    $ erase_picture(1)
-    $ show_transparent(2, "plano_mujer_sonrisa", width=1600, height=900)
+    hide plano_mujer_ojos_blanco_negro
+    show plano_mujer_sonrisa:
+        xsize 1600
+        ysize 900
     Leyna "Yes, I will do my best!"
     Johan "Of course! You can do it!"
     scene black with dissolve
-    $ erase_picture(2)
+    hide plano_mujer_sonrisa
     # TransferPlayer: "HotSpringsWithJohan"
-    hide black with dissolve
+    # fade in
     return
 

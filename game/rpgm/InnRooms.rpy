@@ -3,7 +3,7 @@ label InnRoomsDEJANDOlasmaletas_0:
     Leyna "I love it!. let's leave our things and go for a walk."
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
-    hide black with dissolve
+    # fade in
     $ suitcases = 1
     $ set_switch("suitcases", True)
     return
@@ -18,49 +18,48 @@ label InnRoomssueojohan_0:
     play music "audio/Dungeon1.ogg" loop volume 0.9
     Johan "(Hmmm... What's this? I feel... strange)"
     if switch("johan_silent"):
-        $ show_picture(1, "publico14")
-        hide black with dissolve
+        show publico14 with dissolve
         Johan "Oh no.. this again?"
         pause
-        $ show_picture(2, "publico16")
+        scene publico16
         Johan "(S-stop!... Shit! I can't move or speak)"
         Johan "(What the hell do you think you're doing to my wife?)"
         pause
-        $ erase_picture(1)
-        $ erase_picture(2)
+        hide publico14
+        hide publico16
     if switch("johan_intervened"):
-        $ show_picture(1, "publico13")
-        hide black with dissolve
+        scene publico13
+        # fade in
         Johan "Oh no.. this again?"
         Johan "(Why are you looking at my wife like this?)"
-        $ show_picture(2, "publico16")
+        scene publico16
         Johan "(Hey! What the hell are you doing with my wife?)"
         Johan "(S-stop!... Shit! I can't move or speak)"
         pause
-        $ erase_picture(1)
-        $ erase_picture(2)
-    $ show_picture(1, "sue_o1")
+        hide publico13
+        hide publico16
+    scene sue_o1
     OldMan "Yeah, that position is perfect!"
     Johan "(Perfect?!, stop touching her!)"
     Villager1 "I have an idea! Did you want risque photos right? Well, look"
-    $ show_picture(2, "sue_o2")
+    scene sue_o2
     OldMan "Yeah! Great work guys!"
     Johan "(No! Stop!)"
     Villager2 "Shit! Look at those tits, they're perfect!"
     Villager1 "Yeah! Fuck this I can't hold it anymore"
-    $ show_picture(3, "sue_o3")
+    scene sue_o3
     Johan "(They have taken out their cocks! Leyna, Leyna say something!)"
     Villager1 "What do you think honey, you like what you see?"
     Leyna "They're ... they're huge"
     Villager2 "Seems she is enjoying it. Hey photographer! Take a picture of this, surely the magazine will love it"
     pause
-    $ show_picture(4, "sue_o4")
+    scene sue_o4
     OldMan "Yes!"
     Villager2 "It seems that you are wet down there precious"
     Leyna "Wha-What are you going to do?"
     Villager2 "Shhhh, quiet. Just enjoy bitch"
     pause
-    $ show_picture(5, "sue_o6")
+    scene sue_o6
     Johan "(He is fucking her! Stop!... Why?... Why I feel like this? I'm getting hard)"
     Leyna "OOoohh it's sooo big!"
     Villager2 "Just say it bitch! Say \"fuck me\""
@@ -68,7 +67,7 @@ label InnRoomssueojohan_0:
     Villager2 "What?"
     Leyna "Fuck me please"
     Villager2 "Okey!"
-    $ show_picture(6, "sue_o7")
+    scene sue_o7
     play bgs "audio/audio follar.ogg" loop volume 0.9
     Johan "(Am I enjoying this?... Why can't I stop looking at? This feeling in my stomach ... I've never felt like this)"
     Villager2 "YEAH! You like it?"
@@ -77,14 +76,14 @@ label InnRoomssueojohan_0:
     scene black with dissolve
     stop music fadeout 1
     stop bgs fadeout 1
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
+    hide sue_o1
+    hide sue_o2
+    hide sue_o3
+    hide sue_o4
+    hide sue_o6
+    hide sue_o7
     # TransferPlayer: "InnRooms"
-    hide black with dissolve
+    # fade in
     pause 0.22
     Johan "LEYNA!!"
     pause 0.38
@@ -102,7 +101,7 @@ label InnRoomsescenadildo_0:
     scene black with dissolve
     # TransferPlayer: "InnRooms"
     pause 0.24
-    hide black with dissolve
+    # fade in
     Leyna "...Well, what do you want to talk to me about?"
     Johan "I'm... well... I'm a little nervous... let's see... I want us to enjoy a little more, you know?"
     Leyna "???"
@@ -122,73 +121,73 @@ label InnRoomsescenadildo_0:
     Leyna "Haahahahaha sure Johan... see you later"
     scene black with dissolve
     # TransferPlayer: "Town2"
-    hide black with dissolve
+    # fade in
     Johan "WOw, I can't believe she said yes!...."
     Johan "I'm a little nervous about it... but I can't wait to try it out"
     scene black with dissolve
     # TransferPlayer: "InnRooms"
-    hide black with dissolve
+    # fade in
     pause 0.2
     Leyna "Well... I guess now is as good a time as any to try this sucker...."
-    $ show_picture(1, "dildo1")
+    scene dildo1
     Leyna "I should close the door, though... anyone could see me here"
     Leyna "Wow... looks like he also left me a lubricant I guess that makes sense"
     Leyna "... I can't believe I'm going to do this right now...."
-    $ show_picture(2, "dildo2")
+    scene dildo2
     Leyna "It's... quite big... Is that okay with Johan? This thing is much bigger than his penis...."
     Leyna "Just thinking about what I'm going to do already makes me wet down there"
     Leyna "Well there is no point in waiting..."
-    $ show_picture(3, "dildo3")
+    scene dildo3
     Leyna "I haven't even started and I'm already so horny....."
     Leyna "hmmmmm...."
     pause
-    $ show_picture(4, "dildo4")
+    scene dildo4
     Leyna "will this fit?...it's so big...."
     Leyna "Let's do it little by little... I don't want to hurt myself"
     pause
-    $ show_picture(5, "dildo5")
+    scene dildo5
     Leyna "Ahhh... little by little... hmmm... it hurts a little... but"
     Leyna "Ahhh... it's coming in... ohhh"
     pause
-    $ show_picture(6, "dildo6")
+    scene dildo6
     Leyna "This is it... almost to the bottom... my god this feels... feels much better than I expected..."
     Leyna "I can't believe how good this feels... I'm going to cum... and I just put it in....."
     pause
-    $ show_picture(7, "dildo7")
+    scene dildo7
     Leyna "AH!... this thing vibrates... and it's stimulating my clitoris while penetrating my ass..."
     Leyna "It feels amazing!.... AH ah ah ah!"
     Leyna "This... this is amazing"
     pause
-    $ show_picture(8, "dildo8")
+    scene dildo8
     play bgs "audio/audio follar.ogg" loop volume 0.9
     Leyna "Ah ah ah!!! .... AAAHH!!!"
     Leyna "It hurts a little but .... feels amazing"
     Leyna "I'm going to cum! I'M CUMMING!!!"
     Leyna "aaaaahhhhH!!!"
     pause
-    $ show_picture(9, "dildo9")
+    scene dildo9
     stop bgs fadeout 1
     Leyna "AAAAAAAAAHHH!!!"
     Leyna "I've already cum.... I haven't lasted at all, I've never cum so fast... this has been awesome"
     Leyna "I can't... I can't wait to do it again..."
     pause
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
+    hide dildo1
+    hide dildo2
+    hide dildo3
+    hide dildo4
+    hide dildo5
+    hide dildo6
+    hide dildo7
+    hide dildo8
+    hide dildo9
     # TransferPlayer: "Town2"
-    hide black with dissolve
+    # fade in
     Leyna "Hahahahaha I feel great... I'm like new... I could go back to work right now and I wouldn't get tired of it"
     Leyna "can't wait to tell Johan about it hehehehe"
     scene black with dissolve
     # TransferPlayer: "Town2"
-    hide black with dissolve
+    # fade in
     pause 0.2
     Johan "Another failed attempt to enter the castle... at this rate we won't be able to visit it before going back to the city... anyway..."
     pause 0.2

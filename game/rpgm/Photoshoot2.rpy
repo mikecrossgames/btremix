@@ -14,42 +14,39 @@ label Photoshoot2Sesionfotografica2:
     Leyna "O-okay"
     scene black with dissolve
     # TransferPlayer: "Photoshoot2"
-    hide black with dissolve
+    # fade in
     pause 0.2
     Leyna "Nightgown with straps... it's pretty"
     Leyna "It seems to be a little transparent ..."
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
-    $ show_picture(1, "fotografo11")
-    hide black with dissolve
+    show fotografo11 with dissolve
     Leyna "I'm ready"
     OldMan "You look gorgeous with that Leyna, let's do a couple of poses"
     scene black with dissolve
-    $ show_picture(2, "fotografo13")
-    hide black with dissolve
+    show fotografo13 with dissolve
     "(A FEW MINUTES LATER)"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "This is enough for now"
     OldMan "You can change now so we start with the photos of both together"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    hide black with dissolve
+    hide fotografo11
+    hide fotografo13
+    # fade in
     pause 0.2
     Leyna "This is too provocative. Who's going to wear this? ..Well I just have to do a couple of poses with the boy and we're done but.."
     Leyna "Okay Leyna, focus... let's get this over with"
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
-    $ show_picture(1, "fotografo14")
-    hide black with dissolve
+    show fotografo14 with dissolve
     Leyna "Are you sure this is the correct garment?"
     OldMan "Yeah pretty sure..."
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "Come on Leyna, let yourself go a little, you look very rigid"
     Leyna "Y-yeah"
-    $ show_picture(2, "fotografo15")
+    scene fotografo15
     Leyna "Like this?"
     OldMan "There you go. That's the stuff"
     $ flash_screen([255,255,255,170], 60, True)
@@ -57,14 +54,14 @@ label Photoshoot2Sesionfotografica2:
     Grandson "(Wow! I've never seen a naked woman in person I'm getting a little hard, I've to hide)"
     OldMan "Now smile a little Leyna, you are much more beautiful when you smile"
     pause
-    $ show_picture(3, "fotografo16")
+    scene fotografo16
     Leyna "That's okay?"
     OldMan "Perfect!"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "Now let's start with the both together"
     OldMan "Come on boy! Don't be shy"
-    $ show_picture(4, "fotografo17")
+    scene fotografo17
     OldMan "Well ... I guess that's fine ..."
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
@@ -74,7 +71,7 @@ label Photoshoot2Sesionfotografica2:
     Leyna "(Passion?...)"
     Grandson "O-OKAY!"
     Leyna "(!!!)"
-    $ show_picture(5, "fotografo18")
+    scene fotografo18
     play sound "audio/Jump1.ogg" volume 0.9 noloop
     play music "audio/Dungeon3.ogg" loop volume 0.9
     Grandson "Th-there you go!"
@@ -83,20 +80,20 @@ label Photoshoot2Sesionfotografica2:
     OldMan "Perfect! Relax Leyna, I will cut out the... delicate parts"
     Grandson "De-delicate parts?"
     OldMan "Some zoom and..."
-    $ show_picture(6, "fotografo19")
+    scene fotografo19
     OldMan "Yeah great!"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     Leyna "What it's going on? I feel something in my..."
     Grandson "(Shit, it's going out! With this loincloth shit it's impossible to keep it inside)"
     pause
-    $ show_picture(7, "fotografo20")
+    scene fotografo20
     Leyna "Your dick is out!"
     Grandson "I-Im sorry I couldn't avoid it"
     OldMan "Don't worry, it's natural! You are 18 years old, I wish I had that ... energy"
     OldMan "But this is fine, the magazine has asked me for some raunchy photos, put the girl down"
     Grandson "Okay"
-    $ show_picture(8, "fotografo21")
+    scene fotografo21
     OldMan "Stay in that position"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
@@ -106,7 +103,7 @@ label Photoshoot2Sesionfotografica2:
     OldMan "No no, just a couple more and that's it"
     OldMan "Okay kid, pick her up again, and Leyna I know this is a little weird but I need you to smile"
     Leyna "Right..."
-    $ show_picture(9, "fotografo23")
+    scene fotografo23
     OldMan "Great! Stay still"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
@@ -116,7 +113,7 @@ label Photoshoot2Sesionfotografica2:
     OldMan "One last picture and that's it, Leyna get on your knees"
     Leyna "(...)"
     pause
-    $ show_picture(10, "fotografo24")
+    scene fotografo24
     OldMan "Nice!"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
@@ -127,23 +124,25 @@ label Photoshoot2Sesionfotografica2:
     OldMan "Right! I will notify you when we have more work"
     Leyna "Hmm..."
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
-    $ erase_picture(10)
+    hide fotografo14
+    hide fotografo15
+    hide fotografo16
+    hide fotografo17
+    hide fotografo18
+    hide fotografo19
+    hide fotografo20
+    hide fotografo21
+    hide fotografo23
+    hide fotografo24
     stop music fadeout 1
     # TransferPlayer: "Town"
-    hide black with dissolve
+    # fade in
     pause 0.26
-    $ show_transparent(1, "plano_mujer_timida", width=1600, height=900)
+    show plano_mujer_timida:
+        xsize 1600
+        ysize 900
     Leyna "..."
-    $ erase_picture(1)
+    hide plano_mujer_timida
     "(+3 CORRUPTION)"
     $ set_switch("second_photo_session", True)
     $ corruption = corruption + 3

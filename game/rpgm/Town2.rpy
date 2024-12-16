@@ -20,18 +20,22 @@ label Town2MeetPhotographer_0:
     pause 0.2
     OldMan "HEY LEYNA!"
     Johan "Do you know this man?"
-    $ show_transparent(1, "plano_mujer_sorpresa_lado", width=1600, height=900)
+    show plano_mujer_sorpresa_lado:
+        xsize 1600
+        ysize 900
     Leyna "Emmm..."
     pause 0.26
     OldMan "Leyna! Great news, the magazine is delighted with the photos and they cannot wait for the next session"
-    $ erase_picture(1)
-    $ show_transparent(2, "plano_mujer_timida", width=1600, height=900)
+    hide plano_mujer_sorpresa_lado
+    show plano_mujer_timida:
+        xsize 1600
+        ysize 900
     Leyna "...!"
     OldMan "We are doing a spectacular job ... Oh! Sorry, I didn't see you. Are you Leyna's husband?"
     Johan "Yes, and you are...?"
     OldMan "I'm the town's photographer"
     OldMan "Well, I won't bother you more, I'll be here as always. Speak to me so we can start with the session"
-    $ erase_picture(2)
+    hide plano_mujer_timida
     pause 0.28
     pause 0.2
     Johan "The next session?... What's this, Leyna?"
@@ -61,8 +65,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
         Johan "Well, whatever, I guess it doesn't matter so much if they see our naked bodies... we are both adults and this is something natural"
         Leyna "Yes, you are right"
         scene black with dissolve
-        $ show_picture(1, "riosexo1")
-        hide black with dissolve
+        show riosexo1 with dissolve
         Alexa "Hey! you finally came! I didn't know if you would come with how reserved you are about your bodies!"
         Johan "Reserved... (Well, I guess from her point of view it may seem so, although I think she is just too... open about it)"
         Leyna "Yes... I'm still not used to it, but with Johan here I feel more relaxed"
@@ -73,17 +76,17 @@ label Town2ToRiverEvent_1(menu_choice = None):
         Alexa "Oh come on, don't overreact!"
         Alexa "Come on, take one!"
         Johan "Okay... but just one"
-        $ show_picture(2, "riosexo2")
+        scene riosexo2
         Johan "Well... I have to admit that you are right Alexa, with a couple of shots of beer I already feel much better"
         Alexa "I told you so! Between the beer and being naked here, one's spirits are raised no matter how bad one feels"
         pause
-        $ show_picture(3, "riosexo3")
+        scene riosexo3
         Villager "Hey! how are you guys? I haven't seen you for a couple of days..."
         Leyna "He-hello"
         Johan "Hey... hmmm How's it going?"
         Villager "Here we are, having a beer by the river, enjoying the holidays before the routine starts again"
         pause
-        $ show_picture(4, "riosexo4")
+        scene riosexo4
         Johan "(His penis is rubbing Leyna...) I see, I can't imagine this town living a normal life, does it change much when the festival is over?"
         Villager "Yes! too much, I wish it was like this all year round, but the truth is that once the festival is over, life here is normal and ordinary"
         Villager "I guess when the festival starts everyone goes a little crazy hahahaha"
@@ -92,12 +95,11 @@ label Town2ToRiverEvent_1(menu_choice = None):
         Villager "Yeah! see you later! have fun, guys!"
         pause
         scene black with dissolve
-        $ show_picture(5, "riosexo5")
-        hide black with dissolve
+        show riosexo5 with dissolve
         Johan "Who was that guy?"
         Leyna "... I don't know, it's a little difficult for me to differentiate the people of this town, we have met so many in the last few days..."
         Johan "Hahahaha you can say that again... I'm glad I'm not the only one"
-        $ show_picture(6, "riosexo6")
+        scene riosexo6
         Johan "Alexa... she always seems to be very comfortable naked and surrounded by guys... didn't she come to town with her husband?"
         Johan "I haven't seen him for days... I don't know what he will think of all this"
         Leyna "!!!... yeah... I guess they have some kind of open relationship... or so I hope"
@@ -105,48 +107,48 @@ label Town2ToRiverEvent_1(menu_choice = None):
         Johan "Poor guy..."
         Leyna "!!!!... Y-yes"
         pause
-        $ show_picture(7, "riosexo7")
+        scene riosexo7
         Johan "Oh there you go... I knew something like this was about to happen"
         Johan "They're not going to do it in front of everyone, are they?"
-        $ show_picture(8, "riosexo8")
+        scene riosexo8
         Leyna "I-I don't know... I don't think so, right?"
         Johan "After everything I've seen, nothing surprises me anymore"
         pause
-        $ show_picture(9, "riosexo9")
+        scene riosexo9
         Johan "!!! (they are doing it in front of everyone)"
         Leyna "..."
         Leyna "(I-I'm starting to get horny watching this, I hope Johan doesn't notice....)"
         pause
-        $ show_picture(10, "riosexo10")
+        scene riosexo10
         Johan "(Fuck, they're not disguising shit, I'm embarrassed but I can't stop looking)"
         Johan "(Besides, I have it hard as a rock, I can't get out of the water like this)"
         Johan "(Although Leyna... hold on a second...)"
         Johan "(Leyna is red as a tomato... she seems to be very horny... I didn't know she liked this kind of things)"
         Johan "(Wait a minute... is she touching herself? I can't help but get even more excited seeing my wife like that...)"
         Johan "(... I can't help it... I must take advantage of this situation)"
-        $ show_picture(11, "riosexo11")
+        scene riosexo11
         Leyna "!!!!"
         Johan "Let me give you a hand with that...."
         Leyna "Johan..."
         pause
-        $ show_picture(12, "riosexo12")
+        scene riosexo12
         Leyna "Hmmmfff!"
         Johan "You sure are horny... you're on fire"
         Leyna "J-Johan!"
         Johan "Let me help you with that"
         Leyna "aaahh..."
         pause
-        $ show_picture(13, "riosexo13")
+        scene riosexo13
         Leyna "Johan... fuck me..."
         Johan "Here?.... very well, but let's try to disguise it a little bit"
         Leyna "Let me get on top..."
-        $ show_picture(14, "riosexo14")
+        scene riosexo14
         Johan "Oh!"
         Johan "I can see you were looking forward to it"
         Johan "God... you are so hot down there"
         Leyna "Ah... shut up and fuck me"
         Johan "Yeah..."
-        $ show_picture(15, "riosexo17")
+        scene riosexo17
         Leyna "Hmmmf... ahh"
         Johan "Ssshhhh shut up or they will hear us..."
         Leyna "I-I don't care... I don't care if they can hear us, just fuck me"
@@ -158,20 +160,20 @@ label Town2ToRiverEvent_1(menu_choice = None):
             Johan "(I can't concentrate... I can't get out of my head everything that has been going on these last few days)"
             Leyna "(My God... he is doing terrible... what is happening to Johan lately? has he changed?... or is it me that has changed?)"
             pause
-            $ show_picture(16, "riosexo18")
+            scene riosexo18
             Villager "Hey... I see you need a hand"
             Leyna "Wait"
             Johan "???"
             Villager "Come on, I know you're looking forward to it, doing something like that in front of everybody"
             pause
-            $ show_picture(17, "riosexo19")
+            scene riosexo19
             play bgs "audio/audio follar.ogg" loop volume 0.9
             Johan "!!! what's going on? (I can't see anything from here... there's someone next to us?)"
             Leyna "Aghghgagagh!"
             Villager "Like this! I want to feel your tonsils!"
             Johan "(Wait, that sound! There's a guy sticking his dick in Leyna's mouth! While I'm here fucking her!)"
             Johan "H-hey! ... oh my god"
-            $ show_picture(18, "riosexo20")
+            scene riosexo20
             Johan "(L-Leyna's pussy is convulsing, she looks like she's about to have an orgasm right now! Holy cow it feels so good.... )"
             Johan "F-fuck!!"
             Johan "(H-he's fucking me! Leyna is moving like crazy!... FUCK!i'm going to cum! b-but there's a guy right there rubbing his dick in Leyna's mouth!)"
@@ -180,46 +182,46 @@ label Town2ToRiverEvent_1(menu_choice = None):
             Leyna "(J-johan just cum? right now? while all this is going on?)"
             Johan "Ah ah ah!"
             pause
-            $ show_picture(19, "riosexo21")
+            scene riosexo21
             Johan "(Wait! There's really a guy here!)"
             Johan "H-Hey! get off of my wife right now Get out!"
             Villager "Oh come on, I'm about to finish"
             Johan "I told you to get out! get out now!"
             pause
             stop bgs fadeout 1
-            $ show_picture(20, "riosexo22")
+            scene riosexo22
             Villager "TCh! fuck man! ok ok, I'm leaving, next time don't fuck in public if you don't want someone else to join the party."
             Johan "Leave!"
             Villager "I'm leaving... I'll catch you around, honey"
             Leyna "Ah ah ah!"
             pause
-            $ show_picture(21, "riosexo23")
+            scene riosexo23
             Johan "What a waste of time... come on, let's go..."
             Leyna "Y-yes (waste of time? but you just cummed inside me... you came so fast... were you liking it johan?)"
             scene black with dissolve
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
-            $ erase_picture(17)
-            $ erase_picture(18)
-            $ erase_picture(19)
-            $ erase_picture(20)
-            $ erase_picture(21)
+            hide riosexo1
+            hide riosexo2
+            hide riosexo3
+            hide riosexo4
+            hide riosexo5
+            hide riosexo6
+            hide riosexo7
+            hide riosexo8
+            hide riosexo9
+            hide riosexo10
+            hide riosexo11
+            hide riosexo12
+            hide riosexo13
+            hide riosexo14
+            hide riosexo17
+            hide riosexo18
+            hide riosexo19
+            hide riosexo20
+            hide riosexo21
+            hide riosexo22
+            hide riosexo23
             # TransferPlayer: "Town2"
-            hide black with dissolve
+            # fade in
             pause 0.26
             play sound "audio/Computer.ogg" volume 0.9 noloop
             pause 0.2
@@ -229,7 +231,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
             Johan "The photographer... (that guy again...)"
             Johan "Sure, let's see what he wants"
         if johan_leyna_sex == 2:
-            $ show_picture(16, "riosexo16")
+            scene riosexo16
             play bgs "audio/audio follar.ogg" loop volume 0.9
             Leyna "Oh!"
             Leyna "(My God, J-Johan is fucking me like that day...)"
@@ -237,7 +239,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
             Johan "Perfect! cum, that's what I want"
             Leyna "Ah.... hmmm...."
             pause
-            $ show_picture(17, "riosexo18")
+            scene riosexo18
             Villager "Hey guys, I see you're having a good time"
             Leyna "Hmmff?"
             Villager "Doing this here, I guess you want me to give you a hand, don't you?"
@@ -250,8 +252,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
             Johan "You thought wrong"
             Villager "Okay guys, sorry"
             scene black with dissolve
-            $ show_picture(18, "riosexo24")
-            hide black with dissolve
+            show riosexo24 with dissolve
             Leyna "Ah ah ah...."
             Leyna "Shall we continue?"
             Johan "Hehehehe Do you want to continue?"
@@ -259,9 +260,8 @@ label Town2ToRiverEvent_1(menu_choice = None):
             Johan "Then we continue"
             pause
             scene black with dissolve
-            $ show_picture(19, "riosexo25")
             play bgs "audio/audio follar.ogg" loop volume 0.9
-            hide black with dissolve
+            show riosexo25 with dissolve
             "Minutes later"
             Leyna "Ah! ah! ah! M-my God... I'm cumming!"
             Johan "That's the way I like it, cum! come on! I want to see you writhing with pleasure!"
@@ -274,8 +274,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
             pause
             scene black with dissolve
             stop bgs fadeout 1
-            $ show_picture(20, "riosexo26")
-            hide black with dissolve
+            show riosexo26 with dissolve
             Leyna "I-I see that you've cum too..."
             Johan "hahahaha yes, I couldn't help it"
             Johan "!!!!"
@@ -283,28 +282,13 @@ label Town2ToRiverEvent_1(menu_choice = None):
             Leyna "Yes, good idea"
             "Leyna. (My God I'm still shaking... it's going to be hard for me to get up... what a fuck he has given me... Johan has improved since we arrived)"
             scene black with dissolve
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
-            $ erase_picture(17)
-            $ erase_picture(18)
-            $ erase_picture(19)
-            $ erase_picture(20)
+            hide riosexo16
+            hide riosexo18
+            hide riosexo24
+            hide riosexo25
+            hide riosexo26
             # TransferPlayer: "Town2"
-            hide black with dissolve
+            # fade in
             pause 0.26
             play sound "audio/Computer.ogg" volume 0.9 noloop
             pause 0.2
@@ -333,24 +317,24 @@ label Town2LeynaJohanSex_0(menu_choice = None):
     pause 0.26
     scene black with dissolve
     # TransferPlayer: "Inn"
-    hide black with dissolve
+    # fade in
     pause 0.26
     scene black with dissolve
     # TransferPlayer: "InnRooms"
-    hide black with dissolve
+    # fade in
     pause 0.30
-    $ show_picture(1, "johanfollar1")
+    scene johanfollar1
     play sound "audio/Close1.ogg" volume 0.9 noloop
     Leyna "Johan? what's wrong?"
-    $ show_picture(2, "johanfollar2")
+    scene johanfollar2
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     Leyna "Johan?"
     Johan "(Look at her... this woman... she is perfect)"
     Johan "Hm..."
-    $ show_picture(3, "johanfollar3")
+    scene johanfollar3
     Leyna "!!!"
     play sound "audio/Equip2.ogg" volume 0.9 noloop
-    $ show_picture(4, "johanfollar4")
+    scene johanfollar4
     Leyna "(He has taken off my clothes... in such a... manly way I don't think I've ever seen Johan like that)"
     Johan "(After everything that has happened today.... I cannot stay the same... Leyna is my wife, this beautiful woman is mine)"
     Johan "(Almost everyone in town wants to fuck her and rightly so. I didn't realize how lucky I am to be with a woman like this)"
@@ -361,67 +345,67 @@ label Town2LeynaJohanSex_0(menu_choice = None):
     $ menu_choice = _return
     if menu_choice == _("I can't take the pressure"):
         $ menu_choice = None
-        $ show_picture(5, "johanfollar13")
+        scene johanfollar13
         Johan "(Damn it, the pressure.... Why do I feel like this? it's like I have a crowd watching me)"
         Johan "(After so many years together with her.... now I feel as if it is the first time I am going to fuck my wife)"
         Johan "(I don't know if I'm feeling up to it!)"
-        $ show_picture(6, "johanfollar8")
+        scene johanfollar8
         Leyna "!!! You're already going in? it's a bit... rushed"
         Johan "...."
         Johan "(Don't listen to her if I try hard enough... maybe .... maybe it's good enough)"
         pause
-        $ show_picture(7, "johanfollar9")
+        scene johanfollar9
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Leyna "!!!"
         Johan "(I may have gone too fast... it's a little dry down there...)"
         Johan "(Why can't I stop thinking about stupid things? I'm not where I should be)"
         pause
-        $ show_picture(8, "fotoerotica8")
+        scene fotoerotica8
         $ flash_screen([255,255,255,170], 60, True)
         Johan "(Shit why do I have to think about that now?)"
         Leyna "Johan? are you okay? you feel a little... strange..."
-        $ erase_picture(8)
+        hide fotoerotica8
         Johan "Y-yes, I'm fine!"
         Johan "Pu-put yourself like this!"
         pause
-        $ show_picture(8, "johanfollar10")
+        scene johanfollar10
         stop bgs fadeout 1
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Johan "I like that!"
         Leyna "Ah ah ah!"
         Johan "(Looks like it's getting wet! very good, I just have to keep it up! and stop thinking so much!)"
-        $ show_picture(9, "fotoerotica18")
+        scene fotoerotica18
         Johan "(Shit, not again! Why do I have to be thinking about that shit all the time?)"
         Johan "(What the fuck? I'm going to cum already... normally I last much longer)"
         $ flash_screen([255,255,255,170], 60, True)
         stop bgs fadeout 1
-        $ show_picture(10, "johanfollar11")
+        scene johanfollar11
         $ flash_screen([255,255,255,170], 60, True)
         Johan "AAAhh!"
         Leyna "??? (Already? ... that's been a bit ...)"
         Johan "(Fuck, I couldn't help it... Shit)"
-        $ show_picture(11, "johanfollar14")
+        scene johanfollar14
         Leyna "That was... hahaha it was... well... I ehmmm I'm going rest a little bit... then we could go out for a while and have a drink if you want..."
         Johan "Hmmm yes ... sure... (Why is the atmosphere so uncomfortable? fuck... this has been a disaster)"
         Johan "Take a nap, I'll be downstairs waiting for you"
         Leyna "See you in half an hour or so!"
         Johan ".... Yeah, great..."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
+        hide johanfollar1
+        hide johanfollar2
+        hide johanfollar3
+        hide johanfollar4
+        hide johanfollar13
+        hide johanfollar8
+        hide johanfollar9
+        hide johanfollar10
+        hide fotoerotica18
+        hide johanfollar11
         $ set_switch("johan_and_leyna_sex", True)
         $ johan_leyna_sex = 1
-        $ erase_picture(11)
+        hide johanfollar14
         # TransferPlayer: "Town2"
-        hide black with dissolve
+        # fade in
         pause 0.26
         Leyna "Would you like a beer?"
         Johan "Yes, of course... (I really need some beer)"
@@ -429,21 +413,21 @@ label Town2LeynaJohanSex_0(menu_choice = None):
         Johan "Sure..."
     elif menu_choice == _("NONSENSE! I will do my best!"):
         $ menu_choice = None
-        $ show_picture(5, "johanfollar5")
+        scene johanfollar5
         Johan "(But what am I thinking? Leyna is my wife, among all the guys that tried to seduce her,she chose me)"
         Johan "(I will try my best to give you the best sex of your life I don't have to think so much, just enjoy the moment)"
         Leyna "Johan, are you okay?"
         Johan "Me? yeah!"
-        $ show_picture(6, "johanfollar7")
+        scene johanfollar7
         Leyna "Ah!"
         Leyna "(He's!!! it's been a long time since he did this to me, he's doing it... very well... if he keeps on like this I'll be done soon)"
         Leyna "Keep going... keep going... Oh my God..."
         pause
-        $ show_picture(7, "johanfollar8")
+        scene johanfollar8
         Johan "No, not yet"
         Leyna "Why did you stop?"
         Johan "Because I don't want you to cum yet, I'm going to make it last as long as I can!"
-        $ show_picture(8, "johanfollar9")
+        scene johanfollar9
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Leyna "AH! ah! ah!"
         Johan "Do you like it?"
@@ -453,7 +437,7 @@ label Town2LeynaJohanSex_0(menu_choice = None):
         Johan "Very good, come here"
         Leyna "!!!"
         pause
-        $ show_picture(9, "johanfollar10")
+        scene johanfollar10
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Johan "That's right!"
         Leyna "Ahh! Keep going! Keep fucking me like this!"
@@ -461,14 +445,14 @@ label Town2LeynaJohanSex_0(menu_choice = None):
         Leyna "AH!!! I'M GOING TO CUM!!"
         Johan "ME TOO!"
         pause
-        $ show_picture(10, "johanfollar11")
+        scene johanfollar11
         stop bgs fadeout 1
         $ flash_screen([255,255,255,170], 60, True)
         $ flash_screen([255,255,255,170], 60, True)
         Johan "AH!!"
         Leyna "AAH! shit! (I can't stop shaking, it's the first orgasm I've had in months)"
         pause
-        $ show_picture(11, "johanfollar12")
+        scene johanfollar12
         Johan "What do you think?"
         Leyna "Unbelievable... I don't know what's wrong with you today... but I wouldn't mind if you kept it up a little longer hahaha"
         Johan "Well, no problem with that as long as you want it, we can do this every day hahaha"
@@ -476,62 +460,58 @@ label Town2LeynaJohanSex_0(menu_choice = None):
         Leyna "Shall we go for a drink?"
         Johan "Sure! let's go to the bar for a beer!"
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
+        hide johanfollar5
+        hide johanfollar7
+        hide johanfollar8
+        hide johanfollar9
+        hide johanfollar10
+        hide johanfollar11
         $ set_switch("johan_and_leyna_sex", True)
         $ johan_leyna_sex = 2
-        $ erase_picture(11)
+        hide johanfollar12
         # TransferPlayer: "Town2"
-        hide black with dissolve
+        # fade in
     return
 
 label Town2chicoencontrado_0(menu_choice = None):
     Leyna "I found you!"
-    $ show_picture(1, "mamada1")
+    scene mamada1
     YoungVillager "Right and now comes the best part, go ahead and give me a kiss"
-    $ show_picture(2, "mamada2")
+    scene mamada2
     Leyna "Well, a peck on the cheek"
-    $ show_picture(3, "mamada3")
+    scene mamada3
     YoungVillager "No kiss on the cheek, the kiss has to be on the mouth, I'm not a child anymore, that's what tradition dictates"
-    $ show_picture(4, "mamada4")
+    scene mamada4
     Leyna "(This town and its damn traditions)"
     Leyna "Let's get this over with I'll give you the kiss and we'll be back"
     YoungVillager "Great..."
     Leyna "(Well, it's just an innocent kiss Leyna)"
-    $ show_picture(5, "mamada5")
+    scene mamada5
     Leyna "!!!!"
     Leyna "(This boy!!)"
-    $ show_picture(6, "mamada6")
+    scene mamada6
     Leyna "(it's certainly not the first kiss he's given... it can't be)"
     Leyna "(I'm getting too excited with this kiss... I should stop now but... it's so... hard to stop now)"
-    $ show_picture(7, "mamada7")
+    scene mamada7
     Leyna "... Stop... stop now"
     YoungVillager "Stop? why?"
-    $ show_picture(8, "mamada8")
+    scene mamada8
     Leyna "Because I'm married! we have to go back now"
     YoungVillager "We can't go back now"
     Leyna "And why can't we?"
-    $ show_picture(9, "mamada9")
+    scene mamada9
     YoungVillager "Look how I am now! I can't go around town like this"
     Leyna "Oh...."
     Leyna "(... Of course, it has to be huge...)"
-    $ show_picture(10, "mamada10")
+    scene mamada10
     YoungVillager "And this is all your fault"
     Leyna "My fault?"
-    $ show_picture(11, "mamada11")
+    scene mamada11
     YoungVillager "Of course, you enjoyed that kiss too, didn't you? I could tell, you're so sexy that my body can't control itself"
     Leyna "But..."
     YoungVillager "No! I can't go around town like this, what if my mother sees me? she'll think I'm a pervert!"
     YoungVillager "You have to take responsibility for your actions and help me with this"
-    $ show_picture(12, "mamada12")
+    scene mamada12
     Leyna "Res-responsibility?"
     call GetChoice([_("Help him"), _("Don't help him")], value=menu_choice, called_from="Town2chicoencontrado_0") from _call_Town2chicoencontrado_0_GetChoice
     $ menu_choice = _return
@@ -540,15 +520,15 @@ label Town2chicoencontrado_0(menu_choice = None):
         Leyna "O...okay I will help you with this"
         Leyna "I'll... I'll show you my body a little bit and you can... touch yourself"
         YoungVillager "... Well... go ahead"
-        $ show_picture(13, "mamada13")
+        scene mamada13
         Leyna "(I can't believe I'm doing this in the middle of the street)"
         Leyna "Go on..."
         play music "audio/audio follar.ogg" loop volume 0.9
-        $ show_picture(14, "mamada15")
+        scene mamada15
         YoungVillager "..."
         YoungVillager "......"
         YoungVillager "............"
-        $ show_picture(15, "mamada14")
+        scene mamada14
         stop music fadeout 1
         play music "audio/Town1.ogg" loop volume 0.9
         Leyna "Are you done?"
@@ -556,14 +536,14 @@ label Town2chicoencontrado_0(menu_choice = None):
         Leyna "Help you more?...."
         YoungVillager "Yeah... come on, you're a grown woman, you must have done this a hundred times..."
         Leyna "... Okay... I'll help you, let's get this over with before someone sees us"
-        $ show_picture(16, "mamada16")
+        scene mamada16
         Leyna "God..."
         YoungVillager "Big, right?"
         Leyna "Don't... don't say anything"
-        $ show_picture(17, "mamada17")
+        scene mamada17
         Leyna ".... ( Is so close to me... )"
         pause
-        $ show_picture(18, "mamada18")
+        scene mamada18
         stop music fadeout 1
         play music "audio/audio follar.ogg" loop volume 0.9
         YoungVillager "Ohhh yes, keep it up"
@@ -576,7 +556,7 @@ label Town2chicoencontrado_0(menu_choice = None):
             Leyna "(If this keeps up we'll end up getting caught, I have to end this quickly)"
             Leyna "... I'll have to help you a little bit more ...."
             YoungVillager "???"
-            $ show_picture(19, "mamada19")
+            scene mamada19
             stop music fadeout 1
             play music "audio/Town1.ogg" loop volume 0.9
             YoungVillager "Oooh great!!!"
@@ -588,29 +568,28 @@ label Town2chicoencontrado_0(menu_choice = None):
             $ play_video_looped(1, "mamada_webm", "mamada.webm",width=1920,height=1080)
             pause
             $ stop_video(1)
-            $ show_picture(21, "mamada20")
+            scene mamada20
             Leyna "(It's still taking too long... maybe if I... put it inside me I'll finish sooner... maybe... maybe I'll have to fuck him...)"
             stop music fadeout 1
             play music "audio/Town1.ogg" loop volume 0.9
             Leyna "Hey..."
             scene black with dissolve
-            hide black with dissolve
-        $ show_picture(22, "mamada21")
+            # fade in
+        scene mamada21
         $ flash_screen([255,255,255,170], 60, True)
         YoungVillager "OOOoooh!!!"
         pause
         if switch("infusion"):
             Leyna "(That's it... what was I about to do? was I going to fuck this guy in the middle of the street if I had gone a little bit longer?)"
-        $ show_picture(23, "mamada22")
+        scene mamada22
         Leyna "(thank goodness it's over, although now I have to clean up this mess)"
-        $ show_picture(24, "mamada23")
+        scene mamada23
         YoungVillager "Well, that's it... thank you very much!"
         Leyna "Stop being thankful... bring me something I can clean myself with! and fast!"
         YoungVillager "Y-yes sure! I'll be right back"
         Leyna "...."
         scene black with dissolve
-        $ show_picture(25, "mamada24")
-        hide black with dissolve
+        show mamada24 with dissolve
         YoungVillager2 "I can't believe it! what a lucky son of a bitch!"
         YoungVillager3 "Some are born lucky and others like us are not.... But don't worry, I've taken pictures and I'll pass them on to you later!!"
         YoungVillager2 "Oh! so you took pictures! hahahaha I have an idea!"
@@ -623,60 +602,46 @@ label Town2chicoencontrado_0(menu_choice = None):
             queue music _saved_bgm
             $ _saved_bgm = None
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
-        $ erase_picture(16)
-        $ erase_picture(17)
-        $ erase_picture(18)
-        $ erase_picture(19)
-        $ erase_picture(20)
-        $ erase_picture(21)
-        $ erase_picture(22)
-        $ erase_picture(23)
-        $ erase_picture(24)
-        $ erase_picture(25)
+        hide mamada1
+        hide mamada2
+        hide mamada3
+        hide mamada4
+        hide mamada5
+        hide mamada6
+        hide mamada7
+        hide mamada8
+        hide mamada9
+        hide mamada10
+        hide mamada11
+        hide mamada12
+        hide mamada13
+        hide mamada15
+        hide mamada14
+        hide mamada16
+        hide mamada17
+        hide mamada18
+        hide mamada19
+        hide mamada20
+        hide mamada21
+        hide mamada22
+        hide mamada23
+        hide mamada24
     elif menu_choice == _("Don't help him"):
         $ menu_choice = None
         $ set_switch("corruption_low", True)
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ show_picture(1, "mamada25")
-        hide black with dissolve
+        show mamada25 with dissolve
         Leyna "NO... I cannot help you I am a married woman"
         YoungVillager "You're going to leave me like this? you can't do that"
-        $ show_picture(2, "mamada26")
+        scene mamada26
         Leyna "Sorry I have to go!"
         YoungVillager "Wait!"
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
+        hide mamada25
+        hide mamada26
     $ ritual = 1
     # TransferPlayer: "Festival"
-    hide black with dissolve
+    # fade in
     $ set_switch("find_youth", False)
     return
 
@@ -687,14 +652,16 @@ label Town2musicapueblo_2:
 label Town2eventoflashback_0:
     pause 0.22
     Johan "I have to go for a walk alone... I need some air..."
-    $ show_transparent(1, "plano_mujer_sorpresa_lado", width=1600, height=900)
+    show plano_mujer_sorpresa_lado:
+        xsize 1600
+        ysize 900
     Leyna "!!! Of course... whatever you need Johan.... Don't take what has happened too harshly, we are all a bit drunk and we were playing"
     Johan "Y-yeah, sure... I'll see you in a bit, okay? don't worry, I'm fine"
     Leyna "Yes... see you in a little while..."
     scene black with dissolve
-    $ erase_picture(1)
+    hide plano_mujer_sorpresa_lado
     pause 0.26
-    hide black with dissolve
+    # fade in
     pause 0.2
     Leyna "Fuck..."
     Leyna "I should go to work in the hotsprings... But after what happened... I don't know if I want to go again..."
@@ -705,19 +672,25 @@ label Town2JohanIWasLookingForYou_1:
     pause 0.24
     Leyna "Johan! I was looking for you!"
     Johan "What a coincidence, me too, I have a gift for..."
-    $ show_transparent(1, "plano_mujer_sorpresa_lado", width=1600, height=900)
+    show plano_mujer_sorpresa_lado:
+        xsize 1600
+        ysize 900
     Leyna "Wait! I also have something to tell you... the thing you gave me... ahem... I've already tried it"
     Johan "oh! i-i see... well... hmmm and well? what did you think?"
     Leyna "Well... I"
-    $ erase_picture(1)
-    $ show_transparent(1, "plano_mujer_sonrisa", width=1600, height=900)
+    hide plano_mujer_sorpresa_lado
+    show plano_mujer_sonrisa:
+        xsize 1600
+        ysize 900
     Leyna "I liked it... I liked it very much"
     Johan "WOW REALLY?!"
     Leyna "Shhh! don't raise your voice so much, they will hear us"
     Johan "I'm s-sorry, I got carried away with the emotion"
     Johan "The truth is that I also wanted to tell you something related to... that"
-    $ erase_picture(1)
-    $ show_transparent(1, "expresion_neutral_mujer", width=1600, height=900)
+    hide plano_mujer_sonrisa
+    show expresion_neutral_mujer:
+        xsize 1600
+        ysize 900
     Leyna "Tell me"
     Johan "You see... I bought you another toy..."
     Johan "You're supposed to wear it for quite a while to... ahem well... be ready for us to do it later... you know..."
@@ -727,8 +700,8 @@ label Town2JohanIWasLookingForYou_1:
     Johan "Of course! (WOw I can't believe this is happening)"
     scene black with dissolve
     # TransferPlayer: "Town2"
-    $ erase_picture(1)
-    hide black with dissolve
+    hide expresion_neutral_mujer
+    # fade in
     pause 0.32
     pause 0.22
     pause 0.2
@@ -755,14 +728,13 @@ label Town2JohanIWasLookingForYou_1:
     Leyna "Sure..."
     scene black with dissolve
     # TransferPlayer: "Path"
-    hide black with dissolve
+    # fade in
     Leyna "The boss has already entered the locker room but forgot to give me my uniform"
     Leyna "It's a good thing I'm wearing my festival clothes underneath so I can get in without a problem"
     Leyna "I guess I'm going to have to go into the locker room with the boss in it... anyway, it's certainly not the first dick I've seen since I've been in town"
     Leyna "I should play it down"
     scene black with dissolve
-    $ show_picture(1, "cambiandose1")
-    hide black with dissolve
+    show cambiandose1 with dissolve
     Barman "Le-leyna? I didn't expect you to come in yet..."
     Leyna "I know... but you forgot to give me the uniform"
     "Barman. Shit! it's true, sorry, in my haste I forgot it"
@@ -773,16 +745,16 @@ label Town2JohanIWasLookingForYou_1:
     Leyna "Yeah... but there are more people here"
     Barman "I didn't take you for such a shy girl... come on, we're all too old to worry about these things, aren't we?"
     Leyna "I guess you're right..."
-    $ show_picture(2, "cambiandose2")
+    scene cambiandose2
     Leyna "(Shit, I forgot for a second that I'm wearing that toy)..."
     Leyna "(I'm going to have to be very careful not to let them notice)"
     Barman "Leyna? are you okay? you're making a very strange face"
-    $ show_picture(3, "cambiandose3")
+    scene cambiandose3
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     Leyna "Y-yeah, I'm fine, don't worry..."
     Barman "(Boy is she doing it...I'll never get tired of looking at that pair of tits!)"
     Villager "(Fuck she is undressing herself in front of us, and we are here alone with her... is she some kind of nympho?)"
-    $ show_picture(4, "cambiandose4")
+    scene cambiandose4
     Leyna "Hey, if you're going to stare, you could at least pretend you're not"
     Barman "So-sorry"
     Villager "Yeah sorry, it's just that the views are too good not to look at"
@@ -790,51 +762,51 @@ label Town2JohanIWasLookingForYou_1:
     Leyna "Yeah well... enjoy then"
     Villager "Yes hahaha that's what we will do"
     pause
-    $ show_picture(5, "cambiandose5")
+    scene cambiandose5
     Leyna "Well, the show is over, the uniform suits me, how did you know what my size is?"
     Barman "I have a good eye for these things"
-    $ show_picture(6, "cambiandose7")
+    scene cambiandose7
     Leyna "(Well it seems that no one has noticed, I have stuck my ass to the wall and no one should have seen anything)"
     Leyna "(I hope it doesn't show too much I still have to get to the food stand)"
     pause
-    $ show_picture(7, "cambiandose8")
+    scene cambiandose8
     Leyna "(Although this damn uniform is too revealing even to go to the festival)"
     Leyna "(I'm practically naked and with my pussy in the air, any sudden movement and they will see everything)"
     Leyna "(My God, between everyone looking at me right now and the fact that I'm wearing this butt plug... I'm feeling too excited... this heat...)"
     if switch("corruption_average"):
-        $ show_picture(8, "cambiandose9")
+        scene cambiandose9
         Leyna "What do you guys think? Do you like my new uniform?"
         Leyna "(what am I doing? why am I provoking them like this? ...I feel sexy but...most of all I am very horny...)"
         Villager "You look spectacularly sexy beautiful, later I will visit you at the food stand"
         Villager2 "Yes... and if you want to have a good time right now we can throw you a little party right here"
         Leyna "Keep dreaming guys... I'm a married woman"
-        $ show_picture(9, "cambiandose10")
+        scene cambiandose10
         Leyna "See you guys"
         Barman "(Is that?... Jesus)"
     if switch("corruption_low"):
-        $ show_picture(8, "cambiandose6")
+        scene cambiandose6
         Leyna "W-well I'm going now"
         Villager "Oh come on... Wouldn't you rather stay and have a good time with us? We know how to treat a girl like you"
         Leyna "A girl like me? n-no thank you very much, I'm married and I have to go to work at the food stand"
         Villager2 "Then we'll have to visit you at the food stand, with that uniform I'm getting hungry already"
         Leyna "Su-sure... stop by anytime"
-        $ show_picture(9, "cambiandose10")
+        scene cambiandose10
         Leyna "(they don't seem to have noticed... that was too risky for my taste)"
         Leyna "(but the lubricant... is that what's making me so excited? or am I just changing?)"
         Leyna "(better not to think too much about it and go to the food stand as soon as possible)"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
+    hide cambiandose1
+    hide cambiandose2
+    hide cambiandose3
+    hide cambiandose4
+    hide cambiandose5
+    hide cambiandose7
+    hide cambiandose8
+    hide cambiandose6
+    hide cambiandose10
     # TransferPlayer: "Festival"
     $ butt_plug = 3
-    hide black with dissolve
+    # fade in
     Leyna "All right, I have to go to the food stand to start working!"
     return
 
@@ -842,8 +814,9 @@ label Town2finalfiestafestival_0:
     pause 0.2
     Johan "My God, my head is killing me... I have to find Leyna, where is she?"
     scene black with dissolve
-    $ show_picture(1, "reencuentro1", width=814, height=624)
-    hide black with dissolve
+    show reencuentro1 with dissolve:
+        xsize 814
+        ysize 624
     "An hour later..."
     Johan "I've been looking for her for a long time, she wasn't in the inn room, where did she go?"
     Johan "I still can't quite remember what happened last night... and I don't know if I want to, both of us have done something we might regret"
@@ -851,7 +824,9 @@ label Town2finalfiestafestival_0:
     Johan "!!!!"
     Johan "Wait a second... that's Leyna! And she's with... Shit, she's with Alexa..."
     pause
-    $ show_picture(2, "reencuentro2", width=814, height=624)
+    scene reencuentro2:
+        xsize 814
+        ysize 624
     Johan "H-hey girls... I've been looking for you..."
     Leyna "Hi sweetie!"
     Alexa "Hey Johan! how's it going? how's your hangover? hahahaha"
@@ -866,10 +841,12 @@ label Town2finalfiestafestival_0:
     Alexa "Oh no... yesterday I saw that your wife was quite drunk and I invited her to spend the night in my room... since you had disappeared, where were you?"
     Johan "I... I don't know, I woke up this morning in a field on the outskirts of town"
     Johan "So you are well Leyna?"
-    $ show_picture(3, "reencuentro3", width=814, height=624)
+    scene reencuentro3:
+        xsize 814
+        ysize 624
     Leyna "Hahaha yeah, I'm fine.... I'm still a little drunk and the beers we had with our friend didn't help hahaha"
     Johan "Friend?...ah, this guy?"
-    $ erase_picture(3)
+    hide reencuentro3
     Villager "zzzzz...."
     Johan "It looks like he's out of action..."
     Alexa "Yes... our friend here is out cold... he hasn't been able to sleep much tonight hehehehehehe"
@@ -882,11 +859,11 @@ label Town2finalfiestafestival_0:
     Alexa "Well guys, see you later"
     Leyna "Of course! see you later!"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
+    hide reencuentro1
+    hide reencuentro2
     # TransferPlayer: "Town2"
     pause 0.24
-    hide black with dissolve
+    # fade in
     Johan "Well, what could we do today?"
     Leyna "We can always go to the river with Alexa"
     Johan "I guess so"
@@ -910,7 +887,8 @@ label Town2fotografo_1(menu_choice = None):
     Johan "Hahahaha I know ... Thanks"
     OldMan "The magazine has asked me for a session outside the studio, in an urban environment or something like that"
     "I've already picked the package with the set and I know a place near here where we could take good photos..."
-    $ show_transparent(1, "expresion_gota", pos=(0, 65), scale=(90, 90))
+    show expresion_gota:
+        pos (0, 65)
     Leyna "Wait ... in public?"
     OldMan "Yes, but don't worry, we will be in a place where nobody usually goes by and it would be a relatively quick session"
     Leyna "I don't know ... Johan, what do you think?"
@@ -920,46 +898,46 @@ label Town2fotografo_1(menu_choice = None):
     Leyna "Seen that way.."
     OldMan "Perfect, let's start"
     scene black with dissolve
-    $ erase_picture(1)
+    hide expresion_gota
     # TransferPlayer: "Town2"
-    hide black with dissolve
+    # fade in
     pause 0.2
     pause 0.24
-    $ show_picture(1, "publico1")
+    scene publico1
     Johan "Are you sure you want to do this?"
     Leyna "Yes, I know it seems strange but once you start it's not that bad. He is a very professional man"
     Johan "Okay, let's start then"
     OldMan "Great"
     OldMan "Let's start with a natural pose and move forward on the go"
-    $ show_picture(2, "publico2")
+    scene publico2
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "Great, next one"
     pause
-    $ show_picture(3, "publico3")
+    scene publico3
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "Nice, unbutton the top of the blouse and change your posture"
     pause
-    $ show_picture(4, "publico4")
+    scene publico4
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "Very sexy! Let's continue"
     OldMan "Turn up the bottom of the blouse so we can see the lingerie"
     Johan "...!"
     pause
-    $ show_picture(5, "publico5")
+    scene publico5
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "Amazing! Now take off your blouse and perform a couple more poses"
     pause
-    $ show_picture(6, "publico6")
+    scene publico6
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     Johan "(I... feel weird, seeing Leyna like that in public.)"
     OldMan "Okey, the next one"
     pause
-    $ show_picture(7, "publico7")
+    scene publico7
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "Great work Leyna!"
@@ -967,25 +945,25 @@ label Town2fotografo_1(menu_choice = None):
     pause
     Villager1 "Oh! Wow! What's going on here?"
     Johan "...!!!!"
-    $ show_picture(8, "publico8")
+    scene publico8
     Villager2 "Amazing! What is this, a pornographic session?"
     OldMan "Have a little respect, we are working! And it's for a fashion magazine, so behave!"
     Villager1 "Oh, okay relax, what a shame! (What a bad mood this old man has) You are a supermodel!"
-    $ show_picture(9, "publico9")
+    scene publico9
     Leyna "Thank you.."
     OldMan "Come on Leyna, a couple of poses more, smile a little.."
     Johan "(Wait, are these two going to continue here?)"
-    $ show_picture(10, "publico10")
+    scene publico10
     OldMan "You two stay where you are"
     Villager1 "Okay, no problem..."
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     OldMan "(Muttering) Yes, this is what they were looking for. But ... I see, yes"
     Johan "(What is he saying?)"
-    $ show_picture(11, "publico12")
+    scene publico12
     Villager1 "(That ass is amazing...)"
     pause
-    $ show_picture(12, "publico13")
+    scene publico13
     OldMan "That's great Leyna!"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
@@ -1009,21 +987,21 @@ label Town2fotografo_1(menu_choice = None):
         OldMan "Okay,  we have enough for today, I will talk to the magazine and I will contact you again if I need anything else"
         Johan "Right..."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
+        hide publico1
+        hide publico2
+        hide publico3
+        hide publico4
+        hide publico5
+        hide publico6
+        hide publico7
+        hide publico8
+        hide publico9
+        hide publico10
+        hide publico12
+        hide publico13
         # TransferPlayer: "Town2"
         $ set_switch("johan_intervened", True)
-        hide black with dissolve
+        # fade in
         pause 0.26
         Leyna "You see? I told you it's not so bad"
         Johan "Yeah well... In the end, it was a little weird. I'm still not completely convinced"
@@ -1038,18 +1016,18 @@ label Town2fotografo_1(menu_choice = None):
         Villager1 "Well then ... What are we waiting for?"
         OldMan "Great! Undress and get together with the girl"
         Villager2 "Okey!"
-        $ show_picture(13, "publico14")
+        scene publico14
         $ flash_screen([255,255,255,170], 60, True)
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Okay guys, I need a more dominant attitude on your part"
         Johan "(Dominant?)"
         pause
-        $ show_picture(14, "publico15")
+        scene publico15
         Villager1 "Like this?"
         OldMan "Not bad but... Both of you"
         Villager2 "Okey..."
         pause
-        $ show_picture(15, "publico16")
+        scene publico16
         Villager2 "What do you think like that?"
         OldMan "Like that is perfect!"
         Johan "(They are touching Leyna... I'm... getting an erection seeing this?... it must be because of the nerves)"
@@ -1061,24 +1039,12 @@ label Town2fotografo_1(menu_choice = None):
         Villager2 "Great (easy money)"
         Johan "(Thank goodness it's already over...)"
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
+        hide publico14
+        hide publico15
+        hide publico16
         # TransferPlayer: "Town2"
         $ set_switch("johan_silent", True)
-        hide black with dissolve
+        # fade in
         pause 0.26
         Leyna "You see? I told you it's not so bad"
         Johan "Yeah well... In the end, it was a little weird. I'm still not completely convinced"
@@ -1091,14 +1057,16 @@ label Town2fotografo_1(menu_choice = None):
 
 label Town2fotografo_4(menu_choice = None):
     OldMan "Good morning beautiful, the magazine has contacted me  and they are delighted with the last thing we sent"
-    $ show_transparent(1, "expresion_gota")
+    show expresion_gota
     Leyna "Ah... yes? that's interesting"
     OldMan "Well, yes, things are going much better than I expected, they have asked me for another session, I already have all the clothes... but"
     Leyna "But?"
     OldMan "Well... you know... they like the previous one so much that they have asked me for something similar... something spicy"
     Leyna "So something spicy, huh?"
-    $ erase_picture(1)
-    $ show_transparent(2, "plano_mujer_cartoon", width=1600, height=900)
+    hide expresion_gota
+    show plano_mujer_cartoon:
+        xsize 1600
+        ysize 900
     OldMan "Yes ... with two men... and few clothes, you know"
     Leyna "I... I can't do that, my husband wouldn't be Okay with this"
     OldMan "I figured you'd say that... but I have to tell you that the wardrobe for this new session has a surprise... masks, you will all be wearing masks"
@@ -1114,8 +1082,10 @@ label Town2fotografo_4(menu_choice = None):
         Leyna "I see... Well, we can start whenever you want"
         OldMan "Great, let's go to my studio, change and go to the location where we will do the photo session, now I call the boys"
         Leyna "Yeah great..."
-        $ show_picture(3, "pantallanegro", scale=(120, 120), width=816, height=600)
-        $ erase_picture(2)
+        scene pantallanegro:
+            xsize 979
+            ysize 720
+        hide plano_mujer_cartoon
         "A FEW MOMENTS LATER..."
         Leyna "Here? this is a bit public, isn't it?"
         Villager "That's fine for me"
@@ -1123,16 +1093,16 @@ label Town2fotografo_4(menu_choice = None):
         OldMan "Relax, No one comes through here"
         Leyna "If you say so..."
         OldMan "Well... everyone in your positions let's get started"
-        $ show_picture(4, "mascara1")
+        scene mascara1
         OldMan "Perfect, you look great in the costumes... Now pose as we said before"
         Leyna "Yeah..."
         pause
-        $ show_picture(5, "mascara2")
+        scene mascara2
         OldMan "Great!"
         OldMan "And now show us that perfect ass, and you two come closer, she doesn't bite"
         Leyna "..."
         pause
-        $ show_picture(6, "mascara3")
+        scene mascara3
         OldMan "Perfect, very sexy Leyna, you are made for this, I don't know how you didn't think of being a model before"
         Leyna "I... thank you very much"
         Villager "YES, she has the best ass I've seen in a long time"
@@ -1142,7 +1112,7 @@ label Town2fotografo_4(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Well guys, next position"
         pause
-        $ show_picture(7, "mascara4")
+        scene mascara4
         OldMan "NICE!"
         Villager "Yeah! great... what a pair of tits"
         Villager2 "YES, they are perfect"
@@ -1152,7 +1122,7 @@ label Town2fotografo_4(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "All right, now the good stuff starts, let's go"
         pause
-        $ show_picture(8, "mascara5")
+        scene mascara5
         OldMan "Very good hold this way a little more"
         Villager "All the time you want, I could be like this all my life... how soft her tits are, I could come right now"
         Leyna "What?"
@@ -1161,7 +1131,7 @@ label Town2fotografo_4(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Alright guys let's move on to the next pose"
         pause
-        $ show_picture(9, "mascara6")
+        scene mascara6
         OldMan "Perfect..."
         Villager2 "Wow your ass is so close... I would kill to fuck you right now, as soon as I get home I'm going to masturbate with this in mind"
         Villager "Me too! You're perfect, wouldn't you like to leave your husband and come with me? I'm sure he doesn't have it as big as mine"
@@ -1174,7 +1144,7 @@ label Town2fotografo_4(menu_choice = None):
         OldMan "Come on guys next position"
         Leyna "..."
         pause
-        $ show_picture(10, "mascara7")
+        scene mascara7
         Villager "Oh this is perfect, so warm!"
         Villager2 "That's it, grab my dick, this is incredible"
         OldMan "Come on guys control yourselves"
@@ -1183,7 +1153,7 @@ label Town2fotografo_4(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Okay, the last position"
         pause
-        $ show_picture(11, "mascara8")
+        scene mascara8
         OldMan "Great very sexy Leyna!"
         Leyna "...."
         Villager "It's definitely the best job I've ever had"
@@ -1192,7 +1162,7 @@ label Town2fotografo_4(menu_choice = None):
         OldMan "Okay, hold on a little longer, I'm going to get a little closer"
         Leyna "!!!"
         pause
-        $ show_picture(12, "mascara9")
+        scene mascara9
         OldMan "Right, this angle is perfect!"
         Villager "Leyna right? I hope to see you at the festival and we can do another session, you and me alone"
         Leyna "Not a good idea, Sorry"
@@ -1209,23 +1179,21 @@ label Town2fotografo_4(menu_choice = None):
         Leyna "(This has been a mistake? I hope Johan doesn't find out about this....)"
         $ masks = 2
         scene black with dissolve
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        hide black with dissolve
+        hide pantallanegro
+        hide mascara1
+        hide mascara2
+        hide mascara3
+        hide mascara4
+        hide mascara5
+        hide mascara6
+        hide mascara7
+        hide mascara8
+        hide mascara9
+        # fade in
     elif menu_choice == _("I need to think about it"):
         $ menu_choice = None
         Leyna "I have to think about it, I'm not sure if I'm going to do this"
         OldMan "Of course, I'll be waiting here if you change your mind"
-        $ erase_picture(2)
         $ masks = 1
     return
 
@@ -1241,7 +1209,9 @@ label Town2fotografo_5(menu_choice = None):
         Leyna "I see... Well, we can start whenever you want"
         OldMan "Great, let's go to my studio, change and go to the location where we will do the photo session, now I call the boys"
         Leyna "Yeah great..."
-        $ show_picture(3, "pantallanegro", scale=(120, 120), width=816, height=600)
+        scene pantallanegro:
+            xsize 979
+            ysize 720
         "A FEW MOMENTS LATER..."
         Leyna "Here? this is a bit public, isn't it?"
         Villager "That's fine for me"
@@ -1249,16 +1219,16 @@ label Town2fotografo_5(menu_choice = None):
         OldMan "Relax, No one comes through here"
         Leyna "If you say so..."
         OldMan "Well... everyone in your positions let's get started"
-        $ show_picture(4, "mascara1")
+        scene mascara1
         OldMan "Perfect, you look great in the costumes... Now pose as we said before"
         Leyna "Yeah..."
         pause
-        $ show_picture(5, "mascara2")
+        scene mascara2
         OldMan "Great!"
         OldMan "And now show us that perfect ass, and you two come closer, she doesn't bite"
         Leyna "..."
         pause
-        $ show_picture(6, "mascara3")
+        scene mascara3
         OldMan "Perfect, very sexy Leyna, you are made for this, I don't know how you didn't think of being a model before"
         Leyna "I... thank you very much"
         Villager "YES, she has the best ass I've seen in a long time"
@@ -1268,7 +1238,7 @@ label Town2fotografo_5(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Well guys, next position"
         pause
-        $ show_picture(7, "mascara4")
+        scene mascara4
         OldMan "NICE!"
         Villager "Yeah! great... what a pair of tits"
         Villager2 "YES, they are perfect"
@@ -1278,7 +1248,7 @@ label Town2fotografo_5(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "All right, now the good stuff starts, let's go"
         pause
-        $ show_picture(8, "mascara5")
+        scene mascara5
         OldMan "Very good hold this way a little more"
         Villager "All the time you want, I could be like this all my life... how soft her tits are, I could come right now"
         Leyna "What?"
@@ -1287,7 +1257,7 @@ label Town2fotografo_5(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Alright guys let's move on to the next pose"
         pause
-        $ show_picture(9, "mascara6")
+        scene mascara6
         OldMan "Perfect..."
         Villager2 "Wow your ass is so close... I would kill to fuck you right now, as soon as I get home I'm going to masturbate with this in mind"
         Villager "Me too! You're perfect, wouldn't you like to leave your husband and come with me? I'm sure he doesn't have it as big as mine"
@@ -1300,7 +1270,7 @@ label Town2fotografo_5(menu_choice = None):
         OldMan "Come on guys next position"
         Leyna "..."
         pause
-        $ show_picture(10, "mascara7")
+        scene mascara7
         Villager "Oh this is perfect, so warm!"
         Villager2 "That's it, grab my dick, this is incredible"
         OldMan "Come on guys control yourselves"
@@ -1309,7 +1279,7 @@ label Town2fotografo_5(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Okay, the last position"
         pause
-        $ show_picture(11, "mascara8")
+        scene mascara8
         OldMan "Great very sexy Leyna!"
         Leyna "...."
         Villager "It's definitely the best job I've ever had"
@@ -1318,7 +1288,7 @@ label Town2fotografo_5(menu_choice = None):
         OldMan "Okay, hold on a little longer, I'm going to get a little closer"
         Leyna "!!!"
         pause
-        $ show_picture(12, "mascara9")
+        scene mascara9
         OldMan "Right, this angle is perfect!"
         Villager "Leyna right? I hope to see you at the festival and we can do another session, you and me alone"
         Leyna "Not a good idea, Sorry"
@@ -1335,18 +1305,17 @@ label Town2fotografo_5(menu_choice = None):
         Leyna "(This has been a mistake? I hope Johan doesn't find out about this....)"
         $ masks = 2
         scene black with dissolve
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        hide black with dissolve
+        hide pantallanegro
+        hide mascara1
+        hide mascara2
+        hide mascara3
+        hide mascara4
+        hide mascara5
+        hide mascara6
+        hide mascara7
+        hide mascara8
+        hide mascara9
+        # fade in
     elif menu_choice == _("No"):
         $ menu_choice = None
         Leyna "I have to think about it, I'm not sure if I'm going to do this"
@@ -1355,7 +1324,9 @@ label Town2fotografo_5(menu_choice = None):
 
 label Town2fotografo_10(menu_choice = None):
     OldMan "Good evening Leyna, I wanted to talk to you... I... I didn't expect you to come with your husband."
-    $ show_transparent(1, "plano_mujer_sorpresa_lado", width=1600, height=900)
+    show plano_mujer_sorpresa_lado:
+        xsize 1600
+        ysize 900
     Leyna "Yes, he has come to accompany me"
     OldMan "Ahem... well then, yes, the truth is that I have good news, as so far the magazine is very happy with you"
     OldMan "Very very happy! and they want to continue working with us, but of course... it is clear that readers want more from us"
@@ -1386,40 +1357,41 @@ label Town2fotografo_10(menu_choice = None):
         OldMan "(Tch!) Sure Johan whatever you want, I have prepared the studio for this session, please come with me"
         Johan "Yeah...."
         scene black with dissolve
-        $ erase_picture(1)
-        $ show_picture(1, "fotoerotica1")
-        hide black with dissolve
+        hide plano_mujer_sorpresa_lado
+        show fotoerotica1 with dissolve
         "A FEW MOMENTS LATER"
         Johan "(Fuck, I'm already regretting this..... well I'm here and I can control that nothing gets out of hand)"
         OldMan "Well, Leyna, have you already changed? perfect, please place yourself there"
         Johan "!!! Wow... (Why am I surprised? after all, I know what we came for!)"
-        $ show_picture(2, "fotoerotica2")
+        scene fotoerotica2
         OldMan "Sexy as always Leyna, that outfit looks perfect on you!"
         Leyna "Th-Thanks..."
         Johan "(It's true that she looks very sexy in those clothes...)"
         OldMan "I know you're a little nervous but you have to relax, you know, smile a little and pose for me, you're going to do great"
         Leyna "Yes..."
-        $ show_picture(3, "fotoerotica3")
+        scene fotoerotica3
         Leyna "Is this good?"
         OldMan "That's perfect Leyna"
         Johan "So far so good... God, couldn't it be like this all the time? I'm getting on my nerves and it hasn't even started yet!)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
         OldMan "Perfect, let's move on to the next position"
-        $ show_picture(4, "fotoerotica4")
+        scene fotoerotica4
         OldMan "Keep up the good work Leyna you are doing very well"
         Leyna "Thanks"
         Johan "(She is much more relaxed than in the hotsprings, she even seems to be... enjoying it)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(5, "fotoerotica5")
+        scene fotoerotica5
         OldMan "Wow, super sexy, love it!"
         Leyna "Hahahaha"
         Johan "(Unbelievable, I'm even getting an erection with all this, if I were a teenager I'd go crazy to get pictures of Leyna...)"
         Johan "(I guess that's why the magazine loves it so much... all the wanker kids will be buying it)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(6, "pantallanegro", width=816, height=600)
+        scene pantallanegro:
+            xsize 816
+            ysize 600
         OldMan "Perfect Leyna, we have finished with the solo poses"
         Leyna "..."
         OldMan "Now the boy with whom you will do the rest of the poses will come in"
@@ -1427,27 +1399,27 @@ label Town2fotografo_10(menu_choice = None):
         Leyna "!!!"
         Johan "(Fuck... the guy is huge... My stomach is turning...)"
         OldMan "Okay get in there with her"
-        $ show_picture(7, "fotoerotica6")
+        scene fotoerotica6
         OldMan "There, perfect!"
         OldMan "Okay, stay like this, a little romantic photo to start with"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
         OldMan "Great"
         Leyna "(Johan is right there, looking at us while all this is going on... I never thought I would be in a situation like this next to him.... am I getting excited?)"
-        $ show_picture(8, "fotoerotica7")
+        scene fotoerotica7
         Leyna "(I'm feeling it pressing against my ass... his huge... thing, it's hot and throbbing against me)"
         OldMan "All right, the time has come to start getting spicy, lift her bra, let that perfect body you have be seen"
         Johan "(Shit, here we go... Fuck why do I have an erection now? There's a guy touching my wife right under my nose...)"
         pause
         play sound "audio/Equip2.ogg" volume 0.9 noloop
-        $ show_picture(9, "fotoerotica8")
+        scene fotoerotica8
         Leyna "Ooh (Shit, I couldn't help moaning when he kissed my neck.... What's wrong with me? I can barely control myself)"
         Johan "(Was that a moan?... no... it's my imagination)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
         OldMan "Great... I'm speechless, very good!"
         OldMan "Let's go with the next position lift her, as I told you before"
-        $ show_picture(10, "fotoerotica9")
+        scene fotoerotica9
         Johan "!!! (the son of a bitch has a huge dick and he's already got a hard-on!)"
         Leyna "Wow... (He's rubbing me down there, just with his breathing he's already... stimulating me, I feel his breath on the back of my neck and the... down there)"
         play sound "audio/Key.ogg" volume 0.9 noloop
@@ -1456,7 +1428,7 @@ label Town2fotografo_10(menu_choice = None):
         Leyna "Al-alright"
         Johan "!!! (Shit, the time has come, I have been paralyzed with everything that is happening)"
         play sound "audio/Equip2.ogg" volume 0.9 noloop
-        $ show_picture(11, "fotoerotica10")
+        scene fotoerotica10
         OldMan "That's right... You have a very nice pussy if I may say so Leyna"
         Leyna "Tha-thanks(His cock is rubbing my clitoris and I'm going to go crazy if we go on like this... for a second I forgot that Johan is here)"
         Johan "(Fuck, he's touching her pussy down there with his dick.... Why did I agree to this?)"
@@ -1474,11 +1446,11 @@ label Town2fotografo_10(menu_choice = None):
             OldMan "(Shit, I knew this guy was going to give us trouble) I see... well I guess we'll have to play with the camera angle"
             OldMan "Leyna, please bend over and get your ass in the air"
             Leyna "Alright!"
-            $ show_picture(12, "fotoerotica13")
+            scene fotoerotica13
             OldMan "Okay... so... tch! boy I can still see your dick from here, try to hide it somehow"
             Villager "Sure, give me a second!"
             Leyna "!!!"
-            $ show_picture(13, "fotoerotica14")
+            scene fotoerotica14
             OldMan "Wait wait wait! That's a good position too, hold on a second!"
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
@@ -1486,27 +1458,27 @@ label Town2fotografo_10(menu_choice = None):
             Villager "(This girl is very horny.... I think I have an idea and I'm sure her husband doesn't notice)"
             OldMan "Okay kid, I'm going to go back to the position I was in before and as I said, try to hide it somehow so it doesn't show up in the picture"
             Villager "Okay!"
-            $ show_picture(14, "fotoerotica15")
+            scene fotoerotica15
             Villager "Okay... okay... give me a moment to get myself well positioned"
             Leyna "???"
             pause
-            $ show_picture(15, "fotoerotica16")
+            scene fotoerotica16
             Villager "Yes... a little more, let's see..."
             Leyna "Ah (He's sticking his dick in me! He's sticking it in front of Johan, but he doesn't seem to be noticing...)"
             pause
-            $ show_picture(16, "fotoerotica17")
+            scene fotoerotica17
             Villager "Yeah! right there, perfect"
             Leyna "AH! (shit, he put it all the way in me... with this alone I was about to squirt... fuck!)"
             OldMan "Yes, it's perfect! thank you very much"
             pause
-            $ show_picture(17, "fotoerotica18")
+            scene fotoerotica18
             Leyna "Ah ah ah ah (I find it hard to hold on, I feel it throbbing inside me... deep inside me)"
             Leyna "(Let this end soon please... I don't think I can take much more)"
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
             OldMan "A perfect photo!"
             pause
-            $ show_picture(18, "fotoerotica19")
+            scene fotoerotica19
             Johan "(from here I can't see very well what's going on or what they are saying... it certainly seems that he... no, I have already told them that they can't do that)"
             OldMan "Wow we are having a spectacular photo shoot, well, time to move on to the cumshot"
             Johan "The what?"
@@ -1515,7 +1487,7 @@ label Town2fotografo_10(menu_choice = None):
             OldMan "(Fuck! this guy is ruining my work) Well... I guess I can fix it in photoshop later"
             OldMan "Leyna, get in position! on your knees!"
             Leyna "!!! Yeah!"
-            $ show_picture(19, "fotoerotica21")
+            scene fotoerotica21
             OldMan "Very good"
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
@@ -1523,34 +1495,34 @@ label Town2fotografo_10(menu_choice = None):
             OldMan "You can get dressed now, I will keep you posted during these days"
             Leyna "Okay, thank you"
             Villager "Yes count on me for anything you want hahahaha"
-            $ show_picture(20, "fotoerotica23")
+            scene fotoerotica23
             Johan "(What the hell just happened? How could I let them go to such extremes with Leyna? I ... What the hell is going on with me?)"
             Johan "(And I have this disgusting erection that just won't go away, along with this horrible giddy feeling in my stomach.... Fuck)"
             Johan "(I have to get out of here and get some fresh air)"
             scene black with dissolve
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
-            $ erase_picture(17)
-            $ erase_picture(18)
-            $ erase_picture(19)
+            hide fotoerotica1
+            hide fotoerotica2
+            hide fotoerotica3
+            hide fotoerotica4
+            hide fotoerotica5
+            hide pantallanegro
+            hide fotoerotica6
+            hide fotoerotica7
+            hide fotoerotica8
+            hide fotoerotica9
+            hide fotoerotica10
+            hide fotoerotica13
+            hide fotoerotica14
+            hide fotoerotica15
+            hide fotoerotica16
+            hide fotoerotica17
+            hide fotoerotica18
+            hide fotoerotica19
+            hide fotoerotica21
             $ set_switch("erotic_photos_together", True)
-            $ erase_picture(20)
+            hide fotoerotica23
             # TransferPlayer: "Town2"
-            hide black with dissolve
+            # fade in
             pause 0.26
             Johan "..."
         elif menu_choice == _("Say nothing"):
@@ -1561,14 +1533,14 @@ label Town2fotografo_10(menu_choice = None):
             Villager "All right, here I come"
             Leyna "!!!"
             pause
-            $ show_picture(12, "fotoerotica11")
+            scene fotoerotica11
             Leyna "Ah!"
             Villager "Wow, that went in pretty easy... you're pretty wet down there huh?"
             Leyna "Lo-lower your voice, my husband will hear you."
             Villager "hehehehehe yeah sorry"
             OldMan "All right, guys, hang in there for a second!"
             pause
-            $ show_picture(13, "fotoerotica12")
+            scene fotoerotica12
             OldMan "Okay this angle is perfect"
             Leyna "Ah ah ah... hmmmm"
             play sound "audio/Key.ogg" volume 0.9 noloop
@@ -1576,7 +1548,7 @@ label Town2fotografo_10(menu_choice = None):
             Johan "(My wife is being penetrated in front of my eyes and I... I'm standing here looking at everything, it feels unreal, I'm getting dizzy)"
             OldMan "All right, let's move on to the next position"
             OldMan "Leyna, turn around and bend over, that's perfect!"
-            $ show_picture(14, "fotoerotica18")
+            scene fotoerotica18
             OldMan "All right, hang in there for a little while"
             Villager "Your pussy feels great... I don't think I can go much longer without cumming"
             Leyna "D-don't do it ah ah ah that would be... terrible"
@@ -1584,7 +1556,7 @@ label Town2fotografo_10(menu_choice = None):
             $ flash_screen([255,255,255,170], 60, True)
             OldMan "Okay guys, let's switch again, Leyna lean to one side"
             Leyna "Ah ah alright"
-            $ show_picture(15, "fotoerotica20")
+            scene fotoerotica20
             OldMan "Great, this angle is magic, the magazine will pay us a lot for this!"
             Johan "(From here I can see everything, that guy has a giant dick and he is inside Leyna, although they are not  moving, he is... inside my wife, I feel like vomiting)"
             Johan "(I feel sick watching this)"
@@ -1597,13 +1569,13 @@ label Town2fotografo_10(menu_choice = None):
             OldMan "Oh sure, Leyna get on your knees let's go with the cumshot!"
             Johan "(Cumshot?)"
             Leyna "O-okay"
-            $ show_picture(16, "fotoerotica21")
+            scene fotoerotica21
             OldMan "Perfect! OK, kiddo, anytime"
             Villager "Yes! ah ahh!"
             Johan "Wait..."
             $ flash_screen([255,255,255,170], 60, True)
             $ flash_screen([255,255,255,170], 60, True)
-            $ show_picture(17, "fotoerotica22")
+            scene fotoerotica22
             play sound "audio/Poison.ogg" volume 0.9 noloop
             Villager "AAAhhh"
             Johan "!!!!"
@@ -1612,7 +1584,7 @@ label Town2fotografo_10(menu_choice = None):
             $ flash_screen([255,255,255,170], 60, True)
             OldMan "Perfect! the photo came out great, very good job guys! with this we have enough for today, and I'll keep you informed of what the magazine tells me"
             Leyna "...."
-            $ show_picture(17, "fotoerotica23")
+            scene fotoerotica23
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
             Johan "(What the hell just happened? How could I let them go to such extremes with Leyna? I ... What the hell is going on with me?)"
@@ -1621,31 +1593,19 @@ label Town2fotografo_10(menu_choice = None):
             Leyna "Yeah"
             Johan "..."
             scene black with dissolve
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
+            hide fotoerotica11
+            hide fotoerotica12
+            hide fotoerotica18
+            hide fotoerotica20
+            hide fotoerotica21
             $ set_switch("erotic_photos_together", True)
-            $ erase_picture(17)
+            hide fotoerotica23
             # TransferPlayer: "Town2"
-            hide black with dissolve
+            # fade in
             pause 0.26
             Johan "..."
     elif menu_choice == _("No fucking way"):
         $ menu_choice = None
-        $ erase_picture(1)
         Johan "I'm sorry but I can't allow this"
         OldMan "I understand... but it's a golden opportunity, if you change your mind I'll be right here"
         Johan "Yeah..."
@@ -1662,39 +1622,40 @@ label Town2fotografo_11(menu_choice = None):
         OldMan "(Tch!) Sure Johan whatever you want, I have prepared the studio for this session, please come with me"
         Johan "Yeah...."
         scene black with dissolve
-        $ show_picture(1, "fotoerotica1")
-        hide black with dissolve
+        show fotoerotica1 with dissolve
         "A FEW MOMENTS LATER"
         Johan "(Fuck, I'm already regretting this..... well I'm here and I can control that nothing gets out of hand)"
         OldMan "well Leyna, have you already changed? perfect, please place yourself there"
         Johan "!!! Wow... (Why am I surprised? after all, I knew what we were coming to!)"
-        $ show_picture(2, "fotoerotica2")
+        scene fotoerotica2
         OldMan "Sexy as always Leyna, that outfit looks perfect on you!"
         Leyna "Th-Thanks..."
         Johan "(It is true that she looks very sexy in those clothes...)"
         OldMan "I know you're a little nervous but you have to relax, you know, smile a little and pose for me, you're going to do great"
         Leyna "Yes..."
-        $ show_picture(3, "fotoerotica3")
+        scene fotoerotica3
         Leyna "Is this good?"
         OldMan "That's perfect Leyna"
         Johan "So far so good... God, couldn't it be like this all the time? I'm getting on my nerves and it hasn't even started yet!)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
         OldMan "Perfect, let's move on to the next position"
-        $ show_picture(4, "fotoerotica4")
+        scene fotoerotica4
         OldMan "Keep up the good work Leyna you are doing very well"
         Leyna "Thanks"
         Johan "(She is much more relaxed than in the hotsprings, she even seems to be... enjoying it)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(5, "fotoerotica5")
+        scene fotoerotica5
         OldMan "Wow, super sexy, love it!"
         Leyna "Hahahaha"
         Johan "(Unbelievable, I'm even getting an erection with all this, if I were a teenager I'd go crazy to get pictures of Leyna...)"
         Johan "(I guess that's why the magazine loves it so much... all the wanker kids will be buying it)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(6, "pantallanegro", width=816, height=600)
+        scene pantallanegro:
+            xsize 816
+            ysize 600
         OldMan "Perfect Leyna, we have finished with the solo poses"
         Leyna "..."
         OldMan "Now the boy with whom you will do the rest of the poses will come in"
@@ -1702,27 +1663,27 @@ label Town2fotografo_11(menu_choice = None):
         Leyna "!!!"
         Johan "(Fuck... the guy is huge... My stomach is turning...)"
         OldMan "Okay get in there with her"
-        $ show_picture(7, "fotoerotica6")
+        scene fotoerotica6
         OldMan "There, perfect!"
         OldMan "Okay, stay like this, a little romantic photo to start with"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
         OldMan "Great"
         Leyna "(Johan is right there, looking at us while all this is going on... I never thought I would be in a situation like this next to him.... am I getting excited?)"
-        $ show_picture(8, "fotoerotica7")
+        scene fotoerotica7
         Leyna "(I'm feeling it pressing against my ass... her huge... thing, it's hot and throbbing against me)"
         OldMan "All right, the time has come to start getting spicy, lift her bra, let that perfect body you have be seen"
         Johan "(Shit, here we go... Fuck why do I have an erection now? There's a guy touching my wife right under my nose...)"
         pause
         play sound "audio/Equip2.ogg" volume 0.9 noloop
-        $ show_picture(9, "fotoerotica8")
+        scene fotoerotica8
         Leyna "Ooh (Shit, I couldn't help moaning when he kissed my neck.... What's wrong with me? I can barely control myself)"
         Johan "(Was that a moan?... no... it's my imagination)"
         play sound "audio/Key.ogg" volume 0.9 noloop
         $ flash_screen([255,255,255,170], 60, True)
         OldMan "Great... I'm speechless, very good guys!"
         OldMan "Let's go with the next position lift her as I told you"
-        $ show_picture(10, "fotoerotica9")
+        scene fotoerotica9
         Johan "!!! (the son of a bitch has a huge dick and he's already got a hard-on!)"
         Leyna "Wow... (He's rubbing me down there, just with his breathing he's already... stimulating me, I feel his breath on the back of my neck and the... down there)"
         play sound "audio/Key.ogg" volume 0.9 noloop
@@ -1731,7 +1692,7 @@ label Town2fotografo_11(menu_choice = None):
         Leyna "Al-alright"
         Johan "!!! (Shit, the time has come, I have been paralyzed with everything that is happening)"
         play sound "audio/Equip2.ogg" volume 0.9 noloop
-        $ show_picture(11, "fotoerotica10")
+        scene fotoerotica10
         OldMan "That's right... You have a very nice pussy if I may say so Leyna"
         Leyna "Tha-thanks(His cock is rubbing my clitoris and I'm going to go crazy if we go on like this... for a second I forgot that Johan is here)"
         Johan "(Fuck, he's touching him down there with his dick.... Why did I agree to this?)"
@@ -1749,11 +1710,11 @@ label Town2fotografo_11(menu_choice = None):
             OldMan "(Shit, I knew this guy was going to give us trouble) I see... well I guess we'll have to play with the camera angle"
             OldMan "Leyna, please bend over and get your ass in the air"
             Leyna "Alright!"
-            $ show_picture(12, "fotoerotica13")
+            scene fotoerotica13
             OldMan "Okay... so... tch! boy I can still see your dick from here, try to hide it somehow"
             Villager "Sure, give me a second!"
             Leyna "!!!"
-            $ show_picture(13, "fotoerotica14")
+            scene fotoerotica14
             OldMan "Wait wait wait! That's a good position too, hold on a second!"
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
@@ -1761,27 +1722,27 @@ label Town2fotografo_11(menu_choice = None):
             Villager "(This girl is very horny.... I think I have an idea and I'm sure her husband doesn't notice)"
             OldMan "Okay kid, I'm going to go back to the position I was in before and as I said, try to hide it somehow so it doesn't show up in the picture"
             Villager "Okay!"
-            $ show_picture(14, "fotoerotica15")
+            scene fotoerotica15
             Villager "Okay... okay... give me a moment to get myself well positioned"
             Leyna "???"
             pause
-            $ show_picture(15, "fotoerotica16")
+            scene fotoerotica16
             Villager "Yes... a little more, let's see..."
             Leyna "Ah (He's sticking his dick in me! He's sticking it in front of Johan, but he doesn't seem to be noticing...)"
             pause
-            $ show_picture(16, "fotoerotica17")
+            scene fotoerotica17
             Villager "Yeah! right there, perfect"
             Leyna "AH! (shit, he put it all the way in me... with this alone I was about to squirt... fuck!)"
             OldMan "Yes, it's perfect! thank you very much"
             pause
-            $ show_picture(17, "fotoerotica18")
+            scene fotoerotica18
             Leyna "Ah ah ah ah (I find it hard to hold on, I feel it throbbing inside me... deep inside me)"
             Leyna "(Let this end soon please... I don't think I can take much more)"
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
             OldMan "A perfect photo!"
             pause
-            $ show_picture(18, "fotoerotica19")
+            scene fotoerotica19
             Johan "(from here I can't see very well what's going on or what they are saying... it certainly seems that he... no, I have already told them that they can't do that)"
             OldMan "Wow we are having a spectacular photo shoot, well, time to move on to the cumshot"
             Johan "The what?"
@@ -1790,7 +1751,7 @@ label Town2fotografo_11(menu_choice = None):
             OldMan "(Fuck! this guy is ruining my work) Well... I guess I can fix it in photoshop later"
             OldMan "Leyna, get in position! on your knees!"
             Leyna "!!! Yeah!"
-            $ show_picture(19, "fotoerotica21")
+            scene fotoerotica21
             OldMan "Very good"
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
@@ -1798,34 +1759,34 @@ label Town2fotografo_11(menu_choice = None):
             OldMan "You can get dressed now, I will keep you posted during these days"
             Leyna "Okay, thank you"
             Villager "Yes count on me for anything you want hahahaha"
-            $ show_picture(20, "fotoerotica23")
+            scene fotoerotica23
             Johan "(What the hell just happened? How could I let them go to such extremes with Leyna? I ... What the hell is going on with me?)"
             Johan "(And I have this disgusting erection that just won't go away, along with this horrible giddy feeling in my stomach.... Fuck)"
             Johan "(I have to get out of here and get some fresh air)"
             scene black with dissolve
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
-            $ erase_picture(17)
-            $ erase_picture(18)
-            $ erase_picture(19)
+            hide fotoerotica1
+            hide fotoerotica2
+            hide fotoerotica3
+            hide fotoerotica4
+            hide fotoerotica5
+            hide pantallanegro
+            hide fotoerotica6
+            hide fotoerotica7
+            hide fotoerotica8
+            hide fotoerotica9
+            hide fotoerotica10
+            hide fotoerotica13
+            hide fotoerotica14
+            hide fotoerotica15
+            hide fotoerotica16
+            hide fotoerotica17
+            hide fotoerotica18
+            hide fotoerotica19
+            hide fotoerotica21
             $ set_switch("erotic_photos_together", True)
-            $ erase_picture(20)
+            hide fotoerotica23
             # TransferPlayer: "Town2"
-            hide black with dissolve
+            # fade in
             pause 0.26
             Johan "..."
         elif menu_choice == _("Say nothing"):
@@ -1836,14 +1797,14 @@ label Town2fotografo_11(menu_choice = None):
             Villager "All right, here I come"
             Leyna "!!!"
             pause
-            $ show_picture(12, "fotoerotica11")
+            scene fotoerotica11
             Leyna "Ah!"
             Villager "Wow, that went in pretty easy... you're pretty wet down there huh?"
             Leyna "Lo-lower your voice, my husband will hear you."
             Villager "hehehehehe yeah sorry"
             OldMan "All right, guys, hang in there for a second!"
             pause
-            $ show_picture(13, "fotoerotica12")
+            scene fotoerotica12
             OldMan "Okay this angle is perfect"
             Leyna "Ah ah ah... hmmmm"
             play sound "audio/Key.ogg" volume 0.9 noloop
@@ -1851,7 +1812,7 @@ label Town2fotografo_11(menu_choice = None):
             Johan "(My wife is being penetrated in front of my eyes and I... I'm standing here looking at everything, it feels unreal, I'm getting dizzy)"
             OldMan "All right, let's move on to the next position"
             OldMan "Leyna, turn around and bend over, that's perfect!"
-            $ show_picture(14, "fotoerotica18")
+            scene fotoerotica18
             OldMan "All right, hang in there for a little while"
             Villager "Your pussy feels great... I don't think I can go much longer without cumming"
             Leyna "D-don't do it ah ah ah that would be... terrible"
@@ -1859,7 +1820,7 @@ label Town2fotografo_11(menu_choice = None):
             $ flash_screen([255,255,255,170], 60, True)
             OldMan "Okay guys, let's switch again, Leyna lean to one side"
             Leyna "Ah ah alright"
-            $ show_picture(15, "fotoerotica20")
+            scene fotoerotica20
             OldMan "Great, this angle is magic, the magazine will pay us a lot for this!"
             Johan "(From here I can see everything, that guy has a giant dick and he is inside Leyna, although they are not  moving, he is... inside my wife, I feel like vomiting)"
             Johan "(I feel sick watching this)"
@@ -1872,13 +1833,13 @@ label Town2fotografo_11(menu_choice = None):
             OldMan "Oh sure, Leyna get on your knees let's go with the cumshot!"
             Johan "(Cumshot?)"
             Leyna "O-okay"
-            $ show_picture(16, "fotoerotica21")
+            scene fotoerotica21
             OldMan "Perfect! OK, kiddo, anytime"
             Villager "Yes! ah ahh!"
             Johan "Wait..."
             $ flash_screen([255,255,255,170], 60, True)
             $ flash_screen([255,255,255,170], 60, True)
-            $ show_picture(17, "fotoerotica22")
+            scene fotoerotica22
             play sound "audio/Poison.ogg" volume 0.9 noloop
             Villager "AAAhhh"
             Johan "!!!!"
@@ -1887,7 +1848,7 @@ label Town2fotografo_11(menu_choice = None):
             $ flash_screen([255,255,255,170], 60, True)
             OldMan "Perfect! the photo came out great, very good job guys! with this we have enough for today, and I'll keep you informed of what the magazine tells me"
             Leyna "...."
-            $ show_picture(17, "fotoerotica23")
+            scene fotoerotica23
             play sound "audio/Key.ogg" volume 0.9 noloop
             $ flash_screen([255,255,255,170], 60, True)
             Johan "(What the hell just happened? How could I let them go to such extremes with Leyna? I ... What the hell is going on with me?)"
@@ -1896,26 +1857,15 @@ label Town2fotografo_11(menu_choice = None):
             Leyna "Yeah"
             Johan "..."
             scene black with dissolve
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
+            hide fotoerotica11
+            hide fotoerotica12
+            hide fotoerotica18
+            hide fotoerotica20
+            hide fotoerotica21
             $ set_switch("erotic_photos_together", True)
-            $ erase_picture(17)
+            hide fotoerotica23
             # TransferPlayer: "Town2"
-            hide black with dissolve
+            # fade in
             pause 0.26
             Johan "..."
     elif menu_choice == _("No fucking way"):
@@ -1952,7 +1902,7 @@ label Town2fotografo_13(menu_choice = None):
         scene black with dissolve
         # TransferPlayer: "HotSpringsExterior"
         pause 0.22
-        hide black with dissolve
+        # fade in
         Johan "Well... here we are... ( Jesus, what am I thinking, no matter how much I try to pretend that I'm ok with this...)"
         Johan "(I feel like it could be the worst decision of my life...)"
         Leyna "Yes, come on, they're waiting for us... Are you okay Johan? You have a very strange face, if you're not sure about this..."
@@ -1961,45 +1911,49 @@ label Town2fotografo_13(menu_choice = None):
         Johan "Hahahaha yeah, very mature...."
         Leyna "???... Well, let's go ?"
         Johan "Yeah..."
-        $ show_picture(1, "pantallanegro", scale=(120, 120), width=816, height=600)
+        scene pantallanegro:
+            xsize 979
+            ysize 720
         "Several minutes later"
         Leyna "This is the clothes I have to wear? it's a bit.... well, I'm surprised"
         Johan "??? show me"
-        $ show_picture(2, "photohot1")
+        scene photohot1
         Leyna "After the last session I was expecting something more revealing, it's just a swimsuit"
         pause
-        $ show_picture(3, "photohot2")
+        scene photohot2
         Johan "Well yes... although you look great hehehe (Thank God! what a relief!!! this session I imagine it won't be as explicit as the previous one!)"
         OldMan "Oh yes, I was surprised too, they sent it to me from the magazine, they told me it was a special swimsuit but to me it looks like an ordinary one"
         YoungVillager "Wow Leyna! as beautiful as always!"
         Leyna "!!!"
-        $ show_picture(4, "photohot3")
+        scene photohot3
         Leyna "Y-you!"
         Johan "Oh, hey, you're the guy from the other day!"
         YoungVillager "In the flesh..."
         Leyna "What are you doing here?"
-        $ show_picture(5, "photohot4")
+        scene photohot4
         YoungVillager "Well, I needed some money and the photographer told me that I fit the profile he was looking for, so why not?"
         Leyna "I-I see (I don't trust this guy, I hope he doesn't do anything stupid in front of Johan...)"
         YoungVillager "It will be a pleasure to work with you Leyna, of course it will be a new experience for me, so treat me well, ok?"
         Leyna "Sure, let's be professionals and let's work together to make this happen"
         Villager "Yeah!"
-        $ show_picture(6, "photohot5")
+        scene photohot5
         Leyna "(This guy gives me the creeps, just by looking at his face you know he is not clean... but he is very persuasive... that time in the bar...)"
         Leyna "(If I had known I was going to end up in this situation this morning I would'nt have had a few beers with Alexa)"
         Leyna "(But the party atmosphere in this town is contagious... )"
-        $ show_picture(7, "photohot6")
+        scene photohot6
         OldMan "Well, I see you are motivated for today! All right then, everyone go to your positions"
         OldMan "Let's start with you Leyna and then the guys will join us, Johan, from here you can see everything, if you want to get closer you can do it"
         OldMan "As long as you are not in the frame you can stand wherever you want, okay?"
         Johan "Sure..."
         OldMan "Okay, let's get started!"
-        $ show_picture(8, "pantallanegro", scale=(120, 120), width=816, height=600)
+        scene pantallanegro:
+            xsize 979
+            ysize 720
         OldMan "Very good Leyna put yourself there, perfect"
-        $ show_picture(9, "photohot7")
+        scene photohot7
         OldMan "Okay, get down on your knees, let's start with some simple photos"
         Leyna "Okay..."
-        $ show_picture(10, "photohot8")
+        scene photohot8
         Leyna "Is this position okay?"
         OldMan "That's perfect, stay still"
         Leyna "Yeah"
@@ -2008,7 +1962,7 @@ label Town2fotografo_13(menu_choice = None):
         OldMan "Perfect, now lean in and approach me"
         Leyna "All right..."
         pause
-        $ show_picture(11, "photohot9")
+        scene photohot9
         Leyna "Something like this?"
         OldMan "Yes..."
         $ flash_screen([255,255,255,170], 60, True)
@@ -2016,7 +1970,7 @@ label Town2fotografo_13(menu_choice = None):
         OldMan "Now squat down, like in those reggaeton videos that are so popular"
         Leyna "Okay, I'll give it a try (so far it doesn't look as erotic as usual... thank goodness)"
         pause
-        $ show_picture(12, "photohot10")
+        scene photohot10
         Leyna "So-something like that? it's a little uncomfortable"
         OldMan "Great, hold on to that position for a bit!"
         YoungVillager "Wow, Hot!"
@@ -2024,7 +1978,7 @@ label Town2fotografo_13(menu_choice = None):
         $ flash_screen([255,255,255,170], 60, True)
         play sound "audio/Key.ogg" volume 0.9 noloop
         pause
-        $ show_picture(13, "photohot37")
+        scene photohot37
         Johan "(I don't find it funny when people talk about Leyna like that, especially in front of me)"
         Johan "(But at least it seems that today's session is less erotic than the previous one)"
         Johan "(Even Leyna seems to be starting to have a good time ... at least she's more relaxed than before,she seemed a bit tense)"
@@ -2033,7 +1987,7 @@ label Town2fotografo_13(menu_choice = None):
         Leyna "Okay"
         play sound "audio/Water1.ogg" volume 0.9 noloop
         Johan "!!!!"
-        $ show_picture(14, "photohot11")
+        scene photohot11
         play music "audio/Dungeon3.ogg" loop volume 0.9
         Leyna "!!!"
         Leyna "I already imagined that it was not a normal swimsuit... it shows through everything"
@@ -2044,7 +1998,7 @@ label Town2fotografo_13(menu_choice = None):
         play sound "audio/Key.ogg" volume 0.9 noloop
         OldMan "Perfect, now a small zoom to highlight the interesting parts"
         Johan "(Interesting parts?)"
-        $ show_picture(15, "photohot12")
+        scene photohot12
         OldMan "Perfect, one more photo in this position and the kids can go in"
         $ flash_screen([255,255,255,170], 60, True)
         play sound "audio/Key.ogg" volume 0.9 noloop
@@ -2053,7 +2007,7 @@ label Town2fotografo_13(menu_choice = None):
         YoungVillager "Well, let's get started... I'm a little nervous"
         OldMan "Don't worry, you will do well, you are very young and you have a lot of energy"
         Johan "(what the hell does he mean by that... now that Leyna is showing practically everything I'm not liking this at all)"
-        $ show_picture(16, "photohot13")
+        scene photohot13
         YoungVillager "Well, here we are, how do we get on?"
         OldMan "This way you are perfect for the first photo, stand still"
         Villager "Sure"
@@ -2064,7 +2018,7 @@ label Town2fotografo_13(menu_choice = None):
         Villager "O-okay"
         Johan "!!!"
         Johan "(Shit, things are starting to get too spicy for my taste...should I stop it? but I don't want Leyna to lose her job because of me)"
-        $ show_picture(17, "photohot14")
+        scene photohot14
         OldMan "That's it! very good, stay still"
         Leyna "(.... he was supposed to pretend he was kissing my neck, not really kissing it...this guy is taking advantage)"
         Leyna "(although it feels so good... I feel chills all over my spine and the back of my neck.... does it have something to do with the herbs they put in the water?)"
@@ -2075,7 +2029,7 @@ label Town2fotografo_13(menu_choice = None):
         Johan "(what is he intending to do?)"
         OldMan "All right guys, time to bring out the artillery, take off your loincloths and get your dicks out, I want you to grab them and smack Leyna's ass with them"
         Johan "!!!! B-but!"
-        $ show_picture(18, "photohot15")
+        scene photohot15
         Villager "Sure!"
         YoungVillager "It will be a pleasure! (Slap slap slap slap)"
         Leyna "!!! (They've already started hitting me with their dicks and Johan is right there... he seems to be a bit shocked with what's going on)"
@@ -2088,7 +2042,7 @@ label Town2fotografo_13(menu_choice = None):
         OldMan "Great, Leyna, turn around"
         Leyna "O-okay"
         pause
-        $ show_picture(19, "photohot16")
+        scene photohot16
         OldMan "Perfect, guys, stay like this! with your penises as close to her as possible"
         Villager "Glad to do it"
         Johan "(Shit... I would like nothing more than to stop this nonsense, control yourself Johan, don't be like this,  the previous one was worse...)"
@@ -2101,7 +2055,7 @@ label Town2fotografo_13(menu_choice = None):
         Johan "(Shut the fuck up...)"
         OldMan "All right, now lift her up by her legs, it' s going to look great in the photo"
         pause
-        $ show_picture(20, "photohot17")
+        scene photohot17
         Leyna "Oh!"
         Villager "Like this?"
         OldMan "That's perfect!"
@@ -2115,7 +2069,7 @@ label Town2fotografo_13(menu_choice = None):
         Villager "Sure! it will be a pleasure"
         Johan "Wh-what?!"
         Leyna "!"
-        $ show_picture(21, "photohot18")
+        scene photohot18
         Leyna "Ah! you-could warn before doing something like that!"
         Villager "Sorry"
         Leyna "N-no problem"
@@ -2126,7 +2080,7 @@ label Town2fotografo_13(menu_choice = None):
         Leyna "Thanks..."
         OldMan "All right boy, lift Leyna's leg, it's time to turn it up a notch"
         pause
-        $ show_picture(22, "photohot19")
+        scene photohot19
         OldMan "Very good, that position is perfect, hold it like that a little longer"
         $ flash_screen([255,255,255,170], 60, True)
         play sound "audio/Key.ogg" volume 0.9 noloop
@@ -2138,7 +2092,7 @@ label Town2fotografo_13(menu_choice = None):
         Leyna "Well... okay"
         Johan "(Wait, she agrees just like that? in the previous session something similar and worse happened... but I'm not sure about it)"
         pause
-        $ show_picture(23, "photohot20")
+        scene photohot20
         OldMan "Great"
         OldMan "From close it looks perfect, I'm going to take a good picture"
         $ flash_screen([255,255,255,170], 60, True)
@@ -2146,7 +2100,7 @@ label Town2fotografo_13(menu_choice = None):
         OldMan "Please, place your member against Leyna's pussy, let it touch it lightly"
         Villager "Okay"
         pause
-        $ show_picture(24, "photohot21")
+        scene photohot21
         Leyna "(I'm starting to get wet down there... I hope they don't notice, with all these fumes they might think it's just humidity...)"
         Villager "(Whispering) Wow, your pussy is so wet.... You get excited very fast, don't you?"
         Leyna "!!! (He noticed!)"
@@ -2159,11 +2113,11 @@ label Town2fotografo_13(menu_choice = None):
         $ menu_choice = _return
         if menu_choice == _("Say nothing"):
             $ menu_choice = None
-            $ show_picture(25, "photohot39")
+            scene photohot39
             Johan "(It's like that time... I can't help but remain silent as I watch all this happen)"
             Johan "(I feel like vomiting again, while I have a feeling of vertigo... but at the same time I have an uncontrollable erection)"
             Johan "(I feel like a shithead and a coward)"
-            $ show_picture(26, "photohot23")
+            scene photohot23
             $ flash_screen([255,255,255,170], 60, True)
             play sound "audio/Key.ogg" volume 0.9 noloop
             Leyna "Oh! hmmmm!"
@@ -2172,7 +2126,7 @@ label Town2fotografo_13(menu_choice = None):
             Villager "(Whispering) Or what? your husband is right there looking like an idiot watching everything and he hasn't said a word"
             Leyna "!!! I-I, don't talk like that about my hus..."
             pause
-            $ show_picture(27, "photohot24")
+            scene photohot24
             Leyna "HMMAAH!! MY GOD!"
             Johan "(My wife just moaned?....)"
             Villager "What were you saying? I didn't hear you"
@@ -2183,13 +2137,13 @@ label Town2fotografo_13(menu_choice = None):
             OldVillager "Now take it out, I want to take another picture from that angle"
             Villager "... Sure, whatever you say"
             pause
-            $ show_picture(28, "photohot25")
+            scene photohot25
             Leyna "(I feel it deep inside of me.... feeling it so deep inside me I'm already about to cum)"
             Villager "(Whispering) Too bad I have to take it out, isn't it? I can feel you contracting in there, you're about to cum, aren't you?"
             Leyna "!!!! N-no"
             Villager "Well then I'm going to take it out"
             Leyna "!!! hmma"
-            $ show_picture(29, "photohot26")
+            scene photohot26
             $ flash_screen([255,255,255,170], 60, True)
             "Plop"
             Leyna "Oh my god..."
@@ -2202,7 +2156,7 @@ label Town2fotografo_13(menu_choice = None):
             OldMan "All right Leyna, climb on the young guy, let's go to the next position"
             Leyna "Ah ah ah... O-okay..."
             pause
-            $ show_picture(30, "photohot27")
+            scene photohot27
             Leyna "Li-like this? Is that okay?"
             OldMan "That's fine"
             $ flash_screen([255,255,255,170], 60, True)
@@ -2211,7 +2165,7 @@ label Town2fotografo_13(menu_choice = None):
             Villager "Yes, I have it"
             OldMan "All right, I'm going to take a picture from below"
             pause
-            $ show_picture(31, "photohot28")
+            scene photohot28
             OldMan "Yes... This angle is very good"
             $ flash_screen([255,255,255,170], 60, True)
             play sound "audio/Key.ogg" volume 0.9 noloop
@@ -2225,7 +2179,7 @@ label Town2fotografo_13(menu_choice = None):
             Leyna "I..."
             Johan "(It can't be... this can't be happening)"
             pause
-            $ show_picture(32, "photohot29")
+            scene photohot29
             $ flash_screen([255,255,255,170], 60, True)
             Leyna "!!! OH MY GOD! OHHHH"
             Villager "Hahahaha seems to be liking it"
@@ -2233,7 +2187,7 @@ label Town2fotografo_13(menu_choice = None):
             $ flash_screen([255,255,255,170], 60, True)
             play sound "audio/Key.ogg" volume 0.9 noloop
             pause
-            $ show_picture(33, "photohot31")
+            scene photohot31
             OldMan "Leyna everything ok?"
             Leyna "Aaahh ah ahhh ...."
             YoungVillager "I don't think she can talk right now, with two cocks deep inside her hahahaha"
@@ -2245,7 +2199,7 @@ label Town2fotografo_13(menu_choice = None):
             OldMan "All right guys, that's enough, go down to Leyna and have her give you a titfuck, it'll be great for the end"
             YoungVillager "A titfuck?! great!"
             pause
-            $ show_picture(34, "photohot32")
+            scene photohot32
             YoungVillager "Wow it feels amazing! keep it up Leyna and I'll be cumming in no time!"
             Leyna "I-I see..."
             $ flash_screen([255,255,255,170], 60, True)
@@ -2256,7 +2210,7 @@ label Town2fotografo_13(menu_choice = None):
             Leyna "???"
             OldMan "Wai..."
             pause
-            $ show_picture(35, "photohot33")
+            scene photohot33
             play bgs "audio/audio follar.ogg" loop volume 0.9
             OldMan "Oh well... I guess it's okay to let off some steam after all"
             Leyna "???? AAuughggaah"
@@ -2270,20 +2224,20 @@ label Town2fotografo_13(menu_choice = None):
             Villager "Get ready Leyna here I come!"
             Leyna "???"
             $ flash_screen([255,255,255,170], 60, True)
-            $ show_picture(36, "photohot34")
+            scene photohot34
             Leyna "Wh-what are you doing?"
             Villager "Open your mouth Leyna! OPEN IT, IT'S COMING!"
             Leyna "Ah?"
             Johan "(You're not going to do it, are you? Leyna!)"
             pause
-            $ show_picture(37, "photohot35")
+            scene photohot35
             $ flash_screen([255,255,255,170], 60, True)
             stop bgs fadeout 1
             Villager "OOOooohh!!!!!"
             YoungVillager "OOOoohh Shit!!"
             Villager "A little more and my dick explodes!"
             pause
-            $ show_picture(38, "photohot36")
+            scene photohot36
             Leyna "Ah... ah ah ah...."
             OldMan "Very good Leyna! stay like this!"
             $ flash_screen([255,255,255,170], 60, True)
@@ -2298,46 +2252,46 @@ label Town2fotografo_13(menu_choice = None):
             $ set_switch("johan_does_nothing", True)
             # TransferPlayer: "Path"
             pause 0.28
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
-            $ erase_picture(17)
-            $ erase_picture(18)
-            $ erase_picture(19)
-            $ erase_picture(20)
-            $ erase_picture(21)
-            $ erase_picture(22)
-            $ erase_picture(23)
-            $ erase_picture(24)
-            $ erase_picture(25)
-            $ erase_picture(26)
-            $ erase_picture(27)
-            $ erase_picture(28)
-            $ erase_picture(29)
-            $ erase_picture(30)
-            $ erase_picture(31)
-            $ erase_picture(32)
-            $ erase_picture(33)
-            $ erase_picture(34)
-            $ erase_picture(35)
-            $ erase_picture(36)
-            $ erase_picture(37)
-            $ erase_picture(38)
+            hide pantallanegro
+            hide photohot1
+            hide photohot2
+            hide photohot3
+            hide photohot4
+            hide photohot5
+            hide photohot6
+            hide pantallanegro
+            hide photohot7
+            hide photohot8
+            hide photohot9
+            hide photohot10
+            hide photohot37
+            hide photohot11
+            hide photohot12
+            hide photohot13
+            hide photohot14
+            hide photohot15
+            hide photohot16
+            hide photohot17
+            hide photohot18
+            hide photohot19
+            hide photohot20
+            hide photohot21
+            hide photohot39
+            hide photohot23
+            hide photohot24
+            hide photohot25
+            hide photohot26
+            hide photohot27
+            hide photohot28
+            hide photohot29
+            hide photohot31
+            hide photohot32
+            hide photohot33
+            hide photohot34
+            hide photohot35
+            hide photohot36
             $ set_switch("hotsprings_photo_session", True)
-            hide black with dissolve
+            # fade in
             pause 0.2
             Leyna "Jo-johan?"
             Johan "Johan? JOHAN? What the hell have you done?!"
@@ -2354,10 +2308,10 @@ label Town2fotografo_13(menu_choice = None):
             Leyna "But that doesn't mean anything, do you understand? I..."
             if johan_leyna_sex == 2:
                 $ flash_screen([255,255,255,170], 60, True)
-                $ show_picture(1, "johanfollar9")
+                scene johanfollar9
                 Leyna "Look, I'll be honest with you... no matter how big their dicks are, you're the one that makes me cum when we do it"
                 Leyna "What good does it do them to have the dick of a horse, if they are useless?"
-                $ erase_picture(1)
+                hide johanfollar9
             if johan_leyna_sex == 1:
                 Leyna "Yes, our sex has not been the best in the world, especially since we came to this town"
                 Leyna "But I love you Johan, I love you more than I've ever loved anyone"
@@ -2379,7 +2333,7 @@ label Town2fotografo_13(menu_choice = None):
         elif menu_choice == _("Hey!!"):
             $ menu_choice = None
             Johan "(I-I can't let that happen!)"
-            $ show_picture(25, "photohot40")
+            scene photohot40
             Johan "Hey! stop right now!!!"
             Leyna "!!!! (Johan!)"
             OldMan "What? What are you saying?"
@@ -2402,32 +2356,8 @@ label Town2fotografo_13(menu_choice = None):
             $ set_switch("johan_rejects", True)
             # TransferPlayer: "Path"
             pause 0.26
-            $ erase_picture(1)
-            $ erase_picture(2)
-            $ erase_picture(3)
-            $ erase_picture(4)
-            $ erase_picture(5)
-            $ erase_picture(6)
-            $ erase_picture(7)
-            $ erase_picture(8)
-            $ erase_picture(9)
-            $ erase_picture(10)
-            $ erase_picture(11)
-            $ erase_picture(12)
-            $ erase_picture(13)
-            $ erase_picture(14)
-            $ erase_picture(15)
-            $ erase_picture(16)
-            $ erase_picture(17)
-            $ erase_picture(18)
-            $ erase_picture(19)
-            $ erase_picture(20)
-            $ erase_picture(21)
-            $ erase_picture(22)
-            $ erase_picture(23)
-            $ erase_picture(24)
-            $ erase_picture(25)
-            hide black with dissolve
+            hide photohot40
+            # fade in
             pause 0.2
             Johan "Fucking asshole!"
             Leyna "Johan..."
@@ -2438,14 +2368,14 @@ label Town2fotografo_13(menu_choice = None):
             Johan "!!! I! ... (I'm yelling at Leyna, with so much anger.{p}...)"
             if johan_leyna_sex == 1:
                 $ flash_screen([255,255,255,170], 60, True)
-                $ show_picture(1, "johanfollar6")
+                scene johanfollar6
                 Johan "(Am I taking it out on her because I couldn't deliver that time?.... after seeing the size of that guy Was I intimidated?)"
             if johan_leyna_sex == 2:
                 Johan "(I shouldn't get like this with Leyna... even though)"
                 $ flash_screen([255,255,255,170], 60, True)
-                $ show_picture(1, "johanfollar9")
+                scene johanfollar9
                 Johan "(That time it was clear that we are very compatible, I know that I am able to satisfy Leyna better than any fucking hillbilly)"
-            $ erase_picture(1)
+            hide johanfollar9
             Johan "I am very sorry Leyna... But I can't let them do that to you in front of me, I know it's your job and you could have earned a lot of money"
             Johan "But you are my wife and I love you! and if being jealous and not letting them do those things to you is bad then I am a horrible person"
             Johan "But that's just the way I am, I love you too much to see you like this, I'm sorry"
@@ -2472,7 +2402,7 @@ label Town2ToGlade_v2:
     return
 
 label Town2Flashback_0:
-    $ show_picture(1, "flash1")
+    scene flash1
     Leyna "(I feel that things are getting out of control little by little... our relationship is gradually changing since we arrived in this town)"
     if switch("corruption_average"):
         Leyna "(There have been some things that I deeply regret, but even so, I've been able to maintain a little bit of control, even though it is very difficult for me)"
@@ -2483,73 +2413,80 @@ label Town2Flashback_0:
         Leyna "(I've barely been able to turn down the guys who have been seducing me since I arrived and I've done things I thought I would never be able to do)"
     Leyna "(Like yesterday at the festival....)"
     if festival_clothes == 1:
-        $ show_picture(2, "festivalnoche23", width=814, height=625)
+        scene festivalnoche23:
+            xsize 814
+            ysize 625
         Leyna "(Things got out of control very, very quickly... it's a miracle Johan didn't realize what happened)"
-        $ show_picture(3, "flash3")
+        scene flash3
         Leyna "(Johan was just a few feet away and I... I was being fucked in the middle of a crowd)"
         Leyna "(Fortunately everyone was either extremely drunk or high on mushrooms...)"
         Leyna "(Including me... but I shouldn't make excuses I could have stopped the thing from going ahead.... But I didn't, because I was looking forward to it)"
         Leyna "(I wanted to be fucked like a bitch...)"
         pause
-        $ show_picture(4, "flash4")
+        scene flash4
         Leyna "(When I regained a minimum of my senses, I could not see Johan anywhere, for a second it crossed my mind that he had seen me...)"
         Leyna "(... And that, in anger, he had left the festival... but even so, at that moment, the only thing I wanted was... )"
         pause
-        $ show_picture(5, "flash5")
+        scene flash5
         Leyna "(That...)"
         "Layna. (So I got carried away... and went all the way with them)"
         Leyna "(I don't remember exactly what happened... I just remember that it was one of the best experiences of my life..."
         pause
-        $ show_picture(6, "flash6")
+        scene flash6
         Leyna "(Although I don't know if it was because of the herbs in the drink...)"
         Leyna "(Or because we really had a great time... but I had an amazing orgasm, I remember that...)"
         pause
-        $ show_picture(7, "flash7")
+        scene flash7
         Leyna "(Then... Alexa appeared and caught me in that situation... I didn't know how I was going to react)"
         pause
-        $ show_picture(8, "pantallanegro", scale=(120, 120), width=816, height=600)
+        scene pantallanegro:
+            xsize 979
+            ysize 720
         Leyna "(But she was extremely kind, got me out of there, took me to the inn's room and helped me clean up, then put me to bed and left me to sleep)"
-        $ show_picture(9, "flash8")
+        scene flash8
         "Leyna. (The next morning she was waiting for me downstairs with a cup of coffee and was accompanied by one of the guys from the village...)"
         Leyna "(She didn't say anything about last night, just smiled at me and talked about anything during the morning as if nothing had happened)"
         Leyna "(And then Johan arrived...)"
-        $ show_picture(10, "flash2")
+        scene flash2
     if festival_clothes == 2:
-        $ show_picture(2, "festivalnoche24", width=814, height=625)
+        scene festivalnoche24:
+            xsize 814
+            ysize 625
         Leyna "(Things got a little out of hand last night.... in the end not much happened, but it could have gotten out of hand in no time)"
         Leyna "(I saw Johan having a good time...  so I decided to have a good time myself)"
         pause
-        $ show_picture(3, "flash9")
+        scene flash9
         Leyna "(Let's say I got a little carried away by the atmosphere)"
         Leyna "(I danced a lot with the guys, they were horny and wanted to take advantage of the situation a little bit)"
         Leyna "(... well, what's the point of kidding myself, I let myself go a little bit)"
         Leyna "(I followed their lead... and provoked them a bit...)"
         pause
-        $ show_picture(4, "flash10")
+        scene flash10
         Leyna "(Maybe I provoked them too much... it was still fun to see how they behaved like teenagers and fought for my attention)"
         pause
-        $ show_picture(5, "flash11")
+        scene flash11
         Leyna "(They even made contests of... well)"
         Leyna "\"Wow, do you all have huge dicks in this town hahahaha is it because of the diet or what's going on here?\""
         pause
-        $ show_picture(6, "flash12")
+        scene flash12
         Leyna "(But there came a time when I was too drunk and anything could have happened...)"
         pause
-        $ show_picture(7, "flash13")
+        scene flash13
         Leyna "(But my boss from the bar showed up and really saved my ass... got the guys off my back)"
-        $ show_picture(8, "flash14")
+        scene flash14
         Leyna "(And take me to Alexa)"
         Barman "\"Hey you! she's your friend right? I've seen you together in town, Leyna is really drunk and she was surrounded by guys\""
         Alexa "\"Oh wow, thanks for bringing her, I'll take care of her, I'll take her to the inn right now\""
         scene black with dissolve
-        $ erase_picture(8)
-        $ show_picture(8, "pantallanegro", scale=(120, 120), width=816, height=600)
-        hide black with dissolve
+        hide flash14
+        show pantallanegro with dissolve:
+            xsize 979
+            ysize 720
         Leyna "(I barely remember what happened next, but it seems that Alexa took me to my room, helped me take a cold shower and laid me down on the bed)"
-        $ show_picture(9, "flash8")
+        scene flash8
         Leyna "(The next morning he was waiting for me with a local boy, coffee in hand, and we spent the rest of the morning together)"
         Leyna "(Until Johan came along)"
-        $ show_picture(10, "flash2")
+        scene flash2
     Leyna "(And now this situation happens...)"
     Leyna "(There are times when I feel as if Johan and I are drifting further and further apart as the days go by)"
     if johan_leyna_sex == 2:
@@ -2559,19 +2496,19 @@ label Town2Flashback_0:
         Leyna "(He has never been spectacular in bed but he was good... but now he has become a slacker...he no longer has the energy he used to have....)"
         Leyna "(Will it be like this for the rest of our lives?...)"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
-    $ erase_picture(10)
+    hide flash1
+    hide festivalnoche24
+    hide flash9
+    hide flash10
+    hide flash11
+    hide flash12
+    hide flash13
+    hide pantallanegro
+    hide flash8
+    hide flash2
     # TransferPlayer: "Town2"
     pause 0.24
-    hide black with dissolve
+    # fade in
     Johan "Leyna? are you all right?"
     Leyna "Yes... I'm fine, I'm fine, I've just been numb thinking about my stuff"
     Johan "... Of course, the truth is that I have to go and talk to the mayor again, the festival is coming to an end"
@@ -2580,19 +2517,19 @@ label Town2Flashback_0:
     Johan "Yes... I won't be long, I'll see you in a little while"
     Leyna "Ok..."
     scene black with dissolve
-    hide black with dissolve
+    # fade in
     Leyna "What should I do... I could stop by the bar to see how the boss is doing?"
     return
 
 label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
-    $ show_picture(1, "callefinal1")
+    scene callefinal1
     Villager "Hey sweetie! Do you want to have a good time?"
     Villager2 "Yeah hahahaha why don't you show us those great tits you have?"
     Leyna "hmmm?"
     Leyna "Want to see my boobs? .... hahahaha"
     Villager "????"
     pause
-    $ show_picture(2, "callefinal2")
+    scene callefinal2
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     Leyna "All right, here you go!"
     Villager "F-fuck she really took them out"
@@ -2603,13 +2540,13 @@ label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
     Villager2 "Is this bitch serious?"
     Villager "I don't know... but I don't care! this is too good an opportunity to pass up!"
     pause
-    $ show_picture(3, "callefinal3")
+    scene callefinal3
     Villager "Hmmf! fuck, they are so soft"
     Leyna "Ahhh... You' re doing great, big man... Do you like them?"
     Villager2 "Fuck what a bastard, she really meant it!"
     Villager2 "Wait... you said we can do whatever we want with you, right?... very well"
     pause
-    $ show_picture(4, "callefinal4")
+    scene callefinal4
     "Plas!"
     Leyna "I see that you like to go hard huh?....it is fine with me!"
     Villager2 "!!!  You're a real bitch! Now you'll see!"
@@ -2617,7 +2554,7 @@ label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
     Leyna "Hihihi as you wish... I'm looking forward to it"
     Villager "!!! fuck... you're perfect"
     pause
-    $ show_picture(5, "callefinal5")
+    scene callefinal5
     Villager "Como here!"
     Leyna "AH! of course, as you wish"
     Villager2 "Hey they will see us"
@@ -2625,7 +2562,7 @@ label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
     Leyna "Yes please hehehehe"
     Villager2 "... Yes... let's fuck her!"
     pause
-    $ show_picture(6, "callefinal6")
+    scene callefinal6
     Villager "Ahhhh, It's so wet down there!"
     Villager2 "Hey man, I want some too"
     Villager "Weren't you ashamed because we were in public?"
@@ -2634,7 +2571,7 @@ label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
     Villager "Fuck, I love this bitch"
     Villager2 "Here I come!"
     pause
-    $ show_picture(7, "callefinal7")
+    scene callefinal7
     play bgs "audio/audio follar.ogg" loop volume 0.9
     Villager "God, it feels so good!"
     Villager2 "Fuck, your ass feels like being in paradise it's so tight!"
@@ -2646,7 +2583,7 @@ label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
     Villager "Y-yes, I can't do it anymore either! It's been so long since I've done it with a woman!"
     Leyna "...."
     pause
-    $ show_picture(9, "callefinal8")
+    scene callefinal8
     $ flash_screen([255,255,255,170], 60, False)
     Villagers "AAAAAHH!!!"
     Leyna "!!!! both of you at the same time! you're both in tune with each other hihihi"
@@ -2659,17 +2596,16 @@ label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
     Leyna "W-well, we'll see, maybe I'll come visit you one day, now I think I should go"
     Villager2 "S-sure..."
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
+    hide callefinal1
+    hide callefinal2
+    hide callefinal3
+    hide callefinal4
+    hide callefinal5
+    hide callefinal6
+    hide callefinal7
+    hide callefinal8
     $ final_day = final_day + 1
-    hide black with dissolve
+    # fade in
     return
 
 label Town2ToTownEntrance_v2:

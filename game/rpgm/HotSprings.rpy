@@ -8,8 +8,7 @@ label HotSpringshotspringseventopart2:
     Villager "You are not from here, of course. Yeah, they are mixed but don't worry about us, relax.. We'll keep you company!"
     Leyna "Oh... I see"
     scene black with dissolve
-    $ show_picture(1, "onsen2")
-    hide black with dissolve
+    show onsen2 with dissolve
     play sound "audio/Dive.ogg" volume 0.9 noloop
     Villager "So, are you travelling?"
     Leyna "( He is too close ) Yes.. I've come with my husband.."
@@ -21,18 +20,17 @@ label HotSpringshotspringseventopart2:
     Leyna "Hahaha of course..."
     scene black with dissolve
     play sound "audio/Liquid.ogg" volume 0.9 noloop
-    $ show_picture(2, "onsen3")
-    hide black with dissolve
+    show onsen3 with dissolve
     "(A FEW MINUTES LATER...)"
     Leyna "(I'm starting to get dizzy ... but I don't want to be seen naked and I've left the towel on the bench over there)"
     Villager "Are you okay lady?"
     pause
-    $ show_picture(3, "onsen5")
+    scene onsen5
     Leyna "The heat is affecting me, I guess"
     Villager "Yeah, you are in a very tense position. Relax or you'll pass out"
     Leyna "Do you think so? ... I suppose you are right"
     pause
-    $ show_picture(4, "onsen6")
+    scene onsen6
     play sound "audio/Jump1.ogg" volume 0.9 noloop
     Villager "This is better, right?"
     Leyna "I guess so... thank you very much, I need to relax more, after all I'm on a kind of vacation"
@@ -47,7 +45,7 @@ label HotSpringshotspringseventopart2:
     Villager "Yeah, I'm older and at this rate, I don't think I'll ever get married. Let me touch you a tit, I have to do it before I die"
     Villager2 "Come on dude, don't be a dirty old man.."
     Leyna "...Well... if it's such an important thing to you... it's just touching a tit"
-    $ show_picture(5, "onsen7")
+    scene onsen7
     play sound "audio/Jump1.ogg" volume 0.9 noloop
     play music "audio/Dungeon3.ogg" loop volume 0.9
     Leyna "(!!!)"
@@ -55,32 +53,32 @@ label HotSpringshotspringseventopart2:
     Leyna "... Thanks (I'm too dizzy for this)"
     Villager2 "... Hey! If he can, me too, right? It wouldn't be fair if only one of us could"
     Leyna "Well I don't..."
-    $ show_picture(6, "onsen8")
+    scene onsen8
     play sound "audio/Jump1.ogg" volume 0.9 noloop
     Villager2 "You're right!! They are perfect, what a feeling !!! I wish I had known you years ago to ask you to marry me Your husband is very lucky"
     Leyna "Hahaha..."
-    $ show_picture(7, "onsen9")
+    scene onsen9
     Leyna "I think I've been here too long ... I feel dizzy.. I better get out"
     Villager "Already?! What a shame.. we are having so  much fun.."
     Leyna "Excuse me..."
-    $ show_picture(8, "onsen10")
+    scene onsen10
     play sound "audio/Jump2.ogg" volume 0.9 noloop
     Leyna "Oh?!!"
     Villager "Seems like you're very stunned, let me help you..."
     pause
-    $ show_picture(9, "onsen11")
+    scene onsen11
     play sound "audio/Jump2.ogg" volume 0.9 noloop
     Leyna "Oooh ... don't..."
     Villager "Relax... I will take you to the locker room and give you something cold to drink"
     Leyna "..."
     Villager "Shit, the ground is wet… uoh shit!"
     play sound "audio/Fall.ogg" volume 0.9 noloop
-    $ show_picture(10, "onsen12")
+    scene onsen12
     play sound "audio/Blow1.ogg" volume 0.9 noloop
     $ shake_screen(5, 5, 60)
     Leyna "What... Have we fallen?"
     pause
-    $ show_picture(11, "onsen13")
+    scene onsen13
     play sound "audio/Jump2.ogg" volume 0.9 noloop
     Leyna "(!!!)"
     Villager "Shit my back... Wait a second miss, don't move. We have hit the ground.."
@@ -88,26 +86,25 @@ label HotSpringshotspringseventopart2:
     Leyna "I think ... I think we can get up now, right?"
     Villager "Yes, sure.. I'm better now.. (Fuck..)"
     scene black with dissolve
-    $ show_picture(12, "onsen14")
-    hide black with dissolve
+    show onsen14 with dissolve
     Leyna "Sorry for the inconvenience, because of me you hit you back... I owe you a favour, if you ever need anything tell me"
     Villager "Of course, don't worry, you're going to the festival right? we'll see you there ..."
     Leyna "Yeah right..."
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(9)
-    $ erase_picture(8)
-    $ erase_picture(10)
-    $ erase_picture(11)
-    $ erase_picture(12)
+    hide onsen2
+    hide onsen3
+    hide onsen5
+    hide onsen6
+    hide onsen7
+    hide onsen8
+    hide onsen9
+    hide onsen11
+    hide onsen10
+    hide onsen12
+    hide onsen13
+    hide onsen14
     stop music fadeout 1
-    hide black with dissolve
+    # fade in
     # TransferPlayer: "HotSpringsExterior"
     pause 0.24
     Leyna "That has been dangerous, I can't fall asleep in that place again ... I'm still a little giddy"

@@ -52,11 +52,3 @@ define slowdissolve = Dissolve(1.0)
 
 style default:
     outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
-
-style youfound is text:
-    size 30
-    xpos 340
-    ypos 95
-
-style indented is text:
-    xpos 312

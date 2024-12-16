@@ -1,23 +1,23 @@
 label FestivalFinaleYoSlap:
-    $ show_picture(1, "mini4")
+    scene mini4
     Villager "Yo! (Slap!)"
     Leyna "Ah!"
     Villager "As beautiful as always Leyna!"
     Johan "Hey, cut it out!"
     Villager "Hehehehe sorry!"
     pause
-    $ erase_picture(1)
+    hide mini4
     return
 
 label FestivalFinaleHeyLeynaGoodToSeeYouHere:
-    $ show_picture(1, "mini1")
+    scene mini1
     DrunkVillager "Hey Leyna, good to see you here!"
     Leyna "AH?"
     Johan "What the hell are you doing? Let her go right now!"
     DrunkVillager "Hahahahaha relax, I just wanted to be able to touch them before you leave town! your wife has perfect tits!"
     Johan "Cut the crap!"
     pause
-    $ erase_picture(1)
+    hide mini1
     return
 
 label FestivalFinaleHeyGoodToSeeYouLeynaEspeciallyInThisSituationHehehehehe:
@@ -25,7 +25,7 @@ label FestivalFinaleHeyGoodToSeeYouLeynaEspeciallyInThisSituationHehehehehe:
     Leyna "H-hi"
     Johan "..."
     Villager "Come here give me a hug!"
-    $ show_picture(1, "mini2")
+    scene mini2
     Villager "Yes, let me give you a big hug"
     Leyna "hey! Let go of me... you're touching me with your..."
     Johan "Let her go!"
@@ -33,18 +33,18 @@ label FestivalFinaleHeyGoodToSeeYouLeynaEspeciallyInThisSituationHehehehehe:
     Johan "No! Let her go right now!"
     Villager "tch! okay"
     pause
-    $ erase_picture(1)
+    hide mini2
     return
 
 label FestivalFinaleOhLeynaIWasHopingToMeetYouIHaveSomethingToGiveYou:
     DrunkVillager "Oh Leyna, I was hoping to meet you, I have something to give you"
     Leyna "To me? okay, what do you want to give me"
     DrunkVillager "Oh my god you are so perfect, I am completely in love"
-    $ show_picture(1, "mini5")
+    scene mini5
     Johan "!!! Hey get off!"
     Leyna "Hmmmf"
     pause
-    $ erase_picture(1)
+    hide mini5
     DrunkVillager "Sorry but I had to do it, I couldn't keep it to myself"
     return
 
@@ -76,7 +76,7 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
     OldVillager "Perfect, it is the right decision and you young man? have you got a duel partner?"
     Villager2 "(shit, I don't have a wife and I haven't been able to convince any of the few women who live in town, what the hell can I do)"
     Villager2 "!!! (that's Leyna? hahahaha perfect let's see...) I... yes I choose Leyna the tourist girl! she's right there!"
-    $ show_picture(1, "duelo1")
+    scene duelo1
     Johan "!!!!"
     Leyna "!!!! W-what?"
     OldVillager "Very well, may the chosen one come forward!"
@@ -92,12 +92,12 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
     Johan "!!! But that's my...!"
     Villager3 "Quiet! this is important!"
     Johan "(Damn it! What the hell are they going to do?)"
-    $ show_picture(2, "duelo2")
+    scene duelo2
     Leyna "oh!"
     OldVillager "Perfect! you are already in position! let the duel begin!"
     Villager2 "Sorry Leyna, I'll be careful"
     play bgs "audio/audio follar.ogg" loop volume 0.9
-    $ show_picture(3, "duelo3")
+    scene duelo3
     "flap flap flap flap"
     Johan "!!!!"
     Leyna "(He's rubbing against me down there with all his might...my god his penis is touching my....)"
@@ -105,37 +105,37 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
     Villager2 "Did you just moan Leyna? (my god we just started and she's already dripping)"
     "Flap flap flap"
     pause
-    $ show_picture(4, "duelo11")
+    scene duelo11
     stop bgs fadeout 1
     Johan "(How the fuck did we end up in this situation? This is all happening to my wife... in front of all these people who are watching)"
     Johan "(And there's practically nothing I can do about it, everyone seems to take this bullshit very seriously, if I say anything they might lynch me right here)"
     Villager2 "Good God Leyna... I have never been so close to you, you are the sexiest woman I have ever seen in my life... you are so soft"
     pause
-    $ show_picture(5, "duelo4")
+    scene duelo4
     Leyna "Ah... C-callate... tu solo... mmmhaa callate e intenta aguantar"
     Leyna "(If this goes on for a long time I... I'm going to cum... in front of all these men and my husband...)"
     Villager2 "(My God... I can't hold back anymore I want to fuck her right here in front of the whole world... if I can only stick it in a couple of times I' ll die happy)"
     Villager2 "(I have to try, even if I lose the duel... I don't give a crap anymore)"
     pause
-    $ show_picture(6, "duelo7")
+    scene duelo7
     Leyna "Y-you're not thinking of... don't even think about it"
     Villager2 "I'm sorry Leyna, I can't take it anymore...I have to... I have to...."
     Leyna "!!!"
     if switch("corruption_low"):
         Leyna "(I can't allow it! I have to do something... I can't let him fuck me in front of everyone, especially in front of Johan!)"
         pause
-        $ show_picture(7, "duelo5")
+        scene duelo5
         Leyna "mmmha! You won't be able to do that to me in front of everyone, you'll have to be satisfied with my thighs"
         Villager2 "Damn it...!!!! AH ... my god, I, I was about to cum inside of you...ah there's no other option... I will have to continue"
         pause
-        $ show_picture(8, "duelo6")
+        scene duelo6
         Leyna "(He seems to have given up, but I can't be distracted ...for a second I...almost lost my mind, for a moment I wanted him to..."
         Leyna "... to fuck me in front of all these men)"
         "Cillager 2: F-fuck... I'm going to lose... fuck!"
         pause
         $ flash_screen([255,255,255,170], 60, True)
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(9, "duelo10")
+        scene duelo10
         Villager2 "AAHhh!!! Shit!"
         Leyna "! oh!(he has cum! holy cow! what a quantity!)"
         Johan "(That son of a bitch has cum on my wife's thighs and I'm standing here watching like an asshole doing nothing)"
@@ -148,16 +148,16 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
         Johan "(Well, at least I'm going to drink that beer, after all this shit I need it)"
         pause
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        hide black with dissolve
+        hide duelo1
+        hide duelo2
+        hide duelo3
+        hide duelo11
+        hide duelo4
+        hide duelo7
+        hide duelo5
+        hide duelo6
+        hide duelo10
+        # fade in
         Leyna ".... (this is awkward, Johan says nothing)"
         Johan "(Shit, now what the hell do I say? I didn't do anything while all that was going on, I feel like a coward)"
         Johan "W-well, let's continue exploring the festival"
@@ -165,18 +165,18 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
     if switch("corruption_average"):
         Leyna "(I can't allow it! I have to do something... I can't let him fuck me in front of everyone, especially in front of Johan!)"
         pause
-        $ show_picture(7, "duelo5")
+        scene duelo5
         Leyna "mmmha! You won't be able to do that to me in front of everyone, you'll have to be satisfied with my thighs"
         Villager2 "Damn it...!!!! AH ... my god, I, I was about to cum inside of you...ah there's no other option... I will have to continue"
         pause
-        $ show_picture(8, "duelo6")
+        scene duelo6
         Leyna "(He seems to have given up, but I can't be distracted ...for a second I...almost lost my mind, for a moment I wanted him to..."
         Leyna "... to fuck me in front of all these men)"
         "Cillager 2: F-fuck... I'm going to lose... fuck!"
         pause
         $ flash_screen([255,255,255,170], 60, True)
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(9, "duelo10")
+        scene duelo10
         Villager2 "AAHhh!!! Shit!"
         Leyna "! oh!(he has cum! holy cow! what a quantity!)"
         Johan "(That son of a bitch has cum on my wife's thighs and I'm standing here watching like an asshole doing nothing)"
@@ -189,16 +189,10 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
         Johan "(Well, at least I'm going to drink that beer, after all this shit I need it)"
         pause
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        hide black with dissolve
+        hide duelo5
+        hide duelo6
+        hide duelo10
+        # fade in
         Leyna ".... (this is awkward, Johan says nothing)"
         Johan "(Shit, now what the hell do I say? I didn't do anything while all that was going on, I feel like a coward)"
         Johan "W-well, let's continue exploring the festival"
@@ -207,18 +201,18 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
         "Leyan: (He's going to stick it in front of all these people, in front of Johan and I... I want him to do it I-I can't stop him)"
         Villager2 "(Oh almost there! It's almost in!)"
         pause
-        $ show_picture(7, "duelo8")
+        scene duelo8
         Villager2 "OOhh yeah"
         Leyna "Ah mmmha!"
         pause
-        $ show_picture(8, "duelo9")
+        scene duelo9
         play bgs "audio/audio follar.ogg" loop volume 0.9
         "Flap flap flap"
         Villager2 "Jesus Christ your pussy feels so good!"
         Villager2 "I'll fuck you until I'm satisfied"
         Johan "!!! (H-he's fucking her? he just put it in!)"
         pause
-        $ show_picture(9, "duelo12")
+        scene duelo12
         Johan "Hey!!"
         OldVillager "Hey, what did I tell you about interrupting the ritual?!"
         Johan "(shit I'm going to be lynched! I have to think of something....)"
@@ -229,7 +223,7 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
         pause
         $ flash_screen([255,255,255,170], 60, True)
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(10, "duelo10")
+        scene duelo10
         stop bgs fadeout 1
         "Plop"
         Villager2 "Ah!!"
@@ -242,17 +236,11 @@ label FestivalFinaleHeyWhatsGoingOnHere_0:
         Leyna "Y-yes (god I've been so close to cumming... I can't take it anymore, I need a good orgasm)"
         pause
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        hide black with dissolve
+        hide duelo8
+        hide duelo9
+        hide duelo12
+        hide duelo10
+        # fade in
         Leyna ".... (this is awkward, Johan says nothing)"
         Johan "(Shit, now what the hell do I say? I didn't do anything while all that was going on, I feel like a coward)"
         Johan "W-well, let's continue exploring the festival"
@@ -285,8 +273,7 @@ label FestivalFinaleEvent15_0:
     OldMan "Yes! I'll be right back"
     Johan "W-wait... ah shit..."
     scene black with dissolve
-    $ show_picture(1, "fotofestival1")
-    hide black with dissolve
+    show fotofestival1 with dissolve
     OldMan "Well guys here you have the new queen of the festivities"
     play sound "audio/Applause1.ogg" volume 0.9 noloop
     Villagers "(cheering)"
@@ -297,7 +284,7 @@ label FestivalFinaleEvent15_0:
     OldMan "Well let's take the pictures!"
     Leyna "Sure! What position do you want me to be in?"
     OldMan "for now let's start with a more natural pose"
-    $ show_picture(2, "fotofestival2")
+    scene fotofestival2
     Leyna "Is this okay?"
     OldMan "Yes perfect!"
     $ flash_screen([255,255,255,170], 60, True)
@@ -314,7 +301,7 @@ label FestivalFinaleEvent15_0:
     Leyna "Hahahahaha okay guys, I'm going to pose like I learned!"
     OldMan "That's the way to talk!"
     pause
-    $ show_picture(3, "fotofestival3")
+    scene fotofestival3
     Villagers "OOHHH!!"
     play sound "audio/Applause1.ogg" volume 0.9 noloop
     Villager2 "Impressive! you have a talent for this"
@@ -324,7 +311,7 @@ label FestivalFinaleEvent15_0:
     Johan "... (What's going on? Leyna seems to be having a great time... being the center of attention of all these stares)"
     Leyna "Well, do you want something a little bit more racy? let's see what you think of this Hehehehehehe"
     pause
-    $ show_picture(4, "fotofestival4")
+    scene fotofestival4
     OldMan "Wow! impressive Leyna! very good keep it up!"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Equip1.ogg" volume 0.9 noloop
@@ -333,7 +320,7 @@ label FestivalFinaleEvent15_0:
     "Johan. (Shit they are talking about my wife... but they are right, this is very exciting, I have an uncontrollable erection and we are here in public)"
     Villager "Hey old man, take a picture of me with the queen of the parties! I want one as a souvenir! When I show it to my brother he will die of envy!"
     pause
-    $ show_picture(5, "fotofestival5")
+    scene fotofestival5
     Johan "H-hey!"
     OldMan "Very good! Smile Leyna!"
     Leyna "I... sure..."
@@ -345,12 +332,12 @@ label FestivalFinaleEvent15_0:
     Villager "Sure man, let's pose together"
     OldMan "Of course, it's an excellent idea!"
     pause
-    $ show_picture(6, "fotofestival6")
+    scene fotofestival6
     Johan "!!! (this is getting out of control)"
     Villager "Come on Leyna Smile a little"
     Villager2 "Yes, cheer up that face!"
     pause
-    $ show_picture(7, "fotofestival7")
+    scene fotofestival7
     "Slap slap slap"
     Leyna "(T-they're touching my face with their...) Y-yeah..."
     Leyna "(What the hell am I doing?)"
@@ -371,7 +358,7 @@ label FestivalFinaleEvent15_0:
         Villager2 "Okay, since this is the last photo, let's do something spectacular"
         Leyna "S-sure"
         pause
-        $ show_picture(8, "fotofestival22")
+        scene fotofestival22
         Leyna "!!! Wow"
         Villager2 "That's it! perfect,it will look great in the photo"
         Leyna "(Holy cow... his thing is touching me down there)"
@@ -384,19 +371,19 @@ label FestivalFinaleEvent15_0:
         OldMan "you can now get her down"
         pause
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        hide black with dissolve
+        hide fotofestival1
+        hide fotofestival2
+        hide fotofestival3
+        hide fotofestival4
+        hide fotofestival5
+        hide fotofestival6
+        hide fotofestival7
+        hide fotofestival22
+        # fade in
     if switch("corruption_average"):
         Leyna "O-okay perfect"
         pause
-        $ show_picture(8, "fotofestival10")
+        scene fotofestival10
         Villager2 "Oh, your hands are so warm, can we stay like this all afternoon? hahahaha"
         OldMan "This is going to look spectacular! stand still!"
         $ flash_screen([255,255,255,170], 60, True)
@@ -409,7 +396,7 @@ label FestivalFinaleEvent15_0:
         Johan "You shouldn't..."
         Leyna "If you think it's a good idea..."
         pause
-        $ show_picture(9, "fotofestival8")
+        scene fotofestival8
         "Muak"
         Johan "Leyna..."
         OldMan "Perfect!"
@@ -417,7 +404,7 @@ label FestivalFinaleEvent15_0:
         play sound "audio/Equip1.ogg" volume 0.9 noloop
         OldMan "The session is looking spectacular, we could even sell it to the magazine!"
         pause
-        $ show_picture(10, "fotofestival10")
+        scene fotofestival10
         Leyna "do you think they would be interested?"
         OldMan "Yes, if we take a couple more pictures we could sell it"
         Johan "But we have already talked about it"
@@ -427,7 +414,7 @@ label FestivalFinaleEvent15_0:
         Villager2 "Oh! I think I have a good idea for a pose!"
         OldMan "Let's see then"
         pause
-        $ show_picture(11, "fotofestival11")
+        scene fotofestival11
         OldMan "Hmmm that's a good picture! stand still!"
         "Rub rub rub"
         Leyna "(His penis keeps rubbing my clit...)"
@@ -446,7 +433,7 @@ label FestivalFinaleEvent15_0:
         OldMan "All right guys, let's move on to the next photo"
         OldMan "Hold her"
         pause
-        $ show_picture(12, "fotofestival14")
+        scene fotofestival14
         Villager2 "Is this good?"
         OldMan "Yes, that's perfect, stay still now, okay?"
         Leyna "Okay..."
@@ -460,7 +447,7 @@ label FestivalFinaleEvent15_0:
         Villager2 "Very well... but before the end of the festival I'm going to fuck you raw, I want you to know that"
         Leyna "..."
         pause
-        $ show_picture(13, "fotofestival15")
+        scene fotofestival15
         Leyna "(I can't help it, since I got here I've been gradually becoming more submissive, you're right, you could fuck me right here and I wouldn't do anything...)"
         Leyna "(And that scares me... scares me into the kind of woman I'm becoming)"
         $ flash_screen([255,255,255,170], 60, True)
@@ -476,24 +463,17 @@ label FestivalFinaleEvent15_0:
         Villager2 "...."
         pause
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        hide black with dissolve
+        hide fotofestival10
+        hide fotofestival8
+        hide fotofestival10
+        hide fotofestival11
+        hide fotofestival14
+        hide fotofestival15
+        # fade in
     if switch("corruption_high"):
         Leyna "Sure, no problem!"
         pause
-        $ show_picture(8, "fotofestival10")
+        scene fotofestival10
         Villager2 "Oh, your hands are so warm, can we stay like this all afternoon? hahahaha."
         OldMan "This is going to look spectacular! stand still!"
         $ flash_screen([255,255,255,170], 60, True)
@@ -506,7 +486,7 @@ label FestivalFinaleEvent15_0:
         Johan "You shouldn't..."
         Leyna "If you think it's a good idea..."
         pause
-        $ show_picture(9, "fotofestival8")
+        scene fotofestival8
         "Muak"
         Johan "Leyna..."
         OldMan "Perfect!"
@@ -514,7 +494,7 @@ label FestivalFinaleEvent15_0:
         play sound "audio/Equip1.ogg" volume 0.9 noloop
         OldMan "The session is looking spectacular, we could even sell it to the magazine!"
         pause
-        $ show_picture(10, "fotofestival10")
+        scene fotofestival10
         Leyna "do you think they would be interested?"
         OldMan "Yes, if we take a couple more pictures we could sell it"
         Johan "But we have already talked about it"
@@ -532,7 +512,7 @@ label FestivalFinaleEvent15_0:
         OldMan "What do you think Leyna?"
         Leyna "I think... I think it's a good idea, I'm going to do it"
         pause
-        $ show_picture(11, "fotofestival9")
+        scene fotofestival9
         Villager2 "Oof! you've gone straight... that feels really good, sorry but I think I could cum at any moment"
         OldMan "What are you 15 years old? hold on like a man"
         Villager2 "Y-yeah sorry, but with a beauty like that sucking my cock... it's hard to hold on"
@@ -544,13 +524,13 @@ label FestivalFinaleEvent15_0:
         OldMan "The photo is perfect"
         OldMan "Let's move on to the next photo"
         pause
-        $ show_picture(12, "fotofestival11")
+        scene fotofestival11
         Leyna "Like this?"
         OldMan "That's perfect"
         Villager2 "(whispering) you sure are wet down there... I think I might slip inside without wanting to"
         Leyna ".... Ah ah ah"
         pause
-        $ show_picture(13, "fotofestival12")
+        scene fotofestival12
         Villager2 "I am sure that if we started to fuck you right now you would only moan with pleasure and would do nothing to defend yourself"
         Villager2 "Even with your husband in front of you, you would just  moan and cum with pleasure, wouldn't you? you're dripping down there, I can feel it, you're craving it"
         $ flash_screen([255,255,255,170], 60, True)
@@ -560,7 +540,7 @@ label FestivalFinaleEvent15_0:
         Leyna "...."
         Villager2 "You don't say anything? very well I take that as a yes"
         pause
-        $ show_picture(14, "fotofestival13")
+        scene fotofestival13
         Leyna "!!!"
         Leyna "AAhhh...!"
         Johan "Leyna!"
@@ -576,36 +556,36 @@ label FestivalFinaleEvent15_0:
         OldMan "All right, that's enough in that position, Leyna stand up and lean back a little bit"
         Leyna "Ah ah ah Yes..."
         pause
-        $ show_picture(15, "fotofestival16")
+        scene fotofestival16
         Leyna "Like this?"
         OldMan "Yes, that's perfect, since we've come this far let's add some anal, it'll be quick"
         Johan "(Damn, there's a small crowd gathered here... and they're all seeing Leyna in this state)"
         Johan "(Wait, he said anal?)"
         pause
-        $ show_picture(16, "fotofestival17")
+        scene fotofestival17
         Villager1 "All right, I'm going to do it"
         Leyna "B-be careful"
         Villager1 "(My God how sexy! I-I can't believe I' m doing this, since the first day I saw her around town I've been dreaming about something like this...)"
         Villager1 "S-sure, I'll be careful"
         pause
-        $ show_picture(17, "fotofestival18")
+        scene fotofestival18
         Leyna "Hmmm!"
         Villager1 "Oh! that... feels so good... so tight..."
         pause
-        $ show_picture(18, "fotofestival19")
+        scene fotofestival19
         "Plop!"
         Leyna "Ah!"
         Villager1 "S-sorry, it came out, I'll put it back in right away!"
         Leyna "Slow down, big guy"
         Villager1 "!!! God, you are perfect"
         pause
-        $ show_picture(19, "fotofestival20")
+        scene fotofestival20
         Leyna "Ah!!! A-all right, it's inside"
         Johan "!!!! (She's enjoying it... she's definitely enjoying it)"
         OldMan "Very good, now try to put it in a little deeper"
         Villager1 "Sure!"
         pause
-        $ show_picture(20, "fotofestival21")
+        scene fotofestival21
         Leyna "Oh my god!"
         OldMan "But not so much beast! take it out a little"
         Villager1 "Sorry!"
@@ -618,7 +598,7 @@ label FestivalFinaleEvent15_0:
         OldMan "Very well, since you have so much energy, take it and raise it up in the air, focusing it towards the camera"
         Villager2 "All right!"
         pause
-        $ show_picture(21, "fotofestival22")
+        scene fotofestival22
         Leyna "Oh!"
         Villager2 "Good?"
         OldMan "Yeah!"
@@ -629,7 +609,7 @@ label FestivalFinaleEvent15_0:
         Leyna "!!! oh! you are so strong"
         Villager2 "now you will see..."
         pause
-        $ show_picture(22, "fotofestival23")
+        scene fotofestival23
         Johan "!!!!"
         Leyna "hmmm..."
         Leyna "AAH! god..."
@@ -641,7 +621,7 @@ label FestivalFinaleEvent15_0:
         play sound "audio/Equip1.ogg" volume 0.9 noloop
         OldMan "Very well perfect and now..."
         pause
-        $ show_picture(23, "fotofestival24")
+        scene fotofestival24
         "Johan. I think that's enough, don't you?"
         OldMan "But we still have..."
         Johan "Come on Leyna let's go!"
@@ -653,30 +633,23 @@ label FestivalFinaleEvent15_0:
         Johan "(\"see you guys?\" unbelievable...)"
         pause
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(12)
-        $ erase_picture(11)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
-        $ erase_picture(16)
-        $ erase_picture(17)
-        $ erase_picture(18)
-        $ erase_picture(19)
-        $ erase_picture(20)
-        $ erase_picture(21)
-        $ erase_picture(22)
-        $ erase_picture(23)
-        hide black with dissolve
+        hide fotofestival10
+        hide fotofestival8
+        hide fotofestival10
+        hide fotofestival11
+        hide fotofestival9
+        hide fotofestival12
+        hide fotofestival13
+        hide fotofestival16
+        hide fotofestival17
+        hide fotofestival18
+        hide fotofestival19
+        hide fotofestival20
+        hide fotofestival21
+        hide fotofestival22
+        hide fotofestival23
+        hide fotofestival24
+        # fade in
     $ final_festival = final_festival + 1
     return
 

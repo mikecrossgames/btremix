@@ -8,30 +8,29 @@ label Pathnpcentradafestivalcamino_4:
     Johan "Sure..."
     Johan "They told me that there's a changing room near here..."
     scene black with dissolve
-    $ show_picture(1, "vestuario1")
-    hide black with dissolve
+    show vestuario1 with dissolve
     Villager "Wow!Look at that woman! Is she going to change here,in front of us?"
     Villager2 "I hope so! Get ready to see the show my friend!"
     play sound "audio/Applause1.ogg" volume 0.9 noloop
-    $ show_picture(2, "vestuario2")
+    scene vestuario2
     Villager "WHAT? Is she wearing the festival clothes underneath?"
     play sound "audio/Disappointment.ogg" volume 0.9 noloop
     Villager2 "Damn! What a disappointment! Even so, she has a great body. You don't see this every day"
-    $ show_picture(3, "vestuario3")
+    scene vestuario3
     Villager "Yeah... Man I need to see her naked!"
     Villager2 "Relax, during all the festival games we will find a excuse to see her naked or something better"
     Villager "Don't give me much hope"
-    $ show_picture(4, "vestuario4")
+    scene vestuario4
     Villager "Fuck, what a good ass!"
     Villager2 "That woman will be mine"
     Villager "No, if I get it first"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
+    hide vestuario1
+    hide vestuario2
+    hide vestuario3
+    hide vestuario4
     # TransferPlayer: "Festival"
-    hide black with dissolve
+    # fade in
     play music "audio/Field2.ogg" loop volume 0.9
     pause 0.26
     pause 0.2
@@ -52,8 +51,7 @@ label Pathnpcentradafestivalcamino_7:
 
 label Pathnpcentradafestivalcamino_12:
     scene black with dissolve
-    $ show_picture(1, "vestuario2", scale=(120, 120))
-    hide black with dissolve
+    show vestuario2 with dissolve
     Johan "Well, this is it! I'm really looking forward to seeing what the festival has to offer!"
     Leyna "Yeah! I'm sure it'll be fun, I guess it'll be a good show or something!"
     Villager "Hey! what are you doing?"
@@ -73,8 +71,8 @@ label Pathnpcentradafestivalcamino_12:
     Villager2 "And boy, oh boy! This year is going to be spectacular! I can't wait for the finale!"
     scene black with dissolve
     # TransferPlayer: "FestivalFinale"
-    $ erase_picture(1)
-    hide black with dissolve
+    hide vestuario2
+    # fade in
     return
 
 label Pathespacioentradafestival_2:
@@ -87,30 +85,29 @@ label Pathespacioentradafestival_4:
     Johan "Sure..."
     Johan "They told me that there's a changing room near here..."
     scene black with dissolve
-    $ show_picture(1, "vestuario1")
-    hide black with dissolve
+    show vestuario1 with dissolve
     Villager "Wow!Look at that woman! Is she going to change here,in front of us?"
     Villager2 "I hope so! Get ready to see the show my friend!"
     play sound "audio/Applause1.ogg" volume 0.9 noloop
-    $ show_picture(2, "vestuario2")
+    scene vestuario2
     Villager "WHAT? Is she wearing the festival clothes underneath?"
     play sound "audio/Disappointment.ogg" volume 0.9 noloop
     Villager2 "Damn! What a disappointment! Even so, she has a great body. You don't see this every day"
-    $ show_picture(3, "vestuario3")
+    scene vestuario3
     Villager "Yeah... Man I need to see her naked!"
     Villager2 "Relax, during all the festival games we will find a excuse to see her naked or something better"
     Villager "Don't give me much hope"
-    $ show_picture(4, "vestuario4")
+    scene vestuario4
     Villager "Fuck, what a good ass!"
     Villager2 "That woman will be mine"
     Villager "No, if I get it first"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
+    hide vestuario1
+    hide vestuario2
+    hide vestuario3
+    hide vestuario4
     # TransferPlayer: "Festival"
-    hide black with dissolve
+    # fade in
     play music "audio/Field2.ogg" loop volume 0.9
     pause 0.26
     pause 0.2
@@ -131,8 +128,7 @@ label Pathespacioentradafestival_7:
 
 label Pathespacioentradafestival_12:
     scene black with dissolve
-    $ show_picture(1, "vestuario2", scale=(120, 120))
-    hide black with dissolve
+    show vestuario2 with dissolve
     Johan "Well, this is it! I'm really looking forward to seeing what the festival has to offer!"
     Leyna "Yeah! I'm sure it'll be fun, I guess it'll be a good show or something!"
     Villager "Hey! what are you doing?"
@@ -152,8 +148,8 @@ label Pathespacioentradafestival_12:
     Villager2 "And boy, oh boy! This year is going to be spectacular! I can't wait for the finale!"
     scene black with dissolve
     # TransferPlayer: "FestivalFinale"
-    $ erase_picture(1)
-    hide black with dissolve
+    hide vestuario2
+    # fade in
     return
 
 label PathNPCFestivalWorker_0:
@@ -184,7 +180,7 @@ label PathNPCFestivalWorker_2:
     pause 0.30
     scene black with dissolve
     $ elder_festival = 6
-    hide black with dissolve
+    # fade in
     return
 
 label PathJohan_0:
@@ -202,7 +198,7 @@ label PathJohan_0:
     Leyna "Sure, if that's okay with you, that's fine with me"
     scene black with dissolve
     $ leyna_work = 11
-    hide black with dissolve
+    # fade in
     return
 
 label PathLeynaWorkTrigger_0:
@@ -210,14 +206,13 @@ label PathLeynaWorkTrigger_0:
     Leyna ".... Shit... Do I really have to do this? ... Who am I kidding? It's normal for Johan to get like this..."
     Leyna "The strange thing is that he didn't realize before that something strange was going on... just remembering what happened the other day..."
     scene black with dissolve
-    $ show_picture(1, "hotspringsjuntos6")
-    hide black with dissolve
+    show hotspringsjuntos6 with dissolve
     "THE LAST DAY LEYNA WENT TO WORK..."
     Villager "Hey... You're the new girl working here, right?"
     Leyna "Hmmm yes, it's me, do you need anything?"
     Villager "Yes, my friend and I have a problem, come with us and we'll show you, it's a little delicate"
     Leyna "Su-sure"
-    $ show_picture(2, "flashback1")
+    scene flashback1
     Leyna "Tell me, what is the problem?"
     Villager "Well, you tell me!"
     Leyna "What?"
@@ -228,11 +223,11 @@ label PathLeynaWorkTrigger_0:
     Villager "(I can't believe this is working!).... Well... if you get like that... I guess you could make it up to me..."
     Leyna "??? Sure! Tell me what do you need..."
     Villager "First of all, I want you to see what you've done! look closely at the rash I got here!"
-    $ show_picture(3, "flashback2")
+    scene flashback2
     Villager "That's right, get down!"
     Leyna "(Do I always have to end up with someone's cock so close to my face?)... n-not seeing anything"
     Villager "Ehm... of course! because it's not there! it's here!"
-    $ show_picture(4, "flashback3")
+    scene flashback3
     play sound "audio/Jump2.ogg" volume 0.9 noloop
     Leyna "AH!!"
     Villager "Do you see it now?"
@@ -246,36 +241,36 @@ label PathLeynaWorkTrigger_0:
     Villager2 "Yes! and if I were you I'd hurry up, with how full this place is today they could see us at any moment!"
     Leyna "(!!! shit! he's right and... and Johan is on the other side of these curtains...if he would see me in this situation...  I don't know what would happen)"
     Leyna "Okay..."
-    $ show_picture(5, "flashback4")
+    scene flashback4
     Villager "That's right, good girl"
     Villager2 "(What a fucker! Now I want some too.... Hehehehe I have an idea)"
     Villager2 "Oh boy, you've had a bath too, haven't you, girl? I'm the town doctor and I can see you've got a little problem down there too"
     Leyna "???"
     Villager2 "Yes, this looks bad, I'm going to inspect you a little bit..."
-    $ show_picture(6, "flashback5")
+    scene flashback5
     play bgs "audio/audio follar.ogg" loop volume 0.9
     Leyna "Aahh..."
     Villager "You see? we all help each other here hahahaha"
     Villager2 "Exactly! and it looks like I'm helping you out quite a bit hehehe! you're dripping"
     pause
-    $ show_picture(7, "flashback6")
+    scene flashback6
     stop bgs fadeout 1
     Leyna "Ah ah ah ah... D-don't keep going... (We could be seen at any moment... I can't go on with this... Johan is right there... but it feels soooo good)"
     if switch("infusion"):
         Leyna "...(I can't help it, I just want it to go on a little longer... I need it or I'll go crazy...)"
-        $ show_picture(8, "flashback7")
+        scene flashback7
         Villager2 "I'm going to inspect you a little more thoroughly, sweetie..."
         Leyna "I... we shouldn't... my husband..."
         Villager2 "Oh... it will only take a few minutes, don't worry, it won't take long at all"
         Leyna "!!!"
         pause
-        $ show_picture(9, "flashback8")
+        scene flashback8
         Villager2 "That's it...that's it, all the way to the deep end very good... wow You're really tight down there... You needed this, huh?"
         Leyna "Aahhh... (My God it's huge... it's going to break me in half... )... Yeah? ah ah ah"
         Villager "(What a son of a bitch, I could have thought of that myself...)"
         Villager2 "All right, ready? I'm going to help you really good"
         pause
-        $ show_picture(10, "flashback9")
+        scene flashback9
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Leyna "AH! AH! AH!"
         Villager2 "That's it! do you like it? you don't need to tell me I know you love it, bitch!"
@@ -286,7 +281,7 @@ label PathLeynaWorkTrigger_0:
         Villager2 "What's wrong? Your husband doesn't fuck you like he should? I'm sure that's it... well, don't worry, we'll take care of you, slut!"
         Leyna "S-stop... I... Ah ah ah!"
         pause
-        $ show_picture(11, "flashback10")
+        scene flashback10
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Villager3 "Hey, you wouldn't happen to have any spare towels lying around, would you? FUCK! WHAT THE FUCK IS GOING ON?"
         stop bgs fadeout 1
@@ -296,32 +291,25 @@ label PathLeynaWorkTrigger_0:
         Leyna "Get off of me NOW!"
         "vILLAGER 2: Tch... Yeah yeah..."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        hide black with dissolve
+        hide hotspringsjuntos6
+        hide flashback1
+        hide flashback2
+        hide flashback3
+        hide flashback4
+        hide flashback5
+        hide flashback6
+        hide flashback7
+        hide flashback8
+        hide flashback9
+        hide flashback10
+        # fade in
     if not switch("infusion"):
         "lEYNA: Sto-stop... please stop..."
         Villager2 "What? no way, I'll help you right away and you'll be much better"
         Leyna "N-NO! I've done what you wanted, leave me alone! I have to keep working"
         Villager2 "Fuck... okay as you wish...."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        hide black with dissolve
+        # fade in
     Leyna "N-no! I can't go on like this with this job! it's too much! I'll talk to the manager and..."
     Leyna "I'm sure I'll find something else while I'm waiting for the payments from my modeling job... maybe if I ask the bar again? I hope so..."
     $ set_switch("flashback", True)
@@ -333,14 +321,13 @@ label PathLeynaWorkTrigger_1:
     Leyna ".... Shit... Do I really have to do this? ... Who am I kidding? It's normal for Johan to get like this..."
     Leyna "The strange thing is that he didn't realize before that something strange was going on... just remembering what happened the other day..."
     scene black with dissolve
-    $ show_picture(1, "hotspringsjuntos6")
-    hide black with dissolve
+    show hotspringsjuntos6 with dissolve
     "THE LAST DAY LEYNA WENT TO WORK..."
     Villager "Hey... You're the new girl working here, right?"
     Leyna "Hmmm yes, it's me, do you need anything?"
     Villager "Yes, my friend and I have a problem, come with us and we'll show you, it's a little delicate"
     Leyna "Su-sure"
-    $ show_picture(2, "flashback1")
+    scene flashback1
     Leyna "Tell me, what is the problem?"
     Villager "Well, you tell me!"
     Leyna "What?"
@@ -351,11 +338,11 @@ label PathLeynaWorkTrigger_1:
     Villager "(I can't believe this is working!).... Well... if you get like that... I guess you could make it up to me..."
     Leyna "??? Sure! Tell me what do you need..."
     Villager "First of all, I want you to see what you've done! look closely at the rash I got here!"
-    $ show_picture(3, "flashback2")
+    scene flashback2
     Villager "That's right, get down!"
     Leyna "(Do I always have to end up with someone's cock so close to my face?)... n-not seeing anything"
     Villager "Ehm... of course! because it's not there! it's here!"
-    $ show_picture(4, "flashback3")
+    scene flashback3
     play sound "audio/Jump2.ogg" volume 0.9 noloop
     Leyna "AH!!"
     Villager "Do you see it now?"
@@ -369,36 +356,36 @@ label PathLeynaWorkTrigger_1:
     Villager2 "Yes! and if I were you I'd hurry up, with how full this place is today they could see us at any moment!"
     Leyna "(!!! shit! he's right and... and Johan is on the other side of these curtains...if he would see me in this situation...  I don't know what would happen)"
     Leyna "Okay..."
-    $ show_picture(5, "flashback4")
+    scene flashback4
     Villager "That's right, good girl"
     Villager2 "(What a fucker! Now I want some too.... Hehehehe I have an idea)"
     Villager2 "Oh boy, you've had a bath too, haven't you, girl? I'm the town doctor and I can see you've got a little problem down there too"
     Leyna "???"
     Villager2 "Yes, this looks bad, I'm going to inspect you a little bit..."
-    $ show_picture(6, "flashback5")
+    scene flashback5
     play bgs "audio/audio follar.ogg" loop volume 0.9
     Leyna "Aahh..."
     Villager "You see? we all help each other here hahahaha"
     Villager2 "Exactly! and it looks like I'm helping you out quite a bit hehehe! you're dripping"
     pause
-    $ show_picture(7, "flashback6")
+    scene flashback6
     stop bgs fadeout 1
     Leyna "Ah ah ah ah... D-don't keep going... (We could be seen at any moment... I can't go on with this... Johan is right there... but it feels soooo good)"
     if switch("infusion"):
         Leyna "...(I can't help it, I just want it to go on a little longer... I need it or I'll go crazy...)"
-        $ show_picture(8, "flashback7")
+        scene flashback7
         Villager2 "I'm going to inspect you a little more thoroughly, sweetie..."
         Leyna "I... we shouldn't... my husband..."
         Villager2 "Oh... it will only take a few minutes, don't worry, it won't take long at all"
         Leyna "!!!"
         pause
-        $ show_picture(9, "flashback8")
+        scene flashback8
         Villager2 "That's it...that's it, all the way to the deep end very good... wow You're really tight down there... You needed this, huh?"
         Leyna "Aahhh... (My God it's huge... it's going to break me in half... )... Yeah? ah ah ah"
         Villager "(What a son of a bitch, I could have thought of that myself...)"
         Villager2 "All right, ready? I'm going to help you really good"
         pause
-        $ show_picture(10, "flashback9")
+        scene flashback9
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Leyna "AH! AH! AH!"
         Villager2 "That's it! do you like it? you don't need to tell me I know you love it, bitch!"
@@ -409,7 +396,7 @@ label PathLeynaWorkTrigger_1:
         Villager2 "What's wrong? Your husband doesn't fuck you like he should? I'm sure that's it... well, don't worry, we'll take care of you, slut!"
         Leyna "S-stop... I... Ah ah ah!"
         pause
-        $ show_picture(11, "flashback10")
+        scene flashback10
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Villager3 "Hey, you wouldn't happen to have any spare towels lying around, would you? FUCK! WHAT THE FUCK IS GOING ON?"
         stop bgs fadeout 1
@@ -419,32 +406,25 @@ label PathLeynaWorkTrigger_1:
         Leyna "Get off of me NOW!"
         "vILLAGER 2: Tch... Yeah yeah..."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        hide black with dissolve
+        hide hotspringsjuntos6
+        hide flashback1
+        hide flashback2
+        hide flashback3
+        hide flashback4
+        hide flashback5
+        hide flashback6
+        hide flashback7
+        hide flashback8
+        hide flashback9
+        hide flashback10
+        # fade in
     if not switch("infusion"):
         "lEYNA: Sto-stop... please stop..."
         Villager2 "What? no way, I'll help you right away and you'll be much better"
         Leyna "N-NO! I've done what you wanted, leave me alone! I have to keep working"
         Villager2 "Fuck... okay as you wish...."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        hide black with dissolve
+        # fade in
     Leyna "N-no! I can't go on like this with this job! it's too much! I'll talk to the manager and..."
     Leyna "I'm sure I'll find something else while I'm waiting for the payments from my modeling job... maybe if I ask the bar again? I hope so..."
     $ set_switch("flashback", True)
@@ -462,11 +442,10 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
     Leyna "O-okay..."
     Johan "Perfect, let's go then"
     scene black with dissolve
-    $ show_picture(1, "drunk1")
-    hide black with dissolve
+    show drunk1 with dissolve
     Leyna "Aaaah..."
     Johan "See? I told you it would be okay, we have to enjoy this before it's over and we have to go home"
-    $ show_picture(2, "drunk2")
+    scene drunk2
     Leyna "Hehehee yes... you're right"
     Johan "Ahhh... once I deliver the article I will invite you to a nice restaurant"
     Leyna "Hmmm I've always wanted to go to the posh restaurant downtown, the one with the meat where the cook sprinkles salt in a funny way"
@@ -476,7 +455,7 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
     Leyna "I thought you wanted to go see how they build the festival events?"
     Johan "Well... I've changed my mind, it's not that important hahahaha"
     Leyna "Yes... you're right hahahaha"
-    $ show_picture(3, "drunk3")
+    scene drunk3
     Villager "OH Hey guys! How's it going?"
     Leyna "!!! Oh hey, how are you?"
     Johan "Hey guys! we were enjoying the hotsprings for the last time before we left!"
@@ -489,8 +468,7 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
     Leyna "... yeah I guess you're right.... hahahaha come on pass me that beer!"
     Johan "Hahaha Nice"
     scene black with dissolve
-    $ show_picture(4, "drunk4")
-    hide black with dissolve
+    show drunk4 with dissolve
     "Some time later..."
     Johan "Wow... that beer is really strong..."
     Leyna "Hip! yeah... we haven't tried this one yet... it tastes a little weird but it's good"
@@ -499,49 +477,56 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
     Villager2 "Sure, take whatever you want, we have plenty"
     Johan "Thank you very much"
     scene black with dissolve
-    $ show_picture(5, "drunk5")
-    hide black with dissolve
+    show drunk5 with dissolve
     Johan "(Wow, I'm a little drunk... and it's so cozy in here... with the hot water and the scent of herbs)"
     Johan "(I shouldn't be sleeping here... but... but it's so good.... and tonight it seems that I didn't sleep very well...)"
-    $ show_picture(6, "drunk6")
+    scene drunk6
     Johan "(I'm so sleepy... no... I don't think a little snooze will hurt..... Leyna will wake me up in a few minutes... it's ok)"
     Johan "(yes... I'm going to... I'm.....) hmm"
-    $ show_picture(7, "pantallanegro", scale=(120, 120), width=816, height=600)
+    scene pantallanegro:
+        xsize 979
+        ysize 720
     "....."
     "......."
     Villager "Oh my! hehehehehe"
     Johan "Hm?..."
     Leyna "Oh ups hahahaha"
-    $ show_picture(8, "drunk7")
+    scene drunk7
     Villager "I'm glad I came here today hahahaah"
     Villager2 "God... you are amazing Leyna...."
     Leyna "Hahahaha shut up don't be silly"
     pause
-    $ show_picture(9, "pantallanegro", scale=(120, 120), width=816, height=600)
+    scene pantallanegro:
+        xsize 979
+        ysize 720
     "....."
     "........"
     Leyna "H-hey stop... we shouldn't..."
-    $ show_picture(10, "drunk8")
+    scene drunk8
     Villager "Oh come on, it's just fooling around! We're just playing"
     Leyna "But.. Johan"
     Villager2 "Johan is perfectly fine! Look at him, he's sleeping there"
     Leyna "If you say so..."
-    $ show_picture(11, "pantallanegro", scale=(120, 120), width=816, height=600)
+    scene pantallanegro:
+        xsize 979
+        ysize 720
     "....."
     "........"
     Leyna "Oh come on, you're both very... big, there's no need to compete"
-    $ show_picture(12, "drunk9")
+    scene drunk9
     Villager "Hey, we won't have this opportunity again!"
     Leyna "Hehehe well... you don't have to worry... you can be with any girl in town"
     Villager2 "Does that include you beautiful?"
     Leyna "I... Well..."
-    $ show_picture(13, "pantallanegro", scale=(120, 120), width=816, height=600)
+    scene pantallanegro:
+        xsize 979
+        ysize 720
     if switch("corruption_high"):
         play bgs "audio/audio follar.ogg" loop volume 0.9
         "....."
         "........"
         Leyna "Ah ah ah Oh My god!"
-        $ show_picture(14, "drunk10")
+        scene drunk10
         Villager "You like it slut? look what you're doing in front of your husband"
         Leyna "Yes I like it! keep it up! keep it up!"
         Villager2 "Shut up and suck my fucking cock"
@@ -552,13 +537,13 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
         Villager "Is he... is he awake?"
         Villager2 "Nah no way... let's go on!"
         stop bgs fadeout 1
-        $ erase_picture(14)
+        hide drunk10
     "....."
     "........"
-    $ show_picture(14, "drunk11")
+    scene drunk11
     Leyna "Johan? Johan!"
     Johan "Hmm! ah? ah!"
-    $ show_picture(15, "drunk12")
+    scene drunk12
     Leyna "Johan! hahahahaha you have fallen asleep"
     Villager "Hey Johan! Looks like the beer is really good eh? hahahaha"
     Johan "Hmmm yeah... sorry guys, between the hot water and that...."
@@ -568,33 +553,33 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
     Johan "I see... W-well, we should get going to the festival. How long have I been asleep?"
     Villager2 "At least one hour"
     Johan "One hour? my god and what have you been doing all this time?"
-    $ show_picture(16, "drunk13")
+    scene drunk13
     Leyna "..."
     Villager "Drinking beer of course hahahaha come on let's go, we're all wrinkled from being here that long"
     Johan "Yes... you are right"
     Leyna "Let's get dressed up and go to the festival honey"
     Johan "Y-yeah"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
-    $ erase_picture(10)
-    $ erase_picture(11)
-    $ erase_picture(12)
-    $ erase_picture(13)
-    $ erase_picture(14)
-    $ erase_picture(15)
-    $ erase_picture(16)
+    hide drunk1
+    hide drunk2
+    hide drunk3
+    hide drunk4
+    hide drunk5
+    hide drunk6
+    hide pantallanegro
+    hide drunk7
+    hide pantallanegro
+    hide drunk8
+    hide pantallanegro
+    hide drunk9
+    hide pantallanegro
+    hide drunk11
+    hide drunk12
+    hide drunk13
     # TransferPlayer: "Path"
     $ set_switch("last_hotsprings", True)
     pause 0.26
-    hide black with dissolve
+    # fade in
     Johan "Well... it's time, we should get into the festival... are you ready?"
     Leyna "I'm a little nervous, I'm not going to fool you... I can't believe that all this is coming to an end..."
     Johan "Yeah... I've also gotten used to being in this town... and all in such a short time"

@@ -17,7 +17,7 @@ label Festivalintrofestival_0:
     pause 0.26
     scene black with dissolve
     # TransferPlayer: "Mountains"
-    hide black with dissolve
+    # fade in
     $ elder_festival = 10
     return
 
@@ -25,130 +25,117 @@ label FestivalFoodStand_0:
     Johan "Are you hungry? I'm starving.. Let's eat something here, it smells delicious"
     Leyna "Please!"
     pause 0.26
-    $ show_picture(1, "puesto1")
+    scene puesto1
     Johan "This food is so good!"
     Leyna "I need the recipe to make it at home"
     scene black with dissolve
-    $ erase_picture(1)
-    hide black with dissolve
+    hide puesto1
+    # fade in
     WorkersSon "Hey dude, this is the woman I talked to you about"
-    $ show_picture(2, "puesto2")
+    scene puesto2
     Friend "She's so hot. Look at that ass"
-    $ show_picture(3, "puesto3")
+    scene puesto3
     WorkersSon "Right? Everyone here is trying to fuck her, it's like she is asking for it."
-    $ show_picture(4, "puesto4")
+    scene puesto4
     WorkersSon "I have an idea, let's say hi, keep talking to the man and I will try something"
     Friend "Be careful man, I don't want any trouble"
     WorkersSon "Don't worry,I can be stealthy when I want"
-    $ show_picture(5, "puesto5")
+    scene puesto5
     WorkersSon "Hey guys, what a surprise to see you here. Are you having a good time?"
     Johan "Hey kid! Yes, this is very fun"
-    $ show_picture(6, "puesto6")
+    scene puesto6
     WorkersSon "\"Whispering \"Leyna, it's nice to see you in those clothes"
-    $ show_picture(7, "puesto7")
+    scene puesto7
     Leyna "He..hello"
-    $ show_picture(8, "puesto8")
+    scene puesto8
     WorkersSon "They say you are the lucky person this year, everyone has to touch you, right?"
     Leyna "I guess..."
-    $ show_picture(9, "puesto6")
+    scene puesto6
     WorkersSon "Do you know what brings more lucky?"
     Leyna "W...what?"
-    $ show_picture(10, "puesto10")
+    scene puesto10
     Johan "This place is beautiful, I love your festivities!"
     Friend "Everyone here is very kind, right? We want you to feel as well as possible"
-    $ show_picture(11, "puesto9")
+    scene puesto9
     WorkersSon "Touching gently the lucky person. The happier she is, the more luck she will bring to others"
     if switch("ate_the_fruit"):
         Leyna "(What is he doing? I don't want to say anything, I wouldn't want to get Johan in trouble)"
         Leyna "(Oh my god, this boy... what is he doing? I can't resist, this fruit has turned me on so much...)"
-        $ show_picture(12, "puesto11")
+        scene puesto11
         WorkersSon "Do you like it?"
-        $ show_picture(13, "puesto12")
+        scene puesto12
         Leyna "Y...yes... (If Johan see us.... but I don't really care right now..)"
-        $ show_picture(14, "puesto13")
+        scene puesto13
         WorkersSon "I want to be lucky for many years, you know?"
-        $ show_picture(15, "puesto14")
+        scene puesto14
         WorkersSon "And you are so hot, I can't resist my self. I don't usually do this but.."
-        $ show_picture(16, "puesto15")
+        scene puesto15
         WorkersSon "You are so warm down there.. I want a little of what your husband has"
-        $ show_picture(17, "puesto16")
+        scene puesto16
         WorkersSon "Oh yes!"
-        $ show_picture(20, "puesto17")
+        scene puesto17
         Leyna "OHH!!!!!!!!"
-        $ show_picture(18, "puesto16")
+        scene puesto16
         WorkersSon "SHH! Don't scream. We don't want your husband to see us, right? Just enjoy.."
-        $ show_picture(19, "puesto12")
+        scene puesto12
         Leyna "Please,do..don't, I love Johan... and..."
-        $ show_picture(20, "puesto15")
+        scene puesto15
         WorkersSon "I don't doubt it, we are just having a good time"
-        $ show_picture(21, "puesto10")
+        scene puesto10
         Johan "Well guys, see you over there then.."
-        $ show_picture(22, "puesto18")
+        scene puesto18
         WorkersSon "Fuck....."
-        $ show_picture(23, "puesto19")
+        scene puesto19
         WorkersSon "Yeah! See you..."
         Leyna "(Why are they leaving? I was so...)"
         Leyna "Yeah, bye guys.."
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
-        $ erase_picture(16)
-        $ erase_picture(17)
-        $ erase_picture(18)
-        $ erase_picture(19)
-        $ erase_picture(20)
-        $ erase_picture(21)
-        $ erase_picture(22)
-        $ erase_picture(23)
+        hide puesto2
+        hide puesto3
+        hide puesto4
+        hide puesto5
+        hide puesto6
+        hide puesto7
+        hide puesto8
+        hide puesto6
+        hide puesto10
+        hide puesto9
+        hide puesto11
+        hide puesto12
+        hide puesto13
+        hide puesto14
+        hide puesto15
+        hide puesto16
+        hide puesto16
+        hide puesto12
+        hide puesto15
+        hide puesto10
+        hide puesto18
+        hide puesto19
     if not switch("ate_the_fruit"):
         Leyna "(What is he doing? I don't want to say anything, I wouldn't want to get Johan in trouble)"
-        $ show_picture(12, "puesto11")
+        scene puesto11
         WorkersSon "Do you like it?"
         Leyna "Mmmm... we should stop this.."
-        $ show_picture(14, "puesto13")
+        scene puesto13
         WorkersSon "I want to be lucky for many years, you know?"
-        $ show_picture(15, "puesto14")
+        scene puesto14
         WorkersSon "And you are so hot, I can't resist my self. I don't usually do this but.."
         Leyna "Stop now"
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
+        hide puesto11
+        hide puesto13
+        hide puesto14
         play sound "audio/Blow1.ogg" volume 0.9 noloop
         call ShowAnimation(1, "FestivalEV020", "FestivalEV020_0") from _call_FestivalEV020_0_ShowAnimation
         pause 0.6
-        $ show_picture(21, "puesto10")
+        scene puesto10
         Johan "Well guys, see you over there then.."
-        $ show_picture(23, "puesto19")
+        scene puesto19
         WorkersSon "Yeah! See you..."
         Leyna "Yeah, bye guys (that was close..)"
-        $ erase_picture(21)
-        $ erase_picture(23)
+        hide puesto10
+        hide puesto19
     scene black with dissolve
-    hide black with dissolve
+    # fade in
     pause 0.22
     Johan "Well, what can we do now?"
     Leyna "There is a massage stand near the casino, we should go there"
@@ -166,54 +153,53 @@ label FestivalPhotoSession_0:
     Leyna "Oh! hahaha... Okay, why not? but.. not here,right? I-in front of everyone..."
     Johan "Oh! no! Not here... let's go to a secluded place"
     scene black with dissolve
-    $ show_picture(1, "festivalfotos1")
-    hide black with dissolve
+    show festivalfotos1 with dissolve
     Leyna "Here, what do you think?.. I don't see anyone around"
     Johan "Yeah... I think it's perfect"
-    $ show_picture(2, "festivalfotos2")
+    scene festivalfotos2
     Leyna "Okay.. let's start then!"
     Johan "Okay, stay like that for a second, I want a cute photo"
     Leyna "Hahaha"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     pause
-    $ show_picture(3, "festivalfotos3")
+    scene festivalfotos3
     Leyna "Like this?"
     Johan "Great... you're so beautiful"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     pause
-    $ show_picture(4, "festivalfotos4")
+    scene festivalfotos4
     Johan "Nice..."
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     pause
-    $ show_picture(5, "festivalfotos5")
+    scene festivalfotos5
     Leyna "Look... take a photo now"
     Johan "Wow... so sexy..."
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     pause
-    $ show_picture(6, "festivalfotos6")
+    scene festivalfotos6
     Leyna "Do you like it?"
     Johan "I love it..."
     Johan "I'm getting hard"
     $ flash_screen([255,255,255,170], 60, True)
     play sound "audio/Key.ogg" volume 0.9 noloop
     pause
-    $ show_picture(7, "festivalfotos7")
+    scene festivalfotos7
     Leyna "Now is when the good part begins"
     Johan "I'm looking forward to it"
-    $ show_picture(8, "festivalfotos8")
+    scene festivalfotos8
     DrunkVillager "YyeaaH Me toO!"
     Johan "Hey! What are you doing? This is not a good time pal!"
     DrunkVillager "hEy! I'm Not tHe onEe dOinG tHis In puBlIc"
     Johan "No, but you are naked in public!"
-    $ show_picture(9, "festivalfotos9")
+    scene festivalfotos9
     DrunkVillager "HaVe yoOu ForGoTtenn WhEre You arRre?? ThiSs Is tHe FESTIVal PAL! anD I Ccan Do wHat I WanT"
     DrunkVillager "You, bEauTifUl, Are tHe LuCky pErSonN, rRiGht?"
     if switch("ate_the_fruit"):
-        $ show_picture(10, "festivalfotos10")
+        scene festivalfotos10
         Leyna "(His huge cock is so close to me... Why is it so hard for me to control myself?)"
         Leyna "Yes..."
         DrunkVillager "lEt Me ToUcH YOU tHEn, I waAnt GoOd LuCk LIke EveRyoNe eLsE"
@@ -221,24 +207,24 @@ label FestivalPhotoSession_0:
         Johan "Hey! Stop this!"
         Johan "I told you it isn't a good time friend, you are very drunk, leave us alone!"
         Johan "Leyna, get up we're leaving"
-        $ show_picture(11, "festivalfotos11")
+        scene festivalfotos11
         Leyna "Ye-yeah"
         DrunkVillager "Oook sTaY WitH All ThE lUcK, GrEeDy BoY"
         Johan "Yeah yeah..."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
+        hide festivalfotos1
+        hide festivalfotos2
+        hide festivalfotos3
+        hide festivalfotos4
+        hide festivalfotos5
+        hide festivalfotos6
+        hide festivalfotos7
+        hide festivalfotos8
+        hide festivalfotos9
+        hide festivalfotos10
+        hide festivalfotos11
         # TransferPlayer: "Festival"
-        hide black with dissolve
+        # fade in
         pause 0.28
         Johan "Moron!"
         Leyna "Don't worry, we'll have more chances to do it"
@@ -253,23 +239,14 @@ label FestivalPhotoSession_0:
         Johan "Hey! Stop this!"
         Johan "I told you it isn't a good time friend, you are very drunk, leave us alone!"
         Johan "Leyna, get up we're leaving"
-        $ show_picture(11, "festivalfotos11")
+        scene festivalfotos11
         Leyna "Ye-yeah"
         DrunkVillager "Oook sTaY WitH All ThE lUcK, GrEeDy BoY"
         Johan "Yeah yeah..."
         scene black with dissolve
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(11)
+        hide festivalfotos11
         # TransferPlayer: "Festival"
-        hide black with dissolve
+        # fade in
         pause 0.28
         Johan "Moron!"
         Leyna "Don't worry, we'll have more chances to do it"
@@ -294,26 +271,25 @@ label Festivaliniciacionadolescencia_0(menu_choice = None):
     Johan "Exactly Leyna, don't worry, it's also a golden opportunity to see another tradition of the town"
     Leyna "Yeah..."
     scene black with dissolve
-    $ show_picture(1, "ritual1")
-    hide black with dissolve
+    show ritual1 with dissolve
     OldMan "Good morning townspeople and guests!"
     OldMan "Today we are gathered here to welcome these three young men into adulthood!"
-    $ show_picture(2, "ritual2")
+    scene ritual2
     if bottle_event == 3:
         Leyna "Oh! ( those are the guys we drank with the other day!)"
     OldMan "As tradition dictates, the ritual will be divided into two parts, you know how it goes!"
     OldMan "We need three women to step forward!"
-    $ show_picture(3, "ritual3")
+    scene ritual3
     "Woman: Well, I guess it's our turn this year...."
     OldMan "Hmmmm great but we are missing one! You Miss step forward without fear"
-    $ show_picture(4, "ritual4")
+    scene ritual4
     Leyna "M-me? But... I don't know if..."
     OldMan "Relax, We know you're just visiting, but you don't have to worry, it's a ritual... you don't want to offend our traditions, do you?"
     Leyna "NO! no of course..."
-    $ show_picture(5, "ritual5")
+    scene ritual5
     Johan "Leyna honey don't worry I'll be here at all times"
     Leyna "Yes, of course..."
-    $ show_picture(6, "ritual6")
+    scene ritual6
     OldMan "Well, let the women get in front of the guys!"
     OldMan "Hand out the infusions to all participants"
     Leyna "Infusions?"
@@ -323,7 +299,7 @@ label Festivaliniciacionadolescencia_0(menu_choice = None):
         Leyna "(But I don't want to disrespect all these people either)"
     if not switch("ate_the_fruit"):
         Leyna "(That fruit they talk so much about... well, what could go wrong?)"
-    $ show_picture(7, "ritual7")
+    scene ritual7
     call GetChoice([_("Drink the infusion"), _("Pretend to drink")], value=menu_choice, called_from="Festivaliniciacionadolescencia_0") from _call_Festivaliniciacionadolescencia_0_GetChoice
     $ menu_choice = _return
     if menu_choice == _("Drink the infusion"):
@@ -331,95 +307,96 @@ label Festivaliniciacionadolescencia_0(menu_choice = None):
         $ set_switch("infusion", True)
     elif menu_choice == _("Pretend to drink"):
         $ menu_choice = None
-    $ show_picture(8, "ritual8")
+    scene ritual8
     Leyna "...."
-    $ show_picture(9, "ritual9")
+    scene ritual9
     OldMan "Very good! now comes the first test, this one is for the boys!"
     OldMan "Every man has to prove that he can protect his beloved so lift her up in the air and show your strength to the other guys!"
-    $ show_picture(10, "ritual10")
+    scene ritual10
     "Joven: UUoo!!"
     Leyna "Oh!"
-    $ show_picture(11, "ritual14")
+    scene ritual14
     Villager "How lucky are this year's boys! what beautiful women"
     Villager2 "Hey watch what you say, there's my wife!"
     Villager "I'm sorry, but with the lack of women in this town..."
     Johan "(...)"
-    $ show_picture(12, "ritual11")
+    scene ritual11
     OldMan "Hang in there guys! hang in there!"
     OldMan "All right, girls, look your young men in the face, remember them, you will need that later on!"
-    $ show_picture(13, "ritual12")
+    scene ritual12
     OldMan "You know what's coming next! the second test! the youngsters will have to hide in the town and their respective beloved will have to find them"
     OldMan "Once they have found them, they will have to give them the test of maturity and that's..."
-    $ show_picture(14, "ritual13")
+    scene ritual13
     Leyna "(The test of maturity? I hope he's not just saying ...)"
     OldMan "A kiss!"
-    $ show_picture(15, "ritual12")
+    scene ritual12
     Leyna "Oh... (a kiss? well... it's no big deal, just a kiss on the cheek)"
     OldMan "Well, let the kids run and hide in the village!"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
-    $ erase_picture(10)
-    $ erase_picture(11)
-    $ erase_picture(12)
-    $ erase_picture(13)
-    $ erase_picture(14)
-    $ erase_picture(15)
-    $ show_picture(1, "pantallanegro", scale=(120, 120), width=816, height=600)
-    hide black with dissolve
+    hide ritual1
+    hide ritual2
+    hide ritual3
+    hide ritual4
+    hide ritual5
+    hide ritual6
+    hide ritual7
+    hide ritual8
+    hide ritual9
+    hide ritual10
+    hide ritual14
+    hide ritual11
+    hide ritual12
+    hide ritual13
+    hide ritual12
+    show pantallanegro with dissolve:
+        xsize 979
+        ysize 720
     OldMan "And now girls! look for them!"
     Leyna "(well let's get this over with, I'm hungry)"
     scene black with dissolve
-    $ erase_picture(1)
+    hide pantallanegro
     # TransferPlayer: "Town2"
-    hide black with dissolve
+    # fade in
     $ set_switch("find_youth", True)
     Leyna "Well... let's find that young man and give him the damn kiss"
     return
 
 label FestivalButtPlugEvent_1(menu_choice = None):
-    $ show_picture(1, "analcomida1")
+    scene analcomida1
     Leyna "Hello sir, what do you need?"
     "Fat Villager: (WOw who is this girl? I was expecting the same guy as always) Ehm yeah, a beer and some marinated meat thanks"
     Leyna "Coming!"
-    $ show_picture(2, "analcomida2")
+    scene analcomida2
     Villager "Isn't that your wife?"
     Johan "Yes, it looks like she has already started working, don't tell her that we have already had a beer at the other stall or she will get angry"
     Villager "Hahahahaha easy, I've got your back"
     Johan "Well, let's have a drink with her"
-    $ show_picture(3, "analcomida3")
+    scene analcomida3
     Leyna "Oh Hi honey, have you been here long?"
     Johan "Hahaha no no no, we just got here ten minutes ago, just walking around"
     Leyna "Great, shall I put something on?"
-    $ show_picture(4, "analcomida4")
+    scene analcomida4
     Villager2 "Wow isn't that Leyna? I didn't know she was working at the food stall"
     Villager2 "Mother of God, is that the uniform they make her wear? She's practically naked! From here I can see practically everything!"
-    $ show_picture(5, "analcomida5")
+    scene analcomida5
     Villager2 "Wait a second... she's wearing a butt plug? Fuck!"
     Villager2 "I knew she was a bit of a slut, but to be dressed like that with a butt plug up your ass in public?"
     Villager2 "Just looking at it is making my dick hard"
     Villager2 "Although I have an idea... I should take advantage of this, besides, she has done it for a reason, right? I'm sure she's hoping that someone notices it"
     Villager2 "Yes, I'm going to make my move"
     pause
-    $ show_picture(6, "analcomida6")
+    scene analcomida6
     Leyna "AH!"
     Villager2 "Hey! what's up leyna? the boss told me to come and help you"
     Leyna "The boss?"
     Villager2 "Exactly, he told me that you probably need some help since you are new to all this"
     Leyna "I-I see"
     pause
-    $ show_picture(7, "analcomida7")
+    scene analcomida7
     Villager2 "Yeah... let's see what we have here?"
     Leyna "I-is touching the .... the guy is playing with my ass while Johan is there in front)"
     Leyna "(Whispering) What the hell are you doing? My husband is right here"
-    $ show_picture(8, "analcomida8")
+    scene analcomida8
     Villager2 "(Whispering) Come on, you've come out in public like this in front of everyone, you're asking for someone to help you with this right?"
     Villager2 "(whispering) Well, I have the balls to do it, and I don't give a damn if your husband is in front of me"
     Leyna "You..."
@@ -431,41 +408,41 @@ label FestivalButtPlugEvent_1(menu_choice = None):
     "..."
     Leyna "!!! (The bastard pulled out my butt plug! What the hell is he doing?)"
     Leyna "!!!!"
-    $ show_picture(9, "analcomida9")
+    scene analcomida9
     Leyna "Hmm! ah (H-he's eating my ass! in front of Johan and these guys!)"
     Leyna "(Don't they see it?... no... they are not seeing it...)"
     Leyna "(My God, why does it feel so good?)"
     pause
-    $ show_picture(10, "analcomida10")
+    scene analcomida10
     Johan "???"
     Johan "What's wrong? Where are the beers?"
     Leyna "AH! n-nothing"
     Leyna "The boss must have moved them or something (how long is he going to keep this up?...my god)"
-    $ show_picture(11, "analcomida11")
+    scene analcomida11
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     Leyna "AH!!"
     Johan "!!!!"
     Villager "Wow, I certainly didn't expect that"
     Leyna "I-I'm mmm s-sorry guys it slipped and... ahh... I'll put it on right away"
     pause
-    $ show_picture(12, "analcomida12")
+    scene analcomida12
     Villager "No rush, take as much time as you need hahahahaha"
     Johan "Dude stop looking!"
     Villager "I'm sorry, I can't help it... my God, what a pair of tits your wife has!"
     Johan "For the love of God I'm right here"
     pause
-    $ show_picture(13, "analcomida13")
+    scene analcomida13
     Villager2 "Sorry guys, here are the beers"
     Leyna "(My God, thank goodness it's over, a little more and I wouldn't know how to hide anymore... wait)"
     Leyna "(When he took out his dick?... and he's pressing it  against my ass... he won't attempt to...)"
     Villager2 "Sorry Leyna I'm going to clean up the counter a little bit"
     Leyna "!!!"
     pause
-    $ show_picture(14, "analcomida14")
+    scene analcomida14
     Leyna "(I-I can't pull away he's holding me too tight and squeezing me against him)"
     Villager2 "The rag is over here, isn't it? It's just that everything is a bit dirty..."
     pause
-    $ show_picture(15, "analcomida15")
+    scene analcomida15
     Leyna "!!!! mmm"
     Villager2 "Where did he put the rag? your boss is a disaster hehehehehe"
     Leyna "(Whispering) Don't even think about it... hmmm ah... don't do that"
@@ -482,40 +459,46 @@ label FestivalButtPlugEvent_1(menu_choice = None):
             $ menu_choice = None
             Leyna "(No! I can't let him do this to me in front of Johan! ... no matter how much I want to.... I have to control myself)"
             Villager "(Ooooh the tip is already in... it's so hot) I'm going to fuck your tight asshole"
-            $ show_picture(16, "analalter3", width=814, height=625)
+            scene analalter3:
+                xsize 814
+                ysize 625
             Villager "AAH!"
             Johan "!!!!"
             Villager2 "!!!! Dude, are you okay?"
-            $ show_picture(17, "analalter4", width=814, height=625)
+            scene analalter4:
+                xsize 814
+                ysize 625
             Villager "Y-yeah, I'm fine, just a little cramp in my leg that's all"
             Johan "I see, working in the service sector is very hard..."
-            $ show_picture(18, "analalter5", width=814, height=625)
+            scene analalter5:
+                xsize 814
+                ysize 625
             Villager "You're telling me (this bitch...)"
         elif menu_choice == _("it feels so good..."):
             $ menu_choice = None
-            $ show_picture(16, "analcomida16")
+            scene analcomida16
             Leyna "!!!!! (He has put it in me! It's in!)"
             Villager2 "(Whispering) Wow you must have been dilated down there and it went in really well.... uff feels like paradise...."
             pause
-            $ show_picture(17, "analcomida17")
+            scene analcomida17
             Leyna "(He's sticking it all the way up my ass and they're all less than a meter away from me.... they're talking so quietly while this guy is fucking my ass)"
             Leyna "(Johan's right in front of me... right there... and I'm getting my asshole drilled by a guy with a huge dick... my god... my god...)"
             Leyna "(I can't take it anymore... I can't take it anymore... !!!!)"
             pause
             $ flash_screen([255,255,255,170], 60, True)
             $ flash_screen([255,255,255,170], 60, True)
-            $ show_picture(18, "analcomida18")
+            scene analcomida18
             $ flash_screen([255,255,255,170], 60, True)
             Leyna "AAAhh!!!"
             Johan "Leyna?! Are you ok?!"
             Villager "Wow something is going on with her for sure..."
             Johan "Leyna, what's wrong?"
             pause
-            $ show_picture(19, "analcomida19")
+            scene analcomida19
             Villager2 "Oh! it's a cramp, don't worry, I'm a physiotherapist, I'll fix it right away, it's just that she' been in the wrong posture for a long time"
             Villager2 "Look, I hold his arms like this and with a couple of movements she will feel much better"
             play bgs "audio/audio follar.ogg" loop volume 0.9
-            $ show_picture(20, "analcomida20")
+            scene analcomida20
             Leyna "Oh oh ooooh!!"
             Villager2 "Yes, that seems to be where it hurts! UFf is hard for me... what a tense back!"
             Johan "It does look like she' s feeling a bit of relief..."
@@ -523,11 +506,11 @@ label FestivalButtPlugEvent_1(menu_choice = None):
             pause
             $ flash_screen([255,255,255,170], 60, True)
             stop bgs fadeout 1
-            $ show_picture(21, "analcomida21")
+            scene analcomida21
             $ flash_screen([255,255,255,170], 60, True)
             Villager2 "AAAh! now... now you should be much better...Right Leyna? are you feeling better?"
             pause
-            $ show_picture(22, "analcomida22")
+            scene analcomida22
             Leyna "I-I... I... I... yes... I feel better..."
             Leyna "(the son of a bitch leaves me halfway through...)"
             Leyna "(First I let some teenagers blackmail me because I couldn't control myself, then I let them do all kinds of things to me in the bar and now this...)"
@@ -535,7 +518,7 @@ label FestivalButtPlugEvent_1(menu_choice = None):
             Leyna "You can let me go... thank you very much..."
             Villager2 "Great! Well, I should get going... I think the boss told me..."
             pause
-            $ show_picture(23, "analcomida23")
+            scene analcomida23
             Leyna "(whispering) after what you've done to me in front of everyone you might as well stay and help me the rest of the shift you son of a bitch"
             Leyna "(whispering) or would you rather I talk to the police right now?"
             Villager2 "!!! (Fuck that' s scary...) Of course... I'll stay as long as it takes..."
@@ -547,40 +530,46 @@ label FestivalButtPlugEvent_1(menu_choice = None):
             $ menu_choice = None
             Leyna "(No! I can't let him do this to me in front of Johan! ... no matter how much I want to.... I have to control myself)"
             Villager "(Ooooh the tip is already in... it's so hot) I'm going to fuck your tight asshole"
-            $ show_picture(16, "analalter3", width=814, height=625)
+            scene analalter3:
+                xsize 814
+                ysize 625
             Villager "AAH!"
             Johan "!!!!"
             Villager2 "!!!! Dude, are you okay?"
-            $ show_picture(17, "analalter4", width=814, height=625)
+            scene analalter4:
+                xsize 814
+                ysize 625
             Villager "Y-yeah, I'm fine, just a little cramp in my leg that's all"
             Johan "I see, working in the service sector is very hard..."
-            $ show_picture(18, "analalter5", width=814, height=625)
+            scene analalter5:
+                xsize 814
+                ysize 625
             Villager "You're telling me (this bitch...)"
         elif menu_choice == _("it feels so good..."):
             $ menu_choice = None
-            $ show_picture(16, "analcomida16")
+            scene analcomida16
             Leyna "!!!!! (He has put it in me! It's in!)"
             Villager2 "(Whispering) Wow you must have been dilated down there and it went in really well.... uff feels like paradise...."
             pause
-            $ show_picture(17, "analcomida17")
+            scene analcomida17
             Leyna "(He's sticking it all the way up my ass and they're all less than a meter away from me.... they're talking so quietly while this guy is fucking my ass)"
             Leyna "(Johan's right in front of me... right there... and I'm getting my asshole drilled by a guy with a huge dick... my god... my god...)"
             Leyna "(I can't take it anymore... I can't take it anymore... !!!!)"
             pause
             $ flash_screen([255,255,255,170], 60, True)
             $ flash_screen([255,255,255,170], 60, True)
-            $ show_picture(18, "analcomida18")
+            scene analcomida18
             $ flash_screen([255,255,255,170], 60, True)
             Leyna "AAAhh!!!"
             Johan "Leyna?! Are you ok?!"
             Villager "Wow something is going on with her for sure..."
             Johan "Leyna, what's wrong?"
             pause
-            $ show_picture(19, "analcomida19")
+            scene analcomida19
             Villager2 "Oh! it's a cramp, don't worry, I'm a physiotherapist, I'll fix it right away, it's just that she' been in the wrong posture for a long time"
             Villager2 "Look, I hold his arms like this and with a couple of movements she will feel much better"
             play bgs "audio/audio follar.ogg" loop volume 0.9
-            $ show_picture(20, "analcomida20")
+            scene analcomida20
             Leyna "Oh oh ooooh!!"
             Villager2 "Yes, that seems to be where it hurts! UFf is hard for me... what a tense back!"
             Johan "It does look like she' s feeling a bit of relief..."
@@ -588,61 +577,65 @@ label FestivalButtPlugEvent_1(menu_choice = None):
             pause
             $ flash_screen([255,255,255,170], 60, True)
             stop bgs fadeout 1
-            $ show_picture(21, "analcomida21")
+            scene analcomida21
             $ flash_screen([255,255,255,170], 60, True)
             Villager2 "AAAh! now... now you should be much better...Right Leyna? are you feeling better?"
             pause
-            $ show_picture(22, "analcomida22")
+            scene analcomida22
             Leyna "I-I... I... I... yes... I feel better..."
             Leyna "(the son of a bitch leaves me halfway through...)"
             Leyna "You can let me go... thank you very much..."
             Villager2 "Great! Well, I should get going... I think the boss told me..."
             pause
-            $ show_picture(23, "analcomida23")
+            scene analcomida23
             Leyna "(whispering) after what you've done to me in front of everyone you might as well stay and help me the rest of the shift you son of a bitch"
             Leyna "(whispering) or would you rather I talk to the police right now?"
             Villager2 "!!! (Fuck that' s scary...) Of course... I'll stay as long as it takes..."
             $ set_switch("corruption_maximum", True)
-    $ show_picture(24, "analcomida24")
+    scene analcomida24
     Leyna "Well guys... I see you've already finished your beers, would you like one more round?"
     Johan "Yes please! after this scary moment, I need to relax with another round"
     Leyna "Hahahahaha, coming right up"
     scene black with dissolve
     $ butt_plug = 4
-    $ erase_picture(1)
-    $ erase_picture(2)
-    $ erase_picture(3)
-    $ erase_picture(4)
-    $ erase_picture(5)
-    $ erase_picture(6)
-    $ erase_picture(7)
-    $ erase_picture(8)
-    $ erase_picture(9)
-    $ erase_picture(10)
-    $ erase_picture(11)
-    $ erase_picture(12)
-    $ erase_picture(13)
-    $ erase_picture(14)
-    $ erase_picture(15)
-    $ erase_picture(16)
-    $ erase_picture(17)
-    $ erase_picture(18)
-    $ erase_picture(19)
-    $ erase_picture(20)
-    $ erase_picture(21)
-    $ erase_picture(22)
-    $ erase_picture(23)
-    $ erase_picture(24)
+    hide analcomida1
+    hide analcomida2
+    hide analcomida3
+    hide analcomida4
+    hide analcomida5
+    hide analcomida6
+    hide analcomida7
+    hide analcomida8
+    hide analcomida9
+    hide analcomida10
+    hide analcomida11
+    hide analcomida12
+    hide analcomida13
+    hide analcomida14
+    hide analcomida15
+    hide analcomida16
+    hide analcomida17
+    hide analcomida18
+    hide analcomida19
+    hide analcomida20
+    hide analcomida21
+    hide analcomida22
+    hide analcomida23
+    hide analcomida24
     # TransferPlayer: "Festival"
     $ tint_screen((68, -34, -34, 0), 60, True)
-    hide black with dissolve
+    # fade in
     play sound "audio/Crow.ogg" volume 0.9 noloop
     Leyna "Well, it's getting late, the other stalls are opening for the party tonight, we should be closing"
     Villager "Yes... (in the end she made me work for hours ... well I'm still in time to take revenge )"
-    $ show_picture(1, "analalter1", width=814, height=625)
+    scene analalter1:
+        xsize 814
+        ysize 625
     Villager "Here, I'll give you back what I took from you before"
     Leyna "!!!!!!!"
-    $ show_picture(2, "analalter2", width=814, height=625)
+    scene analalter2:
+        xsize 814
+        ysize 625
     Leyna "OOoh!!!"
     Leyna "You..."
     Villager "I see you're still pretty sensitive down there hahahahahaha"
@@ -651,13 +644,13 @@ label FestivalButtPlugEvent_1(menu_choice = None):
     Villager "Well... your words and your actions don't match, honey"
     Leyna "Shu-shut up"
     scene black with dissolve
-    $ erase_picture(1)
-    $ erase_picture(2)
-    hide black with dissolve
+    hide analalter1
+    hide analalter2
+    # fade in
     Leyna "Well... I've finished what I had to do, time to look for Johan, he should be here at the festival"
     scene black with dissolve
     # TransferPlayer: "FestivalNight"
-    hide black with dissolve
+    # fade in
     $ tint_screen((-68, -68, 0, 68), 60, True)
     Leyna "It seems that many of the food stall workers have not yet arrived"
     Leyna "I'm sure Johan is having a drink with his new friends, better go find him quickly before he drinks too much"

@@ -1,9 +1,9 @@
 label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
-    $ show_picture(1, "orgia1")
+    scene orgia1
     Johan "Looks like the last event is going to be here, this place is much bigger than it looks from the outside"
     Leyna "yes, and it's crowded!"
     Johan "Stay close to me, okay?"
-    $ show_picture(2, "orgia2")
+    scene orgia2
     if switch("corruption_low"):
         Leyna "Sure, I'll be by your side all this time"
         Johan "... thank you Leyna"
@@ -13,10 +13,10 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
     if switch("corruption_high"):
         Leyna "Well don't be like that, I'm sure we'll have a good time if it starts a fun activity I might not be able to help but join in hahahaha"
         Johan "...."
-    $ show_picture(3, "orgia3")
+    scene orgia3
     Johan "!!!"
     Alexa "Hey Johan, I see you came to the last event"
-    $ show_picture(4, "orgia4")
+    scene orgia4
     Johan "Alexa! ... you've come too... but of course why wouldn't you come and do it?"
     Alexa "Hahahahaha are you insinuating something? Well I have something to talk to you about, come with me for a second"
     Johan "But..."
@@ -26,11 +26,10 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
     Johan "What?"
     Alexa "Nothing, let's go"
     scene black with dissolve
-    $ show_picture(5, "orgia6")
-    hide black with dissolve
+    show orgia6 with dissolve
     Villager "Hey Leyna, I see you've decided to come!"
     Leyna "Oh Y-yeah"
-    $ show_picture(6, "orgia7")
+    scene orgia7
     Leyna "I have come with... ah?"
     Leyna "Where has Johan gone?"
     YoungVillager "He'll be having fun over there, come with us Leyna! the ritual is about to begin!"
@@ -38,15 +37,14 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
     Villager2 "Yeah, well it's silly, but it'll be a lot of fun, you'll see"
     Leyna "W-well okay, I'll go with you"
     scene black with dissolve
-    $ show_picture(7, "orgia4")
-    hide black with dissolve
+    show orgia4 with dissolve
     Johan "Well, Alexa, what did you want to tell me? You made me leave Leyna there all alone"
     Alexa "You'll know soon enough, I guess I liked you more than I should have Johan"
     Johan "What? look..."
     Alexa "Quiet...listen, it looks like it's about to start"
     Johan "???"
     OldVillager "Good afternoon everyone!"
-    $ show_picture(8, "orgia8")
+    scene orgia8
     play sound "audio/Applause2.ogg" volume 0.9 noloop
     OldVillager "Hahaha I'm glad to see you all too"
     OldVillager "Well this is about to begin"
@@ -57,10 +55,10 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
     play sound "audio/Applause2.ogg" volume 0.9 noloop
     OldVillager "Very well, I see that you are all ready for this last celebration, now we will all join together and enjoy the pleasure of love"
     Johan "???? Alexa... what does all this mean?"
-    $ show_picture(9, "orgia9")
+    scene orgia9
     Johan "!!!! mmhhgf"
     pause
-    $ show_picture(10, "orgia5")
+    scene orgia5
     Alexa "What do you think is going on Johan? Isn't it obvious... everyone... everyone here right now is going to make love like we've never made love before"
     Johan "T-Then Leyna is right there and she's going to...."
     Alexa "What do you think?"
@@ -71,22 +69,21 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
     Alexa "... you'll regret it, you should carry on as you have been doing and let yourself be carried away by this"
     Johan "No, I'm going to get my wife out of here and we'll go, bye"
     Alexa ".... fool...."
-    $ show_picture(11, "orgia10")
+    scene orgia10
     Johan "Let me through!"
     Villager "??? Fucking wait your turn like everyone else!"
-    $ show_picture(12, "orgia11")
+    scene orgia11
     Johan "Ah shit my nose!"
-    $ show_picture(13, "orgia12")
+    scene orgia12
     Johan "I hope it's not broken, shit... I'm supposed to find my wife among all these people... fuck!"
     scene black with dissolve
-    $ show_picture(14, "orgia13")
-    hide black with dissolve
+    show orgia13 with dissolve
     "johan: I-I don't see her anywhere...."
     Johan "Where has she gone? ... damn... why did I decide to write about this damn town and its damn festival?"
     Johan "Since then weird things have been happening and our relationship .... shit I don't even want to think about it"
     Johan "I don't see her anywhere, again the situation is getting out of control... what can I do?"
     Johan "Is there anything I can do? At this stage Leyna... Leyna... where are you?"
-    $ show_picture(15, "orgia14")
+    scene orgia14
     Barman "Johan? what are you doing lying there?"
     Johan "ah? oh you... I was trying to find Leyna... tried to stop it from happening... but I can't find her in all these people... I don't know what to do man..."
     Barman "... you should not have come to the last event Johan..."
@@ -97,7 +94,7 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
     Johan "!!! I-I don't know what to say... thank you very much"
     Barman "Save your thanks and let's get you out of here!"
     Johan "Yes!"
-    $ show_picture(16, "orgia15")
+    scene orgia15
     Barman "Hey, get out of the way!"
     Villager "Ah? !!!! Oh sorry man, go ahead"
     Barman "Come on Johan over here!"
@@ -106,29 +103,29 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
     Johan "Yes, I see it too"
     Johan "!!!!"
     if switch("corruption_low"):
-        $ show_picture(17, "orgia16")
+        scene orgia16
         Villager2 "Come on honey I know you want to do this"
         YoungVillager "Come on Leyna, let yourself go and suck our dicks"
         Leyna "no, leave me alone, I don't want to do any of this"
         Johan "Hey! leave her alone!"
         pause
-        $ show_picture(18, "orgia17")
+        scene orgia17
         Villager2 "her husband the cuck has already arrived, it was taking too long already"
         YoungVillager "What are you doing here? Go and have a wank somewhere"
         Johan "Leave my wife alone, Leyna, we're getting out of here"
         YoungVillager "Bullshit you're leaving! She's staying here!"
         Johan "Get out of the way, you moron!"
         Villager2 "Don't touch my nephew"
-        $ show_picture(19, "orgia18")
+        scene orgia18
         Leyna "Johan!"
         Barman "what the fuck are you doing motherfucker? come here"
-        $ show_picture(20, "orgia19")
+        scene orgia19
         Villager2 "ah!"
         YoungVillager "What have you done to my uncle? you will regret this! you know what awaits you!"
-        $ show_picture(21, "orgia20")
+        scene orgia20
         Barman "You want me to knock you unconscious too, you little punk? get out of my sight!"
         YoungVillager "Tch I'll get you for this, you old fucker"
-        $ show_picture(22, "orgia21")
+        scene orgia21
         Johan "Th-thanks man, you saved my ass"
         Leyna "Yes, thank you very much for helping us"
         Barman "thank less, get out of here at once, this is not made for you, a couple from outside should never have to come to this place!"
@@ -139,32 +136,32 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Leyna "Yes, thank you very much!"
         scene black with dissolve
         # TransferPlayer: "InnRooms"
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
-        $ erase_picture(17)
-        $ erase_picture(18)
-        $ erase_picture(19)
-        $ erase_picture(20)
-        $ erase_picture(21)
-        $ erase_picture(22)
-        $ erase_picture(16)
-        hide black with dissolve
+        hide orgia1
+        hide orgia2
+        hide orgia3
+        hide orgia4
+        hide orgia6
+        hide orgia7
+        hide orgia4
+        hide orgia8
+        hide orgia9
+        hide orgia5
+        hide orgia10
+        hide orgia11
+        hide orgia12
+        hide orgia13
+        hide orgia14
+        hide orgia16
+        hide orgia17
+        hide orgia18
+        hide orgia19
+        hide orgia20
+        hide orgia21
+        hide orgia15
+        # fade in
         "the following morning"
     if switch("corruption_average"):
-        $ show_picture(17, "orgia22")
+        scene orgia22
         Johan "N-no... it can't be happening"
         Barman "Shit..."
         Johan "What the hell are you doing Leyna?"
@@ -172,19 +169,19 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Villager2 "Man! look who's husband is here! do you like what you see pussy?"
         YoungVillager "Hahahaha! we're having a great time with your wife!  look!"
         pause
-        $ show_picture(18, "orgia23")
+        scene orgia23
         "Flap flap flap"
         Leyna "AAAaaah!!!"
         Johan "H-how could you do this to me? It's only been a few minutes and you... Oh, my God"
         Leyna "Johan... don't look... AAAHHHH! My god!"
         pause
-        $ show_picture(19, "orgia24")
+        scene orgia24
         Johan "Shit... I'm out of here"
         Barman "Johan..."
         Johan "LET ME GO!"
         Barman "!!!!"
         pause
-        $ show_picture(20, "orgia25")
+        scene orgia25
         Leyna "J-Johan!"
         Villager2 "At last that prick is leaving, come on, let's get on with it"
         Leyna "N-no..."
@@ -195,14 +192,14 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Barman "Let her go"
         Villager2 "Yeah? and who's going to stop us from making him stay? you? you're nobody, you moron! get out of here before something bad happens to you!"
         pause
-        $ show_picture(21, "orgia26")
+        scene orgia26
         Barman "Now you can never talk to me like that again, or at least not until you get your mouth reconstructed, you little shit"
         "YOung Villager: !!! Wh-what have you done? Do you even know whose son he is?"
         pause
-        $ show_picture(22, "orgia20")
+        scene orgia20
         Barman "Yes, and if you don't want the same thing to happen to you, you can let the girl go"
         YoungVillager "O-okay, there's no need to get like that"
-        $ show_picture(23, "orgia27")
+        scene orgia27
         Leyna "T-thanks boss"
         Barman "Don't thank me and go to your husband... but after what you've done... you've really fucked up, precious"
         Leyna "I-I... I know"
@@ -211,33 +208,17 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Barman "...Go"
         scene black with dissolve
         # TransferPlayer: "InnRooms"
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
-        $ erase_picture(16)
-        $ erase_picture(17)
-        $ erase_picture(18)
-        $ erase_picture(19)
-        $ erase_picture(20)
-        $ erase_picture(21)
-        $ erase_picture(22)
-        $ erase_picture(23)
-        hide black with dissolve
+        hide orgia22
+        hide orgia23
+        hide orgia24
+        hide orgia25
+        hide orgia26
+        hide orgia20
+        hide orgia27
+        # fade in
         "the following morning"
     if switch("corruption_high"):
-        $ show_picture(17, "orgia22")
+        scene orgia22
         Johan "N-no... it can't be happening."
         Barman "shit..."
         Johan "What the hell are you doing Leyna?"
@@ -245,24 +226,24 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Villager2 "Man! look who's husband is here! do you like what you see pussy?"
         YoungVillager "Hahahaha! we're having a great time with your wife! look!"
         pause
-        $ show_picture(18, "orgia23")
+        scene orgia23
         "Flap flap flap"
         Leyna "AAAaaah!!!"
         Johan "H-how could you do this to me? It's only been a few minutes and you... Oh, my God."
         Leyna "I.... AAhhh Yeah-keep it up!"
         pause
-        $ show_picture(19, "orgia28")
+        scene orgia28
         Johan "You disgust me... I'm out of here"
         Barman "What a fucking mess..."
         pause
-        $ show_picture(20, "orgia29")
+        scene orgia29
         Johan "How could this happen... I've been blind all this time, the signs were there but I couldn't believe it... it's just too much already"
         Johan "Tomorrow morning I will be leaving this town and if Leyna should show up at our house her things will be waiting for her at the door"
         Johan "Next to the divorce papers"
         Johan ".... I'm going to drink myself unconscious"
         "Meanwhile Leyna..."
         pause
-        $ show_picture(21, "orgia30")
+        scene orgia30
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Leyna "Ah ah ah!"
         Villager2 "Look at her! She doesn't even care that her husband is gone, she just wants to keep fucking!"
@@ -279,8 +260,7 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Villager2 "What a slut"
         pause
         scene black with dissolve
-        $ show_picture(22, "orgia31")
-        hide black with dissolve
+        show orgia31 with dissolve
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Villager "Ugh yes! do you like it? let me hear from you"
         Leyna "I love it, don't stop! keep going!"
@@ -293,28 +273,27 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         "Villager 4: greedy bastard"
         pause
         scene black with dissolve
-        hide black with dissolve
+        # fade in
         Villager "God I'm cumming!"
         Villager2 "Me too!"
         Villagers "Ahhhh"
         pause
         stop bgs fadeout 1
-        $ show_picture(23, "orgia32")
+        scene orgia32
         Leyna "Oh my god... you've stuffed me like a turkey!"
         Villager3 "It's not over yet!"
         Leyna "Ah ah ah... I don't know if I can go on"
         Villager3 "You can"
         pause
         scene black with dissolve
-        $ show_picture(24, "corrupcionalta1")
-        hide black with dissolve
+        show corrupcionalta1 with dissolve
         play bgs "audio/audio follar.ogg" loop volume 0.9
         Leyna "Aaahhh!! god! you are breaking me in half!"
         "Villager3: See how you could go on, we are going to fuck you between all of us until you can't walk!"
         Leyna "AAh!!! Yes please, use me like the slut that I am"
         "Villager 4: Jesus, this bitch is insatiable!"
         pause
-        $ show_picture(25, "corrupcionalta2")
+        scene corrupcionalta2
         play bgs "audio/audio follar.ogg" loop volume 0.9
         "Villager 4: Now you will see!"
         Leyna "OOOh!!! I...I can't go on any longer... i'm cumming!"
@@ -322,7 +301,7 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Leyna "Yes! yes! I've never been fucked like this! fuck me harder!"
         "Villager 4: W-wait! I'm going to cum! open your mouth bitch!"
         pause
-        $ show_picture(26, "corrupcionalta3")
+        scene corrupcionalta3
         "Villager 4: Like that in your mouth, get ready, I've got a lot in store for you!"
         Villager3 "Yes, I'm going to fill your face with cum too, you slut!"
         Leyna "MMmf!"
@@ -331,13 +310,13 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         pause
         $ flash_screen([255,255,255,170], 60, True)
         $ flash_screen([255,255,255,170], 60, True)
-        $ show_picture(27, "corrupcionalta4")
+        scene corrupcionalta4
         $ flash_screen([255,255,255,170], 60, False)
         "Villager 4: AAAhhh!! Fuck!"
         Villager3 "Here you go! all for you!"
         "Villager 4: Yes, enjoy! hahahaha"
         pause
-        $ show_picture(28, "corrupcionalta5")
+        scene corrupcionalta5
         Leyna "A-are you finished?"
         Villager3 "Fuck, you want more?"
         "Villager 4: Yes, it is true that this girl is insatiable!"
@@ -346,10 +325,12 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         "Villager 4: Yes you can, now you will see how you can honey"
         pause
         stop bgs fadeout 1
-        $ show_picture(29, "pantallanegro", scale=(120, 120), width=816, height=600)
+        scene pantallanegro:
+            xsize 979
+            ysize 720
         "Some time later"
         pause
-        $ show_picture(30, "corrupcionalta6")
+        scene corrupcionalta6
         Villager "Hahahaha now I think it is satisfied!"
         Villager2 "Yeah, the bitch can't even move, she's just lying there shaking and can't get up"
         Leyna "Ah ah ah I ... I... ah ah ah i can't..."
@@ -358,37 +339,21 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Leyna "Ahhh..."
         scene black with dissolve
         # TransferPlayer: "InnRooms"
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
-        $ erase_picture(7)
-        $ erase_picture(8)
-        $ erase_picture(9)
-        $ erase_picture(10)
-        $ erase_picture(11)
-        $ erase_picture(12)
-        $ erase_picture(13)
-        $ erase_picture(14)
-        $ erase_picture(15)
-        $ erase_picture(16)
-        $ erase_picture(17)
-        $ erase_picture(18)
-        $ erase_picture(19)
-        $ erase_picture(20)
-        $ erase_picture(21)
-        $ erase_picture(22)
-        $ erase_picture(23)
-        $ erase_picture(24)
-        $ erase_picture(25)
-        $ erase_picture(26)
-        $ erase_picture(27)
-        $ erase_picture(28)
-        $ erase_picture(29)
-        $ erase_picture(30)
-        hide black with dissolve
+        hide orgia22
+        hide orgia23
+        hide orgia28
+        hide orgia29
+        hide orgia30
+        hide orgia31
+        hide orgia32
+        hide corrupcionalta1
+        hide corrupcionalta2
+        hide corrupcionalta3
+        hide corrupcionalta4
+        hide corrupcionalta5
+        hide pantallanegro
+        hide corrupcionalta6
+        # fade in
         "the following morning"
     $ set_switch("festival_final", True)
     return

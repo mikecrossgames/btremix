@@ -10,13 +10,17 @@ label ApartmentORDENADOR:
     pause 0.30
     Leyna "What is it?"
     Johan "Honey, I think this is a good idea for the article."
-    $ show_transparent(1, "expresion_neutral_mujer", width=1600, height=900)
+    show expresion_neutral_mujer:
+        xsize 1600
+        ysize 900
     "It's a small town lost in the mountains, very traditional, with ancient festivities that take place in the summer"
     "We could go and make an article about it."
-    $ erase_picture(1)
-    $ show_transparent(2, "expresion_ilusion_mujer", width=1600, height=900)
+    hide expresion_neutral_mujer
+    show expresion_ilusion_mujer:
+        xsize 1600
+        ysize 900
     Leyna "Great! We could enjoy and relax a little, it's been a long time since we took a vacation."
-    $ erase_picture(2)
+    hide expresion_ilusion_mujer
     pause 0.22
     Johan "Yeah, they have hot springs, a beautiful river and they all seem very rustic and friendly"
     "We'll have a great time while we work"

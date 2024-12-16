@@ -22,7 +22,7 @@ label TownNightEhhhYouuuuuuuuu_2(menu_choice = None):
     YoungVillager "Why don't you do the honours and start the bottle?"
     pause 0.2
     Johan "Hahahaha thank you, let's get started"
-    $ show_picture(1, "adolescentes1")
+    scene adolescentes1
     Johan "Wow this liquor is quite strong"
     YoungVillager "Hahahaha I know, in this town we make liquors quite strong"
     Leyna "So you have already tried it, huh?"
@@ -36,16 +36,16 @@ label TownNightEhhhYouuuuuuuuu_2(menu_choice = None):
     Johan "He's right, come on Leyna, a little doesn't hurt"
     Leyna "If that's okay with you then ... why not?"
     YoungVillager "Great!"
-    $ show_picture(2, "adolescentes2")
+    scene adolescentes2
     Johan "(Wow that's a pretty big drink)"
     YoungVillager "(Cool she's not playing, she almost drinks half a bottle in one go)"
-    $ show_picture(3, "adolescentes3")
+    scene adolescentes3
     Leyna "Wow! It's strong but it's very good"
     YoungVillager2 "So tell me, are you here on vacation?"
     Leyna "Yes, we've come to do a report of the festival for a tourism magazine, we are from the capital"
     YoungVillager2 "Great, the capital! I've always wanted to go but my father makes me work every day in the fields and I don't have time for anything"
     YoungVillager "Yes, it must be great to live in the capital, surely there are many beautiful girls like you there"
-    $ show_picture(4, "adolescentes4")
+    scene adolescentes4
     Leyna "Pretty girls? Hahaha thanks"
     YoungVillager "Here there are almost none and those who live here are already married or their parents have them out of our reach"
     Johan "Hahahahha a classic, Leyna's father was also very protective of her"
@@ -61,7 +61,7 @@ label TownNightEhhhYouuuuuuuuu_2(menu_choice = None):
     YoungVillager2 "It's easy for you to say, you are with a beautiful woman. Sure you do it every day!"
     Johan "(I wish I were...) Hahaha well it's not that simple.."
     YoungVillager "Right, if I had a wife like Leyna I would be fucking everyday day without stopping"
-    $ show_picture(5, "adolescentes5")
+    scene adolescentes5
     Leyna "Hahaha what an impressive youth"
     YoungVillager2 "And.. this.. since you see them every day.. How are they?"
     Johan "... the boobs?"
@@ -90,7 +90,7 @@ label TownNightEhhhYouuuuuuuuu_2(menu_choice = None):
         YoungVillager "REALLY?! Great, thank you very much!"
         YoungVillager2 "Incredible I can't believe it, thank you very much!"
         Leyna "Okay, just a little look and that's it"
-        $ show_picture(6, "adolescentes6")
+        scene adolescentes6
         Leyna "Here they are!"
         YoungVillager "Wow!! Amazing!"
         YoungVillager2 "Great, I'm going to jerk off tonight, thank you very much!"
@@ -101,30 +101,24 @@ label TownNightEhhhYouuuuuuuuu_2(menu_choice = None):
         YoungVillager "Sorry..."
         pause
         scene black with dissolve
-        $ erase_picture(6)
-        $ erase_picture(5)
-        $ erase_picture(4)
-        hide black with dissolve
+        hide adolescentes6
+        hide adolescentes5
+        hide adolescentes4
+        # fade in
         "...A FEW DRINKS OF LIQUOR LATER..."
         Leyna "Well ... I think it's about time we go"
         YoungVillager2 "Oooh! Now that we were having a good time?"
         Johan "Relax, we'll see you around here"
         YoungVillager "I take your word, if you want to have a good time one day you know where we are"
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
+        hide adolescentes1
+        hide adolescentes2
+        hide adolescentes3
         $ bottle_event = 3
     elif menu_choice == _("No"):
         $ menu_choice = None
         Johan "You're drunk, you don't know what you're saying"
         Johan "You're definitely not going to show your tits to these kids, sorry guys."
         Johan "We were having a good time but we should go"
-        $ erase_picture(1)
-        $ erase_picture(2)
-        $ erase_picture(3)
-        $ erase_picture(4)
-        $ erase_picture(5)
-        $ erase_picture(6)
         $ bottle_event = 4
     return
 
