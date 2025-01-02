@@ -42,7 +42,7 @@ label PoliceStationeventocomisaria_0:
     scene black with dissolve
     stop music fadeout 1
     hide carcel6
-    $ player_location = "PoliceStation"
+    call SetPlayerLocation("PoliceStation") from _call_PoliceStationeventocomisaria_0_SetPlayerLocation
     # fade in
     call ShowAnimation(1, "PoliceStationprisionero", "PoliceStationeventocomisaria_0") from _call_PoliceStationeventocomisaria_0_ShowAnimation_1
     PoliceCaptain "My sincere apologies for this, but in this way you will learn that you should not get back to approach a prisoner"
@@ -52,7 +52,7 @@ label PoliceStationeventocomisaria_0:
     PoliceCaptain "(Douchebag...)"
     Johan "(Dickhead...)"
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_PoliceStationeventocomisaria_0_SetPlayerLocation_1
     # fade in
     pause 0.26
     Johan "Are you okay Leyna?"

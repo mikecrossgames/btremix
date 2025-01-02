@@ -55,7 +55,7 @@ label ClothingStoreIShouldComeBackLaterToTryTheFestivalClothes_1:
         ysize 621
     Johan "Why am I thinking about this right now?"
     Johan "(I feel something in my stomach ... Am I getting turned on thinking about this?... No, I'm just...)"
-    hide rio_7
+    scene probador2
     $ flash_screen(wait=True)
     scene probador3
     Leyna "Why are you staring at me so hard, Johan?"
@@ -86,7 +86,7 @@ label ClothingStoreIShouldComeBackLaterToTryTheFestivalClothes_1:
         xsize 1104
         ysize 621
     Johan "Shit, this again? What the hell is wrong with me?"
-    hide escena_camisa_mojada_1
+    scene probador6
     Johan "Get up Leyna"
     Leyna "!!!"
     scene probador7
@@ -108,7 +108,7 @@ label ClothingStoreIShouldComeBackLaterToTryTheFestivalClothes_1:
     scene black with dissolve
     hide probador9
     stop bgs fadeout 1
-    $ player_location = "ClothingStore"
+    call SetPlayerLocation("ClothingStore") from _call_ClothingStoreEV005_1_SetPlayerLocation
     # fade in
     pause 0.40
     show plano_mujer_sorpresa_lado:
@@ -119,7 +119,7 @@ label ClothingStoreIShouldComeBackLaterToTryTheFestivalClothes_1:
     Johan "... We will"
     scene black with dissolve
     hide plano_mujer_sorpresa_lado
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_ClothingStoreEV005_1_SetPlayerLocation_1
     # fade in
     pause 0.24
     Johan "(What is happening to me? ... I've never had these kinds of thoughts)"

@@ -95,7 +95,7 @@ label HotSpringshotspringseventopart2:
     hide onsen14
     stop music fadeout 1
     # fade in
-    $ player_location = "HotSpringsExterior"
+    call SetPlayerLocation("HotSpringsExterior") from _call_HotSpringshotspringseventopart2_SetPlayerLocation
     pause 0.24
     Leyna "That has been dangerous, I can't fall asleep in that place again ... I'm still a little giddy"
     "(+2 CORRUPTION)"

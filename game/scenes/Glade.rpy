@@ -1,4 +1,4 @@
-label GladeImSureHeWontFindMeHereThisAreaIsALittleScaryAtNightThough_0(menu_choice = None):
+label GladeImSureHeWontFindMeHereThisAreaIsALittleScaryAtNightThough_0:
     Leyna "I'm sure he won't find me here. This area is a little scary at night though"
     if jail == 1:
         scene black with dissolve
@@ -31,7 +31,7 @@ label GladeImSureHeWontFindMeHereThisAreaIsALittleScaryAtNightThough_0(menu_choi
                 play sound "audio/Run.ogg" volume 0.9 noloop
                 pause
                 scene black with dissolve
-                $ player_location = "TownFestivalNight"
+                call SetPlayerLocation("TownFestivalNight") from _call_GladeEV004_0_SetPlayerLocation
                 hide pantallanegro
                 # fade in
                 pause 0.24
@@ -94,7 +94,7 @@ label GladeImSureHeWontFindMeHereThisAreaIsALittleScaryAtNightThough_0(menu_choi
                 Leyna "...."
                 $ hiding_place = 4
                 scene black with dissolve
-                $ player_location = "TownFestivalNight"
+                call SetPlayerLocation("TownFestivalNight") from _call_GladeEV004_0_SetPlayerLocation_1
                 hide revenge10
                 # fade in
                 pause 0.24
@@ -132,7 +132,7 @@ label GladeImSureHeWontFindMeHereThisAreaIsALittleScaryAtNightThough_0(menu_choi
                 play sound "audio/Run.ogg" volume 0.9 noloop
                 pause
                 scene black with dissolve
-                $ player_location = "TownFestivalNight"
+                call SetPlayerLocation("TownFestivalNight") from _call_GladeEV004_0_SetPlayerLocation_2
                 hide pantallanegro
                 # fade in
                 pause 0.24
@@ -195,7 +195,7 @@ label GladeImSureHeWontFindMeHereThisAreaIsALittleScaryAtNightThough_0(menu_choi
                 Leyna "...."
                 $ hiding_place = 4
                 scene black with dissolve
-                $ player_location = "TownFestivalNight"
+                call SetPlayerLocation("TownFestivalNight") from _call_GladeEV004_0_SetPlayerLocation_3
                 hide revenge10
                 # fade in
                 pause 0.24
@@ -205,7 +205,6 @@ label GladeImSureHeWontFindMeHereThisAreaIsALittleScaryAtNightThough_0(menu_choi
     return
 
 label Gladecontinuacionfestival_0:
-    $ tint_screen((0, 0, 0, 0), 60, True)
     pause 0.36
     pause 0.2
     Johan "My God... I feel like a truck has passed over my head"

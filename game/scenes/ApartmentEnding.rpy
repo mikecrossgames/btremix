@@ -219,7 +219,7 @@ label ApartmentEndingORDENADOR:
     pause 0.54
     stop music fadeout 1
     $ set_switch("introduction", False)
-    $ player_location = "TownEntrance"
+    call SetPlayerLocation("TownEntrance") from _call_ApartmentEndingORDENADOR_SetPlayerLocation
     return
 
 label ApartmentEndingCbajaending2_v2:

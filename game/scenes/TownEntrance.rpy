@@ -4,10 +4,10 @@ label TownEntranceparadabus_0:
     ".. we'll be in town in a few minutes"
     $ set_switch("introduction", True)
     pause 0.28
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_TownEntranceparadabus_0_SetPlayerLocation
     return
 
-label TownEntranceJohanmedia_1(menu_choice = None):
+label TownEntranceJohanmedia_1:
     scene ending4
     Leyna "Johan..."
     Johan "Johan?! How could you do this to me!"
@@ -110,12 +110,15 @@ label TownEntranceJohanmedia_1(menu_choice = None):
                 $ game_over = True
             if johan_leyna_sex == 2:
                 "Some time later"
+                scene ending14
                 Leyna "Johan!"
                 Johan "Yes?"
+                scene ending15
                 Leyna "I'm off to work, see you this afternoon"
                 Johan "To work already?"
                 Leyna "Yes, today I want to go with some extra time, you never know when public transportation might leave you stranded"
                 Johan "... Hmmm"
+                scene cmedia3cont1
                 Johan "Leyna! Wait a second"
                 Leyna "Ah? W-what is it?"
                 Johan "Oh.. no big deal... why don't you stay a few more minutes?"
@@ -124,9 +127,6 @@ label TownEntranceJohanmedia_1(menu_choice = None):
                 Leyna "Johan..."
                 Leyna "Come on... but just a little bit"
                 scene black with dissolve
-                scene ending14
-                scene ending15
-                scene cmedia3cont1
                 show cmedia3cont2 with dissolve
                 Johan "God... as sexy as ever"
                 Leyna "S-shut up..."
@@ -210,7 +210,7 @@ label TownEntranceJohanmedia_1(menu_choice = None):
             scene pantallanegro:
                 xsize 979
                 ysize 720
-            $ player_location = "ApartmentEnding"
+            call SetPlayerLocation("ApartmentEnding") from _call_TownEntranceJohanmedia_1_SetPlayerLocation
             "Some time later..."
             scene black with dissolve
             hide pantallanegro
@@ -246,7 +246,7 @@ label TownEntranceJohanAlta_1:
     scene pantallanegro:
         xsize 979
         ysize 720
-    $ player_location = "ApartmentEnding"
+    call SetPlayerLocation("ApartmentEnding") from _call_TownEntranceJohanAlta_1_SetPlayerLocation
     "Some time later..."
     scene black with dissolve
     hide pantallanegro
@@ -269,7 +269,7 @@ label TownEntranceCbajaending:
     scene pantallanegro:
         xsize 979
         ysize 720
-    $ player_location = "ApartmentGroundFloor"
+    call SetPlayerLocation("ApartmentGroundFloor") from _call_TownEntranceCbajaending_SetPlayerLocation
     "Several weeks later..."
     hide pantallanegro
     return

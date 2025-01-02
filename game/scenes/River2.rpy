@@ -47,7 +47,7 @@ label River2ThisPlaceIsBeautiful:
     Alexa "I can see that... yeah"
     Leyna "(What the hell are they talking about?)"
     Villager2 "Soo..."
-    hide rio21
+    scene rio20
     Leyna "Yeah?"
     Villager2 "You two are here for the festival or...?"
     Leyna "Oh no, I came with my husband to make an article about the traditions of this place, and enjoy the local food"
@@ -99,7 +99,7 @@ label River2ThisPlaceIsBeautiful:
     scene black with dissolve
     hide rio26
     $ set_switch("second_river", True)
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_River2EVENTORIO2_SetPlayerLocation
     # fade in
     show expresion_yuyu_mujer:
         xsize 1600

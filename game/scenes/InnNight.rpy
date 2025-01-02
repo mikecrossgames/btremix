@@ -97,7 +97,7 @@ label InnNightSleep:
     scene black with dissolve
     hide pantallanegro
     $ set_switch("leyna_dream_end", True)
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_InnNightSleep_SetPlayerLocation
     # fade in
     pause 0.26
     pause 0.2
@@ -134,9 +134,8 @@ label InnNightentradaalaposadanoche_0:
     Leyna "Great"
     hide plano_mujer_sonrisa
     scene black with dissolve
-    $ player_location = "InnRooms"
+    call SetPlayerLocation("InnRooms") from _call_InnNightentradaalaposadanoche_0_SetPlayerLocation
     # fade in
-    $ tint_screen((0, 0, 0, 0), 60, True)
     "THE NEXT MORNING"
     "You can choose between exploring the town by day or by night. Just go to bed and choose"
     $ set_switch("third_day", True)

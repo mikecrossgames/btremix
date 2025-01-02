@@ -5,7 +5,7 @@ label HotSpringsWithJohanhotspringjuntoscont:
     Johan "These hotsprings were supposed to be mixed, right? but there are only men here... for a change, well... I just love Leyna"
     Johan "But looking is not a crime, right? hahahaha... anyway, I guess I'll take a bath, I hope Leyna doesn't have a hard time with this amount of work"
     scene black with dissolve
-    $ player_location = "HotSpringsWithJohan"
+    call SetPlayerLocation("HotSpringsWithJohan") from _call_HotSpringsWithJohanhotspringjuntoscont_SetPlayerLocation
     # fade in
     pause 0.2
     Johan "Aaaahhh, how nice! I don't know why I didn't come here before! The water is at the perfect temperature! and it feels... a bit weird to be honest..."
@@ -54,14 +54,15 @@ label HotSpringsWithJohanhotspringjuntoscont:
         scene black with dissolve
         hide hotspringsjuntos9
     if not switch("infusion"):
+        scene hotspringsjuntos8
         Johan "(what's going on there? I hope they are not giving problems to Leyna...)"
         Johan "(she will be looking for something on the shelves... some cream or balm)"
         Johan "(Am I becoming a jealous husband?... I have to stop having such a hard time when Leyna is not with me for the sake of our relationship)"
         Johan "(And my mental health... shit... it's taking too long, isn't it... here we go again Johan try to relax)"
         pause
         scene black with dissolve
-    scene hotspringsjuntos8
-    show hotspringsjuntos10 with dissolve
+    scene hotspringsjuntos10
+    # fade in
     "A FEW MOMENTS LATER"
     Johan "!!! (It looks like Leyna has finished helping those guys and comes to greet me)"
     Johan "(At the end it does seem that she is a little uncomfortable with all these naked men around her... the truth is that I feel a little relieved hahaha)"
@@ -75,13 +76,14 @@ label HotSpringsWithJohanhotspringjuntoscont:
         Leyna "Yes, of course!"
         scene black with dissolve
     if not switch("infusion"):
+        scene hotspringsjuntos12
         Leyna "Ohh don't worry, I'm almost done... in half an hour everything will be ready and I'll be able to go out"
         Johan "Great! I'll wait for you to finish and we'll go out together Is that okay with you?"
         Leyna "Yes, of course!"
         scene black with dissolve
-    hide hotspringsjuntos13
-    $ player_location = "Path"
-    show hotspringsjuntos12 with dissolve
+    hide hotspringsjuntos12
+    call SetPlayerLocation("Path") from _call_HotSpringsWithJohanhotspringjuntoscont_SetPlayerLocation_1
+    # fade in
     pause 0.26
     Johan "Well, what should we do now?"
     show plano_mujer_sorpresa_lado:

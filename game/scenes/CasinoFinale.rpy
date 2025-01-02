@@ -135,7 +135,7 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Barman "Hehehehehe right, get out of here"
         Leyna "Yes, thank you very much!"
         scene black with dissolve
-        $ player_location = "InnRooms"
+        call SetPlayerLocation("InnRooms") from _call_CasinoFinaleEV015_SetPlayerLocation
         hide orgia21
         # fade in
         "the following morning"
@@ -186,7 +186,7 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Leyna "Y-yes... Thank you very much"
         Barman "...Go"
         scene black with dissolve
-        $ player_location = "InnRooms"
+        call SetPlayerLocation("InnRooms") from _call_CasinoFinaleEV015_SetPlayerLocation_1
         hide orgia27
         # fade in
         "the following morning"
@@ -311,7 +311,7 @@ label CasinoFinaleLooksLikeTheLastEventIsGoingToBeHere:
         Villager2 "Yes, good night, bitch! You can come back whenever you want..."
         Leyna "Ahhh..."
         scene black with dissolve
-        $ player_location = "InnRooms"
+        call SetPlayerLocation("InnRooms") from _call_CasinoFinaleEV015_SetPlayerLocation_2
         hide corrupcionalta6
         # fade in
         "the following morning"

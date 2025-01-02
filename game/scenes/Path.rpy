@@ -1,5 +1,5 @@
 label Pathnpcentradafestivalcamino_2:
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Pathnpcentradafestivalcamino_2_SetPlayerLocation
     return
 
 label Pathnpcentradafestivalcamino_4:
@@ -26,7 +26,7 @@ label Pathnpcentradafestivalcamino_4:
     Villager "No, if I get it first"
     scene black with dissolve
     hide vestuario4
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Pathnpcentradafestivalcamino_4_SetPlayerLocation
     # fade in
     play music "audio/Field2.ogg" loop volume 0.9
     pause 0.26
@@ -39,11 +39,11 @@ label Pathnpcentradafestivalcamino_4:
     return
 
 label Pathnpcentradafestivalcamino_5:
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Pathnpcentradafestivalcamino_5_SetPlayerLocation
     return
 
 label Pathnpcentradafestivalcamino_7:
-    $ player_location = "Mountains"
+    call SetPlayerLocation("Mountains") from _call_Pathnpcentradafestivalcamino_7_SetPlayerLocation
     return
 
 label Pathnpcentradafestivalcamino_12:
@@ -67,13 +67,13 @@ label Pathnpcentradafestivalcamino_12:
     Villager3 "Really? but her husband is here... don't they know what's going to happen? well it's better for us!"
     Villager2 "And boy, oh boy! This year is going to be spectacular! I can't wait for the finale!"
     scene black with dissolve
-    $ player_location = "FestivalFinale"
+    call SetPlayerLocation("FestivalFinale") from _call_Pathnpcentradafestivalcamino_12_SetPlayerLocation
     hide vestuario2
     # fade in
     return
 
 label Pathespacioentradafestival_2:
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Pathespacioentradafestival_2_SetPlayerLocation
     return
 
 label Pathespacioentradafestival_4:
@@ -100,7 +100,7 @@ label Pathespacioentradafestival_4:
     Villager "No, if I get it first"
     scene black with dissolve
     hide vestuario4
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Pathespacioentradafestival_4_SetPlayerLocation
     # fade in
     play music "audio/Field2.ogg" loop volume 0.9
     pause 0.26
@@ -113,11 +113,11 @@ label Pathespacioentradafestival_4:
     return
 
 label Pathespacioentradafestival_5:
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Pathespacioentradafestival_5_SetPlayerLocation
     return
 
 label Pathespacioentradafestival_7:
-    $ player_location = "Mountains"
+    call SetPlayerLocation("Mountains") from _call_Pathespacioentradafestival_7_SetPlayerLocation
     return
 
 label Pathespacioentradafestival_12:
@@ -141,7 +141,7 @@ label Pathespacioentradafestival_12:
     Villager3 "Really? but her husband is here... don't they know what's going to happen? well it's better for us!"
     Villager2 "And boy, oh boy! This year is going to be spectacular! I can't wait for the finale!"
     scene black with dissolve
-    $ player_location = "FestivalFinale"
+    call SetPlayerLocation("FestivalFinale") from _call_Pathespacioentradafestival_12_SetPlayerLocation
     hide vestuario2
     # fade in
     return
@@ -511,7 +511,7 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
         Villager "Is he... is he awake?"
         Villager2 "Nah no way... let's go on!"
         stop bgs fadeout 1
-        hide drunk10
+        scene pantallanegro
     "....."
     "........"
     scene drunk11
@@ -535,7 +535,7 @@ label PathWowItLooksLikeTheHotspringsHaveReopened_0:
     Johan "Y-yeah"
     scene black with dissolve
     hide drunk13
-    $ player_location = "Path"
+    call SetPlayerLocation("Path") from _call_PathEV021_0_SetPlayerLocation
     $ set_switch("last_hotsprings", True)
     pause 0.26
     # fade in

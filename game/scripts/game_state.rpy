@@ -88,7 +88,7 @@ init python:
             return False
         return self_switches[called_from][event_id][switch_id]
 
-default player_location = "Intro"
+default _saved_bgm = None
 default switches = get_default_switches()
 default self_switches = {}
 default suitcases = 0

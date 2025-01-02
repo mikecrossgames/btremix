@@ -15,9 +15,9 @@ label TownNPCCop_0:
     Johan "Since you mention it, can you tell us how to get to the inn?"
     Policeman "Sure, you have to go straight to the end of the town and turn right, there it is!"
     Johan "Okey, thanks"
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_TownNPCCop_0_SetPlayerLocation
     pause 0.28
-    $ player_location = "Inn"
+    call SetPlayerLocation("Inn") from _call_TownNPCCop_0_SetPlayerLocation_1
     return
 
 label TownMerchant_0:
@@ -27,7 +27,7 @@ label TownMerchant_0:
     VillagerWoman "you shut up, helpless old man"
     return
 
-label TownNPCwoman_2(menu_choice = None):
+label TownNPCwoman_2:
     Alexa "Do you want to go to the river now?"
     menu:
         "Yes":
@@ -39,7 +39,7 @@ label TownNPCwoman_2(menu_choice = None):
                 Leyna "Now? Okay, why not .."
                 Alexa "Great! Let's do this"
                 scene black with dissolve
-                $ player_location = "River2"
+                call SetPlayerLocation("River2") from _call_TownNPCwoman_2_SetPlayerLocation
                 # fade in
         "No":
             show plano_mujer_timida:
@@ -148,7 +148,7 @@ label Townfinaldelprimerdia_0:
     Leyna "No no, nothing's wrong but... It has been a very long day and with the trip and the interviews I'm tired..."
     "Can we go back to the hotel and go to sleep?"
     Johan "Oh of course"
-    $ player_location = "InnRooms"
+    call SetPlayerLocation("InnRooms") from _call_Townfinaldelprimerdia_0_SetPlayerLocation
     pause 0.34
     scene black with dissolve
     if not renpy.in_rollback():
@@ -157,7 +157,7 @@ label Townfinaldelprimerdia_0:
     if _saved_bgm is not None and not renpy.in_rollback():
         queue music _saved_bgm
         $ _saved_bgm = None
-    $ player_location = "Inn"
+    call SetPlayerLocation("Inn") from _call_Townfinaldelprimerdia_0_SetPlayerLocation_1
     # fade in
     pause 0.28
     Johan "Leyna, today I'm going to the town hall to interview the mayor and talk to some public employees..."
@@ -166,7 +166,7 @@ label Townfinaldelprimerdia_0:
     Leyna "Well... yes, you're right. I think I need a day to relax a little. See you here in the afternoon?"
     Johan "Yeah perfect! See you later"
     scene black with dissolve
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_Townfinaldelprimerdia_0_SetPlayerLocation_2
     # fade in
     pause 0.24
     show plano_mujer_sonrisa:
@@ -205,10 +205,10 @@ label Townfotografo_3:
     hide plano_mujer_cartoon
     Leyna "Well yes, why not?"
     OldMan "Great! Let's go there"
-    $ player_location = "Photoshoot2"
+    call SetPlayerLocation("Photoshoot2") from _call_Townfotografo_3_SetPlayerLocation
     return
 
-label Towneventofotografiaintro_0(menu_choice = None):
+label Towneventofotografiaintro_0:
     if switch("photo_not_taken"):
         OldMan "Have you changed your mind?"
         menu:
@@ -216,7 +216,7 @@ label Towneventofotografiaintro_0(menu_choice = None):
                 Leyna "Well.. I've some free time and a little extra money won't hurt me.. Sure, I'm interested"
                 OldMan "Perfect, come with me to my house, that's where I have the photo studio.."
                 scene black with dissolve
-                $ player_location = "PhotographersHouse"
+                call SetPlayerLocation("PhotographersHouse") from _call_Towneventofotografiaintro_0_SetPlayerLocation
                 # fade in
             "No":
                 Leyna "I'm sorry, I'm not interested right now..."
@@ -252,7 +252,7 @@ label Towneventofotografiaintro_0(menu_choice = None):
                 OldMan "Perfect, come with me to my house, that's where I have the photo studio.."
                 scene black with dissolve
                 hide plano_mujer_sorpresa_lado
-                $ player_location = "PhotographersHouse"
+                call SetPlayerLocation("PhotographersHouse") from _call_Towneventofotografiaintro_0_SetPlayerLocation_1
                 # fade in
             "No":
                 Leyna "I'm sorry, I'm not interested right now..."
@@ -261,7 +261,7 @@ label Towneventofotografiaintro_0(menu_choice = None):
         $ set_switch("photo_not_taken", True)
     return
 
-label TownMeetAlexa_0(menu_choice = None):
+label TownMeetAlexa_0:
     pause 0.22
     TouristWoman "Don't be mad, it was silly"
     Tourist "I thought it would be good for us to come on this trip, but I start to think that it wasn't a good idea"
@@ -347,7 +347,7 @@ label TownMeetAlexa_0(menu_choice = None):
                 Leyna "Now? Okay, why not .."
                 Alexa "Great! Let's do this"
                 scene black with dissolve
-                $ player_location = "River2"
+                call SetPlayerLocation("River2") from _call_TownEV085_0_SetPlayerLocation
                 # fade in
         "No":
             show plano_mujer_timida:

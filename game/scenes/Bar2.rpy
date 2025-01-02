@@ -163,7 +163,7 @@ label Bar2barman_3:
         Villager "OOOh so you'll think about it? well that's almost a yes"
         Leyna "I make no promises..."
         Villager2 "Okay okay, let's hope you decide, you will have us as your number one fans"
-        hide trabajobar22
+        scene trabajobar21
     Leyna "Well... not right now guys... I'm going to get dressed"
     Barman "Too bad..."
     scene black with dissolve
@@ -184,11 +184,11 @@ label Bar2barman_3:
     Barman "See you tomorrow and... think about working topless it would be a spectacular idea for the business"
     Leyna "!!!... sure... I will think about it"
     $ bar_work = 1
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Bar2barman_3_SetPlayerLocation
     Leyna "Where has Johan gone?... anyway, I should go to the inn to rest, tomorrow I have another day of work"
     return
 
-label Bar2barman_5(menu_choice = None):
+label Bar2barman_5:
     scene trabajobar25
     Barman "Good morning Leyna, ready for another day of work?"
     Leyna "Yes... I'm going to change"
@@ -377,12 +377,12 @@ label Bar2barman_5(menu_choice = None):
             Barman "Ehmmm Leyna... Go-good job... see you tomorrow."
             Leyna "Yes... see you tomorrow"
             Barman "... Sure"
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Bar2barman_5_SetPlayerLocation
             pause 0.2
             Leyna "Now you've made it good Leyna... Half the town has seen you fucking with another man... If Johan doesn't find out, it will be a miracle"
             Leyna "What am I going to do?"
             scene black with dissolve
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Bar2barman_5_SetPlayerLocation_1
             # fade in
             "Some time later"
             Johan "Where is Leyna? Maybe she is still working I'll go to the bar to see what's going on"
@@ -456,11 +456,11 @@ label Bar2barman_5(menu_choice = None):
                     Barman "Ehmmm Leyna... Go-good job... see you tomorrow."
                     Leyna "Yes... see you tomorrow"
                     Barman "... Sure"
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Bar2barman_5_SetPlayerLocation_2
                     pause 0.2
                     Leyna "That was a bit of an experience... anyway, I'm going to rest and and tomorrow will be another day"
                     scene black with dissolve
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Bar2barman_5_SetPlayerLocation_3
                     # fade in
                     "Some time later"
                     Johan "Where is Leyna? Maybe she is still working I'll go to the bar to see what's going on"
@@ -478,18 +478,18 @@ label Bar2barman_5(menu_choice = None):
                     Barman "Ehmmm Leyna... Go-good job... see you tomorrow."
                     Leyna "Yes... see you tomorrow"
                     Barman "... Sure"
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Bar2barman_5_SetPlayerLocation_4
                     pause 0.2
                     Leyna "That was a bit of an experience... anyway, I'm going to rest and and tomorrow will be another day"
                     scene black with dissolve
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Bar2barman_5_SetPlayerLocation_5
                     # fade in
                     "Some time later"
                     Johan "Where is Leyna? Maybe she is still working I'll go to the bar to see what's going on"
                     $ bar_work = 3
     return
 
-label Bar2WowGuysWhatACoincidence_0(menu_choice = None):
+label Bar2WowGuysWhatACoincidence_0:
     pause 0.24
     pause 0.2
     Alexa "Wow guys! what a coincidence!"
@@ -631,7 +631,7 @@ label Bar2WowGuysWhatACoincidence_0(menu_choice = None):
             Johan "Yes, of course"
             scene black with dissolve
             hide apuesta17
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Bar2EV012_0_SetPlayerLocation
             # fade in
             pause 0.24
             pause 0.2
@@ -674,7 +674,7 @@ label Bar2WowGuysWhatACoincidence_0(menu_choice = None):
             Leyna "... Yes, we'll see"
             scene black with dissolve
             hide apuesta17
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Bar2EV012_0_SetPlayerLocation_1
             # fade in
             pause 0.24
             pause 0.2
@@ -715,12 +715,12 @@ label Bar2Eventoanal1_0:
     Villager "Come home with me and I'll give you the dildo"
     Johan "Great, let's go!"
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Bar2Eventoanal1_0_SetPlayerLocation
     # fade in
     Johan "Well I got it... I get nervous just thinking about telling Leyna.... Hahaha I look like a teenager"
     Johan "What a nice man... There are good people in this town..."
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Bar2Eventoanal1_0_SetPlayerLocation_1
     pause 0.26
     # fade in
     Johan "Leyna! I've been looking all over for you, where have you been?"
@@ -732,7 +732,7 @@ label Bar2Eventoanal1_0:
     $ bar_work = 4
     return
 
-label Bar2LeynaWeWereLookingForYou_0(menu_choice = None):
+label Bar2LeynaWeWereLookingForYou_0:
     pause 0.22
     pause 0.2
     Alexa "Leyna! We were looking for you!"
@@ -1040,7 +1040,7 @@ label Bar2LeynaWeWereLookingForYou_0(menu_choice = None):
             scene poker39
             Leyna "!!!"
             Villager "Ups sorry..."
-            hide poker39
+            scene poker38
             "flap flap flap"
             Villager "That's better? although as wet as you are, I could slip in there without wanting to hehehehe"
             Alexa "(whispering) do it"
@@ -1109,7 +1109,7 @@ label Bar2LeynaWeWereLookingForYou_0(menu_choice = None):
             hide poker48
             hide poker49
             $ set_switch("bet_2", True)
-            $ player_location = "InnRooms"
+            call SetPlayerLocation("InnRooms") from _call_Bar2EV014_0_SetPlayerLocation
             # fade in
         "avoid the dick":
             Johan "???"
@@ -1163,7 +1163,7 @@ label Bar2LeynaWeWereLookingForYou_0(menu_choice = None):
             Leyna "!!!"
             Villager "Ups Sorry..."
             pause
-            hide poker39
+            scene poker36
             "flap flap flap"
             Villager "That's better? although as wet as you are, I could slip in there without wanting to hehehehe"
             Alexa "(whispering) do it"
@@ -1192,13 +1192,13 @@ label Bar2LeynaWeWereLookingForYou_0(menu_choice = None):
             hide poker49
             $ leyna_poker = 2
             $ set_switch("bet_2", True)
-            $ player_location = "InnRooms"
+            call SetPlayerLocation("InnRooms") from _call_Bar2EV014_0_SetPlayerLocation_1
             # fade in
     return
 
 label Bar2ToBar2_0:
     scene black with dissolve
-    $ player_location = "Bar2"
+    call SetPlayerLocation("Bar2") from _call_Bar2EV015_0_SetPlayerLocation
     pause 0.24
     # fade in
     pause 0.2
@@ -1272,7 +1272,7 @@ label Bar2ToBar2_0:
         hide desayuno6
         hide desayuno18
         $ set_switch("last_bar", True)
-        $ player_location = "Town2"
+        call SetPlayerLocation("Town2") from _call_Bar2EV015_0_SetPlayerLocation_1
         # fade in
     if switch("corruption_high"):
         Villager "Hey Johan, I want to ask you a couple of questions about the article...."
@@ -1345,7 +1345,7 @@ label Bar2ToBar2_0:
         scene black with dissolve
         hide desayuno18
         $ set_switch("last_bar", True)
-        $ player_location = "Town2"
+        call SetPlayerLocation("Town2") from _call_Bar2EV015_0_SetPlayerLocation_2
         # fade in
     if switch("corruption_average"):
         pause
@@ -1370,7 +1370,7 @@ label Bar2ToBar2_0:
         hide desayuno6
         hide desayuno18
         $ set_switch("last_bar", True)
-        $ player_location = "Town2"
+        call SetPlayerLocation("Town2") from _call_Bar2EV015_0_SetPlayerLocation_3
         # fade in
     return
 
@@ -1467,7 +1467,7 @@ label Bar2LeynawhatAreYouDoingHereIThoughtYouWereLeavingTownThisMorning_0:
     $ final_day = final_day + 1
     scene black with dissolve
     hide barfinal12
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Bar2EV016_0_SetPlayerLocation
     # fade in
     return
 

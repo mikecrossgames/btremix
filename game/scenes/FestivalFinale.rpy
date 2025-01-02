@@ -20,6 +20,11 @@ label FestivalFinaleHeyLeynaGoodToSeeYouHere:
     hide mini1
     return
 
+label FestivalFinaleDoYouWantSomeMasksForTheFinalEvent:
+    Villager "Do you want some masks for the final event?"
+    Johan "Masks? no thanks... (what do you need masks for?)"
+    return
+
 label FestivalFinaleHeyGoodToSeeYouLeynaEspeciallyInThisSituationHehehehehe:
     Villager "Hey good to see you leyna! especially in this situation hehehehehe"
     Leyna "H-hi"

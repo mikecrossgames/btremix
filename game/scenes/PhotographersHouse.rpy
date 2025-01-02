@@ -4,7 +4,7 @@ label PhotographersHousesesionfotografica1:
     OldMan "Alright, let's start. Clothes are in a package on top of my bed, you should put on the swimsuit in the first place..."
     Leyna "Great!"
     pause 0.22
-    $ player_location = "PhotographersHouse"
+    call SetPlayerLocation("PhotographersHouse") from _call_PhotographersHousesesionfotografica1_SetPlayerLocation
     pause 0.26
     pause 0.6
     show expresion_ilusion_mujer:
@@ -15,7 +15,7 @@ label PhotographersHousesesionfotografica1:
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     hide expresion_ilusion_mujer
-    $ player_location = "PhotographersHouse"
+    call SetPlayerLocation("PhotographersHouse") from _call_PhotographersHousesesionfotografica1_SetPlayerLocation_1
     # fade in
     pause 0.36
     pause 0.6
@@ -37,13 +37,13 @@ label PhotographersHousesesionfotografica1:
     Leyna "Great! ( This is fun! )"
     scene black with dissolve
     hide fotografo3
-    $ player_location = "PhotographersHouse"
+    call SetPlayerLocation("PhotographersHouse") from _call_PhotographersHousesesionfotografica1_SetPlayerLocation_2
     # fade in
     pause 0.6
     Leyna "Is this..? It's a little ... revealing, I don't know if I should ..."
     OldMan "Is there any problem?"
     Leyna "Oh  (come on Leyna, it's just a photo shoot ...) No, any problem at all..."
-    $ player_location = "PhotographersHouse"
+    call SetPlayerLocation("PhotographersHouse") from _call_PhotographersHousesesionfotografica1_SetPlayerLocation_3
     pause 0.36
     scene fotografo4
     Leyna "Isn't it too provocative?..."
@@ -52,7 +52,7 @@ label PhotographersHousesesionfotografica1:
     scene fotografo5
     OldMan "(Damn, I can see everything!)"
     pause
-    hide fotografo5
+    scene fotografo4
     OldMan "Okay precious, pose a little for me, you look very sexy, you can do this!"
     Leyna "Hahahaha O-okay..."
     scene fotografo6
@@ -83,14 +83,14 @@ label PhotographersHousesesionfotografica1:
     OldMan "We're done, you can change now"
     scene black with dissolve
     hide fotografo10
-    $ player_location = "PhotographersHouse"
+    call SetPlayerLocation("PhotographersHouse") from _call_PhotographersHousesesionfotografica1_SetPlayerLocation_4
     # fade in
     pause 0.24
     pause 0.22
     OldMan "The photos have turned out great. If you want you can come back later and do another photoshoot"
     Leyna "I would love that, it was really fun!"
     OldMan "Great, see you later then..."
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_PhotographersHousesesionfotografica1_SetPlayerLocation_5
     pause 0.24
     $ set_switch("first_photo_session", True)
     return

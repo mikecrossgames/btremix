@@ -31,7 +31,7 @@ label ApartmentORDENADOR:
     stop music fadeout 1
     $ set_switch("introduction", False)
     scene black with dissolve
-    $ player_location = "TownEntrance"
+    call SetPlayerLocation("TownEntrance") from _call_ApartmentORDENADOR_SetPlayerLocation
     if switch("netorase"):
         show netorase4 with dissolve
         Johan ".... (god... I can't sleep... this opportunity is huge, it might be the beginning of something great... if I get promoted in the magazine because of this...)"

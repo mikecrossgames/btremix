@@ -62,7 +62,7 @@ label BarWetTShirt_0:
     pause
     stop music fadeout 1
     hide escenas_camisa_mojada_3
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_BarWetTShirt_0_SetPlayerLocation
     pause 0.26
     Johan "Wow that has been ... weird"
     Leyna "Yes, sorry. With the heat, I haven't put on a bra because it makes me uncomfortable"
@@ -71,13 +71,13 @@ label BarWetTShirt_0:
     $ set_switch("wet_shirt", True)
     $ set_switch("dry_shirt", True)
     play sound "audio/Equip2.ogg" volume 0.9 noloop
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_BarWetTShirt_0_SetPlayerLocation_1
     pause 0.24
     $ corruption = corruption + 1
     "CORRUPTION +1"
     return
 
-label BarBJGame_0(menu_choice = None):
+label BarBJGame_0:
     Villager "Hmm sorry, I heard that your husband and you are writing an article about the town"
     show expresion_neutral_mujer:
         xsize 1600
@@ -104,7 +104,7 @@ label BarBJGame_0(menu_choice = None):
             Leyna "Wow, thank you!"
             scene black with dissolve
             hide plano_mujer_sonrisa
-            $ player_location = "Bar"
+            call SetPlayerLocation("Bar") from _call_BarBJGame_0_SetPlayerLocation
             # fade in
             "(SEVERAL BEERS LATER... )"
             Villager "... So yes, we expose our bodies on the festival place to honour the fertility goddess. As you may have noticed, the nudity in this town"
@@ -279,7 +279,7 @@ label BarBJGame_0(menu_choice = None):
                     "It has been..................... fun? Bye"
                     scene black with dissolve
                     hide bar14
-                    $ player_location = "Town"
+                    call SetPlayerLocation("Town") from _call_BarBJGame_0_SetPlayerLocation_1
                     $ set_switch("gave_bj", True)
                     $ corruption = corruption + 3
                     # fade in
@@ -296,7 +296,7 @@ label BarBJGame_0(menu_choice = None):
                     Villager "I see, don't worry, have a good time at the festival."
                     Villager "(I have time to seduce this girl little by little.. there's no reason to rush)"
                     scene black with dissolve
-                    $ player_location = "Town"
+                    call SetPlayerLocation("Town") from _call_BarBJGame_0_SetPlayerLocation_2
                     # fade in
                     $ set_switch("no_bj", True)
                     pause 0.24

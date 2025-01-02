@@ -42,3 +42,10 @@ label FoodStoreMerchant_3:
     $ leyna_work = 2
     return
 
+label FoodStoreYouWonANewObject_0:
+    play sound "audio/Recovery.ogg" volume 0.9 noloop
+    $ item_tools_bag = True
+    "(YOU WON A NEW OBJECT)"
+    $ elder_festival = 5
+    return
+

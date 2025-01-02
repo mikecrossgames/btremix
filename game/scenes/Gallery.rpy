@@ -1,4 +1,4 @@
-label Galleryeventorio_1(menu_choice = None):
+label Galleryeventorio_1:
     "First accident in the river: do you want to see the scene again?"
     menu:
         "Yes":
@@ -135,7 +135,7 @@ label Galleryeventorio_1(menu_choice = None):
             pass
     return
 
-label GalleryFotografo1_1(menu_choice = None):
+label GalleryFotografo1_1:
     "First session with the photographer"
     "Do you want to see it?"
     menu:
@@ -168,7 +168,7 @@ label GalleryFotografo1_1(menu_choice = None):
             scene fotografo5
             OldMan "(Damn, I can see everything!)"
             pause
-            hide fotografo5
+            scene fotografo4
             OldMan "Okay precious, pose a little for me, you look very sexy, you can do this!"
             Leyna "Hahahaha O-okay..."
             scene fotografo6
@@ -204,7 +204,7 @@ label GalleryFotografo1_1(menu_choice = None):
             pass
     return
 
-label Galleryonsen1_1(menu_choice = None):
+label Galleryonsen1_1:
     "Hotsprings 1, Do you want to see it?"
     menu:
         "Yes":
@@ -300,7 +300,7 @@ label Galleryonsen1_1(menu_choice = None):
             pass
     return
 
-label GallerySecondSessionWithThePhotographer_1(menu_choice = None):
+label GallerySecondSessionWithThePhotographer_1:
     "Second session with the photographer"
     "Do you want to see it?"
     menu:
@@ -413,7 +413,7 @@ label GallerySecondSessionWithThePhotographer_1(menu_choice = None):
             pass
     return
 
-label GalleryBarSceneGambling_1(menu_choice = None):
+label GalleryBarSceneGambling_1:
     "Bar scene, gambling"
     "Do you want to see it?"
     menu:
@@ -569,7 +569,7 @@ label GalleryBarSceneGambling_1(menu_choice = None):
             pass
     return
 
-label GalleryBarSceneGambling_2(menu_choice = None):
+label GalleryBarSceneGambling_2:
     "Bar scene, gambling"
     "Do you want to see it?"
     menu:
@@ -725,7 +725,7 @@ label GalleryBarSceneGambling_2(menu_choice = None):
             pass
     return
 
-label GalleryAtTheRiverWithAlexa_1(menu_choice = None):
+label GalleryAtTheRiverWithAlexa_1:
     "At the river with Alexa"
     "Do you want to see it?"
     menu:
@@ -766,7 +766,7 @@ label GalleryAtTheRiverWithAlexa_1(menu_choice = None):
             Alexa "I can see that... yeah"
             Leyna "(What the hell are they talking about?)"
             Villager2 "Soo..."
-            hide rio21
+            scene rio20
             Leyna "Yeah?"
             Villager2 "You two are here for the festival or...?"
             Leyna "Oh no, I came with my husband to make an article about the traditions of this place, and enjoy the local food"
@@ -822,7 +822,7 @@ label GalleryAtTheRiverWithAlexa_1(menu_choice = None):
             pass
     return
 
-label GalleryThirdSessionWithThePhotographer_1(menu_choice = None):
+label GalleryThirdSessionWithThePhotographer_1:
     "Third session with the photographer"
     "Do you want to see it?"
     menu:
@@ -946,7 +946,7 @@ label GalleryThirdSessionWithThePhotographer_1(menu_choice = None):
             pass
     return
 
-label GalleryChangingRoomScene_1(menu_choice = None):
+label GalleryChangingRoomScene_1:
     "Changing room scene"
     "Do you want to see it?"
     menu:
@@ -972,7 +972,7 @@ label GalleryChangingRoomScene_1(menu_choice = None):
                 ysize 621
             Johan "Why am I thinking about this right now?"
             Johan "(I feel something in my stomach ... Am I getting turned on thinking about this?... No, I'm just...)"
-            hide rio_7
+            scene probador2
             $ flash_screen(wait=True)
             scene probador3
             Leyna "Why are you staring at me so hard, Johan?"
@@ -1001,7 +1001,7 @@ label GalleryChangingRoomScene_1(menu_choice = None):
                 xsize 1104
                 ysize 621
             Johan "Shit, this again? What the hell is wrong with me?"
-            hide escena_camisa_mojada_1
+            scene probador6
             Johan "Get up Leyna"
             Leyna "!!!"
             scene probador7
@@ -1028,7 +1028,7 @@ label GalleryChangingRoomScene_1(menu_choice = None):
             pass
     return
 
-label GalleryJohansDream_1(menu_choice = None):
+label GalleryJohansDream_1:
     "Johan's dream"
     "do you want to see it?"
     menu:
@@ -1101,7 +1101,7 @@ label GalleryJohansDream_1(menu_choice = None):
             pass
     return
 
-label GalleryJailScene_1(menu_choice = None):
+label GalleryJailScene_1:
     "Jail scene"
     "Do you want to see it?"
     menu:
@@ -1151,7 +1151,7 @@ label GalleryJailScene_1(menu_choice = None):
             pass
     return
 
-label GalleryAtNightWithTheYoungBoys_1(menu_choice = None):
+label GalleryAtNightWithTheYoungBoys_1:
     "At night with the young boys"
     "Do you want to see it?"
     menu:
@@ -1248,7 +1248,7 @@ label GalleryAtNightWithTheYoungBoys_1(menu_choice = None):
             pass
     return
 
-label GalleryAtNightWithTheYoungBoys_2(menu_choice = None):
+label GalleryAtNightWithTheYoungBoys_2:
     "At night with the young boys"
     "Do you want to see it?"
     menu:
@@ -1345,7 +1345,7 @@ label GalleryAtNightWithTheYoungBoys_2(menu_choice = None):
             pass
     return
 
-label GalleryHotsprings3_1(menu_choice = None):
+label GalleryHotsprings3_1:
     "Hotsprings 3"
     "do you want to see it?"
     menu:
@@ -1395,14 +1395,15 @@ label GalleryHotsprings3_1(menu_choice = None):
                 scene black with dissolve
                 hide hotspringsjuntos9
             if not switch("infusion"):
+                scene hotspringsjuntos8
                 Johan "(what's going on there? I hope they are not giving problems to Leyna...)"
                 Johan "(she will be looking for something on the shelves... some cream or balm)"
                 Johan "(Am I becoming a jealous husband?... I have to stop having such a hard time when Leyna is not with me for the sake of our relationship)"
                 Johan "(And my mental health... shit... it's taking too long, isn't it... here we go again Johan try to relax)"
                 pause
                 scene black with dissolve
-            scene hotspringsjuntos8
-            show hotspringsjuntos10 with dissolve
+            scene hotspringsjuntos10
+            # fade in
             "A FEW MOMENTS LATER"
             Johan "!!! (It looks like Leyna has finished helping those guys and comes to greet me)"
             Johan "(At the end it does seem that she is a little uncomfortable with all these naked men around her... the truth is that I feel a little relieved hahaha)"
@@ -1416,17 +1417,18 @@ label GalleryHotsprings3_1(menu_choice = None):
                 Leyna "Yes, of course!"
                 scene black with dissolve
             if not switch("infusion"):
+                scene hotspringsjuntos12
                 Leyna "Ohh don't worry, I'm almost done... in half an hour everything will be ready and I'll be able to go out"
                 Johan "Great! I'll wait for you to finish and we'll go out together Is that okay with you?"
                 Leyna "Yes, of course!"
                 scene black with dissolve
-            hide hotspringsjuntos13
-            show hotspringsjuntos12 with dissolve
+            hide hotspringsjuntos12
+            # fade in
         "No":
             pass
     return
 
-label GalleryHotsprings2_1(menu_choice = None):
+label GalleryHotsprings2_1:
     "Hotsprings 2"
     "do you want to see it?"
     menu:
@@ -1503,7 +1505,7 @@ label GalleryHotsprings2_1(menu_choice = None):
             pass
     return
 
-label GalleryFoodStall1_1(menu_choice = None):
+label GalleryFoodStall1_1:
     "Food stall 1"
     "do you want to see it?"
     menu:
@@ -1589,7 +1591,7 @@ label GalleryFoodStall1_1(menu_choice = None):
             pass
     return
 
-label GalleryFindTheYoungVillager_1(menu_choice = None):
+label GalleryFindTheYoungVillager_1:
     "Find the young villager"
     "Do you want to see it?"
     menu:
@@ -1736,7 +1738,7 @@ label GalleryFindTheYoungVillager_1(menu_choice = None):
             pass
     return
 
-label GalleryBonfireWithTheYoungBoys_1(menu_choice = None):
+label GalleryBonfireWithTheYoungBoys_1:
     "Bonfire with the young boys"
     "Do you want to see it?"
     menu:
@@ -1887,7 +1889,7 @@ label GalleryBonfireWithTheYoungBoys_1(menu_choice = None):
             pass
     return
 
-label GalleryBonfireWithTheYoungBoys_2(menu_choice = None):
+label GalleryBonfireWithTheYoungBoys_2:
     "Bonfire with the young boys"
     "Do you want to see it?"
     menu:
@@ -2038,7 +2040,7 @@ label GalleryBonfireWithTheYoungBoys_2(menu_choice = None):
             pass
     return
 
-label GalleryHideAndSeek_1(menu_choice = None):
+label GalleryHideAndSeek_1:
     "Hide and seek"
     "Do you want to see it?"
     menu:
@@ -2212,7 +2214,7 @@ label GalleryHideAndSeek_1(menu_choice = None):
             pass
     return
 
-label GalleryHideAndSeek_2(menu_choice = None):
+label GalleryHideAndSeek_2:
     "Hide and seek"
     "Do you want to see it?"
     menu:
@@ -2386,7 +2388,7 @@ label GalleryHideAndSeek_2(menu_choice = None):
             pass
     return
 
-label GalleryRiverNight_1(menu_choice = None):
+label GalleryRiverNight_1:
     "River Night"
     "Do you want to see it?"
     menu:
@@ -2485,7 +2487,7 @@ label GalleryRiverNight_1(menu_choice = None):
             pass
     return
 
-label GalleryFourthSessionWithThePhotographer_1(menu_choice = None):
+label GalleryFourthSessionWithThePhotographer_1:
     "Fourth session with the photographer"
     "Do you want to see it?"
     menu:
@@ -2591,7 +2593,7 @@ label GalleryFourthSessionWithThePhotographer_1(menu_choice = None):
             pass
     return
 
-label GalleryHotspringsFlashback_1(menu_choice = None):
+label GalleryHotspringsFlashback_1:
     "Hotsprings flashback"
     "Do you want to see it?"
     menu:
@@ -2695,7 +2697,7 @@ label GalleryHotspringsFlashback_1(menu_choice = None):
             pass
     return
 
-label GalleryPhotoShootTogether_1(menu_choice = None):
+label GalleryPhotoShootTogether_1:
     "photo shoot together"
     "Do you want to see it?"
     menu:
@@ -2914,7 +2916,7 @@ label GalleryPhotoShootTogether_1(menu_choice = None):
             pass
     return
 
-label GalleryJohanAndLeynaFuck_1(menu_choice = None):
+label GalleryJohanAndLeynaFuck_1:
     "Johan and Leyna fuck"
     "Do you want to see it?"
     menu:
@@ -2958,7 +2960,7 @@ label GalleryJohanAndLeynaFuck_1(menu_choice = None):
                     $ flash_screen(wait=True)
                     Johan "(Shit why do I have to think about that now?)"
                     Leyna "Johan? are you okay? you feel a little... strange..."
-                    hide fotoerotica8
+                    scene johanfollar9
                     Johan "Y-yes, I'm fine!"
                     Johan "Pu-put yourself like this!"
                     pause
@@ -3041,7 +3043,7 @@ label GalleryJohanAndLeynaFuck_1(menu_choice = None):
             pass
     return
 
-label GalleryGameWithAlexa_1(menu_choice = None):
+label GalleryGameWithAlexa_1:
     "Game with Alexa"
     "Do you want to see it?"
     menu:
@@ -3212,7 +3214,7 @@ label GalleryGameWithAlexa_1(menu_choice = None):
             pass
     return
 
-label GalleryGameWithAlexa_2(menu_choice = None):
+label GalleryGameWithAlexa_2:
     "Game with Alexa"
     "Do you want to see it?"
     menu:
@@ -3383,7 +3385,7 @@ label GalleryGameWithAlexa_2(menu_choice = None):
             pass
     return
 
-label GalleryBarDay1_1(menu_choice = None):
+label GalleryBarDay1_1:
     "Bar day1"
     "Do you want to see it?"
     menu:
@@ -3515,7 +3517,7 @@ label GalleryBarDay1_1(menu_choice = None):
                 Villager "OOOh so you'll think about it? well that's almost a yes"
                 Leyna "I make no promises..."
                 Villager2 "Okay okay, let's hope you decide, you will have us as your number one fans"
-                hide trabajobar22
+                scene trabajobar21
             Leyna "Well... not right now guys... I'm going to get dressed"
             Barman "Too bad..."
             scene black with dissolve
@@ -3533,7 +3535,7 @@ label GalleryBarDay1_1(menu_choice = None):
             pass
     return
 
-label GalleryJohanAndAlexa_1(menu_choice = None):
+label GalleryJohanAndAlexa_1:
     "Johan and Alexa?"
     "Do you want to see it?"
     menu:
@@ -3648,7 +3650,7 @@ label GalleryJohanAndAlexa_1(menu_choice = None):
             pass
     return
 
-label GalleryBarDay2_1(menu_choice = None):
+label GalleryBarDay2_1:
     "bar day2"
     "Do you want to see it?"
     menu:
@@ -3917,7 +3919,7 @@ label GalleryBarDay2_1(menu_choice = None):
             pass
     return
 
-label GalleryTryingTheNewToy_1(menu_choice = None):
+label GalleryTryingTheNewToy_1:
     "trying the new toy"
     "Do you want to see it?"
     menu:
@@ -3966,13 +3968,13 @@ label GalleryTryingTheNewToy_1(menu_choice = None):
             pause
             scene black with dissolve
             hide dildo9
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_GalleryEV028_1_SetPlayerLocation
             # fade in
         "No":
             pass
     return
 
-label GalleryAnalAtTheFoodStall_1(menu_choice = None):
+label GalleryAnalAtTheFoodStall_1:
     "Anal at the food stall"
     "Do you want to see it?"
     menu:
@@ -4228,7 +4230,7 @@ label GalleryAnalAtTheFoodStall_1(menu_choice = None):
             pass
     return
 
-label GalleryNightPartyAtTheFestival_1(menu_choice = None):
+label GalleryNightPartyAtTheFestival_1:
     "Night party at the festival"
     "Do you want to see it?"
     menu:
@@ -4657,7 +4659,7 @@ label GalleryNightPartyAtTheFestival_1(menu_choice = None):
             pass
     return
 
-label GalleryRiverWithAlexa2_1(menu_choice = None):
+label GalleryRiverWithAlexa2_1:
     "River with Alexa 2"
     "Do you want to see it?"
     menu:
@@ -4862,7 +4864,7 @@ label GalleryRiverWithAlexa2_1(menu_choice = None):
             pass
     return
 
-label GalleryPhotoshootInTheHotsprings_1(menu_choice = None):
+label GalleryPhotoshootInTheHotsprings_1:
     "Photoshoot in the hotsprings"
     "Do you want to see it?"
     menu:

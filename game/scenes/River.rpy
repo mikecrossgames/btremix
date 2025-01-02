@@ -1,4 +1,4 @@
-label Riverentradario_0(menu_choice = None):
+label Riverentradario_0:
     pause 0.22
     pause 0.22
     Villager "Hey! you can't pass with clothes on! Tradition says one can only pass if he goes naked."
@@ -16,16 +16,16 @@ label Riverentradario_0(menu_choice = None):
             Johan "Perfect, we'll interview a couple of people and take photos of those who agree"
             hide plano_mujer_sorpresa_lado
             $ set_switch("separated_in_the_river", True)
-            $ player_location = "River"
+            call SetPlayerLocation("River") from _call_Riverentradario_0_SetPlayerLocation
             pause 0.24
         "I'm not ready yet":
             Leyna "I think I'm not ready yet. I have to think about this a little more."
             Johan "Okey, no problem. We'll do it another time."
-            $ player_location = "Town"
+            call SetPlayerLocation("Town") from _call_Riverentradario_0_SetPlayerLocation_1
             pause 0.24
     return
 
-label RiverNPCEventMan(menu_choice = None):
+label RiverNPCEventMan:
     Johan "Good afternoon, me and my wife are doing a report on the traditions of this town..."
     "... I was wondering if you would mind answering some questions for me and let me take some pictures of you by the river."
     show general_chica_rio:
@@ -180,7 +180,7 @@ label RiverNPCEventMan(menu_choice = None):
                 scene black with dissolve
                 hide rio15
                 # fade in
-                $ player_location = "Town"
+                call SetPlayerLocation("Town") from _call_RiverNPCEventMan_SetPlayerLocation
                 pause 0.24
                 $ corruption = corruption + 2
                 "CORRUPTION +2"
@@ -188,7 +188,7 @@ label RiverNPCEventMan(menu_choice = None):
                 Johan "No, enough guys! We are leaving..."
                 scene black with dissolve
                 # fade in
-                $ player_location = "Town"
+                call SetPlayerLocation("Town") from _call_RiverNPCEventMan_SetPlayerLocation_1
                 pause 0.24
                 $ corruption = corruption + 1
                 "CORRUPTION +1"
@@ -211,7 +211,7 @@ label RiverNPCEventMan(menu_choice = None):
         scene black with dissolve
         hide rio15
         # fade in
-        $ player_location = "Town"
+        call SetPlayerLocation("Town") from _call_RiverNPCEventMan_SetPlayerLocation_2
         pause 0.24
         $ corruption = corruption + 2
         "CORRUPTION +2"

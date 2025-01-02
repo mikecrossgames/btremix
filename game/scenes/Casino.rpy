@@ -98,7 +98,7 @@ label Casinohombredelasuerte:
     Leyna "Johan ... Let's take a walk around the festival to see what can we do"
     Johan "Sure..."
     $ set_switch("lucky_person", True)
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Casinohombredelasuerte_SetPlayerLocation
     pause 0.24
     if switch("ate_the_fruit"):
         $ corruption = corruption + 2

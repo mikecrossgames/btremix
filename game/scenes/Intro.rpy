@@ -1,4 +1,4 @@
-label IntroOhHelloThere(menu_choice = None):
+label IntroOhHelloThere:
     scene black with dissolve
     show pantallanegro with dissolve:
         xsize 979
@@ -58,7 +58,7 @@ label IntroOhHelloThere(menu_choice = None):
     "And that's why she helps me at work until she can get one"
     "Even with all our problems we love and support each other and we have a simple and happy life."
     hide plano_mujer_cerca
-    $ player_location = "Apartment"
+    call SetPlayerLocation("Apartment") from _call_IntroEV001_SetPlayerLocation
     stop music fadeout 1
     return
 

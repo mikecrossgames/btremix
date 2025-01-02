@@ -13,7 +13,7 @@ label Photoshoot2Sesionfotografica2:
     OldMan "Let's start with the first of the two, with that one you will pose alone. With the second you will pose together"
     Leyna "O-okay"
     scene black with dissolve
-    $ player_location = "Photoshoot2"
+    call SetPlayerLocation("Photoshoot2") from _call_Photoshoot2Sesionfotografica2_SetPlayerLocation
     # fade in
     pause 0.2
     Leyna "Nightgown with straps... it's pretty"
@@ -126,7 +126,7 @@ label Photoshoot2Sesionfotografica2:
     scene black with dissolve
     hide fotografo24
     stop music fadeout 1
-    $ player_location = "Town"
+    call SetPlayerLocation("Town") from _call_Photoshoot2Sesionfotografica2_SetPlayerLocation_1
     # fade in
     pause 0.26
     show plano_mujer_timida:

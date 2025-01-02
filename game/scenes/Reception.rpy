@@ -33,7 +33,7 @@ label Receptionrecepcion_4:
     $ item_flowers = False
     Receptionist "Well, then let's see what the work consists of"
     scene black with dissolve
-    $ player_location = "HotSpringsBathroom"
+    call SetPlayerLocation("HotSpringsBathroom") from _call_Receptionrecepcion_4_SetPlayerLocation
     # fade in
     return
 
@@ -57,14 +57,14 @@ label Receptioneventohotsprings_0:
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     pause 0.6
-    $ player_location = "HotSpringsBathroom"
+    call SetPlayerLocation("HotSpringsBathroom") from _call_Receptioneventohotsprings_0_SetPlayerLocation
     # fade in
     pause 0.24
     Leyna "There's nobody, I have the place for myself!"
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
     pause 0.6
-    $ player_location = "HotSpringsBathroom"
+    call SetPlayerLocation("HotSpringsBathroom") from _call_Receptioneventohotsprings_0_SetPlayerLocation_1
     # fade in
     pause 0.6
     Leyna "Aaah... good... and the water is perfect how relaxing!"
@@ -78,7 +78,7 @@ label Receptioneventohotsprings_0:
     Leyna "Well... closing my eyes for a few minutes won't hurt"
     scene black with dissolve
     hide onsen1
-    $ player_location = "HotSprings"
+    call SetPlayerLocation("HotSprings") from _call_Receptioneventohotsprings_0_SetPlayerLocation_2
     # fade in
     return
 
@@ -152,7 +152,7 @@ label ReceptionDamn_0:
     pause
     scene black with dissolve
     hide trabajo16
-    $ player_location = "Reception"
+    call SetPlayerLocation("Reception") from _call_ReceptionEV005_0_SetPlayerLocation
     # fade in
     pause 0.26
     pause 0.2
@@ -166,7 +166,7 @@ label ReceptionDamn_0:
     Leyna "Great thank you very much"
     scene black with dissolve
     play sound "audio/Equip2.ogg" volume 0.9 noloop
-    $ player_location = "HotSpringsExterior"
+    call SetPlayerLocation("HotSpringsExterior") from _call_ReceptionEV005_0_SetPlayerLocation_1
     # fade in
     pause 0.22
     $ leyna_work = 10
@@ -190,7 +190,7 @@ label Receptionhotspringsjuntos_0:
     Johan "Of course! You can do it!"
     scene black with dissolve
     hide plano_mujer_sonrisa
-    $ player_location = "HotSpringsWithJohan"
+    call SetPlayerLocation("HotSpringsWithJohan") from _call_Receptionhotspringsjuntos_0_SetPlayerLocation
     # fade in
     return
 

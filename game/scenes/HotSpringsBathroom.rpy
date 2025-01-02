@@ -17,7 +17,7 @@ label HotSpringsBathroomeventoenseatrabajo:
     Leyna "Here is the uniform. Get changed and we'll see you at the reception"
     $ leyna_work = 9
     scene black with dissolve
-    $ player_location = "Reception"
+    call SetPlayerLocation("Reception") from _call_HotSpringsBathroomeventoenseatrabajo_SetPlayerLocation
     # fade in
     return
 

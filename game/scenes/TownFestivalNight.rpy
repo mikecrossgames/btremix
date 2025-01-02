@@ -17,7 +17,7 @@ label TownFestivalNighteventoblackmail_0:
     Leyna "Oh... sure..."
     scene black with dissolve
     hide blackmail2
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_0_SetPlayerLocation
     # fade in
     if switch("corruption_average"):
         YoungVillager "Wow Leyna, I have to say that today you look even more beautiful than usual, if that's possible"
@@ -107,7 +107,7 @@ label TownFestivalNighteventoblackmail_0:
         scene black with dissolve
         hide blackmail15
         hide blackmail16
-        $ player_location = "TownFestivalNight"
+        call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_0_SetPlayerLocation_1
         pause 0.24
         # fade in
         YoungVillager2 "I must say that your wife looks beautiful today, Johan"
@@ -166,7 +166,7 @@ label TownFestivalNighteventoblackmail_0:
         YoungVillager "Hmmm yeah sorry Johan! We stopped already"
         Leyna "...."
         scene black with dissolve
-        $ player_location = "TownFestivalNight"
+        call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_0_SetPlayerLocation_2
         pause 0.24
         hide noblackmail3
         # fade in
@@ -189,7 +189,7 @@ label TownFestivalNighteventoblackmail_1:
     Leyna "Oh... sure..."
     scene black with dissolve
     hide blackmail2
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_1_SetPlayerLocation
     # fade in
     if switch("corruption_average"):
         YoungVillager "Wow Leyna, I have to say that today you look even more beautiful than usual, if that's possible"
@@ -279,7 +279,7 @@ label TownFestivalNighteventoblackmail_1:
         scene black with dissolve
         hide blackmail15
         hide blackmail16
-        $ player_location = "TownFestivalNight"
+        call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_1_SetPlayerLocation_1
         pause 0.24
         # fade in
         YoungVillager2 "I must say that your wife looks beautiful today, Johan"
@@ -338,7 +338,7 @@ label TownFestivalNighteventoblackmail_1:
         YoungVillager "Hmmm yeah sorry Johan! We stopped already"
         Leyna "...."
         scene black with dissolve
-        $ player_location = "TownFestivalNight"
+        call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_1_SetPlayerLocation_2
         pause 0.24
         hide noblackmail3
         # fade in
@@ -361,7 +361,7 @@ label TownFestivalNighteventoblackmail_2:
     Leyna "Oh... sure..."
     scene black with dissolve
     hide blackmail2
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_2_SetPlayerLocation
     # fade in
     if switch("corruption_average"):
         YoungVillager "Wow Leyna, I have to say that today you look even more beautiful than usual, if that's possible"
@@ -451,7 +451,7 @@ label TownFestivalNighteventoblackmail_2:
         scene black with dissolve
         hide blackmail15
         hide blackmail16
-        $ player_location = "TownFestivalNight"
+        call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_2_SetPlayerLocation_1
         pause 0.24
         # fade in
         YoungVillager2 "I must say that your wife looks beautiful today, Johan"
@@ -510,7 +510,7 @@ label TownFestivalNighteventoblackmail_2:
         YoungVillager "Hmmm yeah sorry Johan! We stopped already"
         Leyna "...."
         scene black with dissolve
-        $ player_location = "TownFestivalNight"
+        call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoblackmail_2_SetPlayerLocation_2
         pause 0.24
         hide noblackmail3
         # fade in
@@ -541,7 +541,7 @@ label TownFestivalNighteventoescondite_0:
     Johan "Well, if it's no problem, the truth is I'm starving"
     Husband "No more talk. Have a seat"
     scene black with dissolve
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoescondite_0_SetPlayerLocation
     $ hiding_place = 1
     # fade in
     pause 0.2
@@ -561,8 +561,7 @@ label TownFestivalNighteventoescondite_0:
     Leyna "Hahaha this is going to be fun, if you haven't found us in half an hour, we'll meet you at the square."
     Husband "Yes, good idea"
     scene black with dissolve
-    $ player_location = "Glade"
-    $ tint_screen((-68, -68, 0, 68), 60, True)
+    call SetPlayerLocation("Glade") from _call_TownFestivalNighteventoescondite_0_SetPlayerLocation_1
     hide pantallanegro
     # fade in
     return
@@ -588,7 +587,7 @@ label TownFestivalNighteventoescondite_1:
     Johan "Well, if it's no problem, the truth is I'm starving"
     Husband "No more talk. Have a seat"
     scene black with dissolve
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNighteventoescondite_1_SetPlayerLocation
     $ hiding_place = 1
     # fade in
     pause 0.2
@@ -608,8 +607,7 @@ label TownFestivalNighteventoescondite_1:
     Leyna "Hahaha this is going to be fun, if you haven't found us in half an hour, we'll meet you at the square."
     Husband "Yes, good idea"
     scene black with dissolve
-    $ player_location = "Glade"
-    $ tint_screen((-68, -68, 0, 68), 60, True)
+    call SetPlayerLocation("Glade") from _call_TownFestivalNighteventoescondite_1_SetPlayerLocation_1
     hide pantallanegro
     # fade in
     return
@@ -619,7 +617,7 @@ label TownFestivalNightIShouldLookForJohanThisGameHasGoneLongerThanIdLike_0:
     Leyna "I should look for Johan, this game has gone longer than I'd like"
     scene black with dissolve
     $ set_switch("final_hideout", True)
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNightEV136_0_SetPlayerLocation
     # fade in
     pause 0.40
     pause 0.22
@@ -633,7 +631,7 @@ label TownFestivalNightIShouldLookForJohanThisGameHasGoneLongerThanIdLike_0:
     Leyna "Okay guys... let's have a couple of beers"
     Alexa "Good!! We're meeting them for a drink nearby"
     scene black with dissolve
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNightEV136_0_SetPlayerLocation_1
     # fade in
     Alexa "We are here! Did you get the beers?"
     Villager "Yes, we have plenty for the whole night"
@@ -767,13 +765,13 @@ label TownFestivalNightIShouldLookForJohanThisGameHasGoneLongerThanIdLike_0:
     Johan "Sure! (for a second I thought that... anyway, it's just my imagination...)"
     scene black with dissolve
     hide rioleyna14
-    $ player_location = "TownNight"
+    call SetPlayerLocation("TownNight") from _call_TownFestivalNightEV136_0_SetPlayerLocation_2
     # fade in
     pause 0.28
     Johan "It looks like everyone has already gone to sleep... We better go to sleep too"
     Leyna "Yes... you are right"
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_TownFestivalNightEV136_0_SetPlayerLocation_3
     show pantallanegro with dissolve:
         xsize 979
         ysize 720
@@ -800,7 +798,7 @@ label TownFestivalNightIShouldLookForJohanThisGameHasGoneLongerThanIdLike_1:
     Leyna "I should look for Johan, this game has gone longer than I'd like"
     scene black with dissolve
     $ set_switch("final_hideout", True)
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNightEV136_1_SetPlayerLocation
     # fade in
     pause 0.40
     pause 0.22
@@ -814,7 +812,7 @@ label TownFestivalNightIShouldLookForJohanThisGameHasGoneLongerThanIdLike_1:
     Leyna "Okay guys... let's have a couple of beers"
     Alexa "Good!! We're meeting them for a drink nearby"
     scene black with dissolve
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_TownFestivalNightEV136_1_SetPlayerLocation_1
     # fade in
     Alexa "We are here! Did you get the beers?"
     Villager "Yes, we have plenty for the whole night"
@@ -948,13 +946,13 @@ label TownFestivalNightIShouldLookForJohanThisGameHasGoneLongerThanIdLike_1:
     Johan "Sure! (for a second I thought that... anyway, it's just my imagination...)"
     scene black with dissolve
     hide rioleyna14
-    $ player_location = "TownNight"
+    call SetPlayerLocation("TownNight") from _call_TownFestivalNightEV136_1_SetPlayerLocation_2
     # fade in
     pause 0.28
     Johan "It looks like everyone has already gone to sleep... We better go to sleep too"
     Leyna "Yes... you are right"
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_TownFestivalNightEV136_1_SetPlayerLocation_3
     show pantallanegro with dissolve:
         xsize 979
         ysize 720

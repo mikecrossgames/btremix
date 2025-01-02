@@ -64,7 +64,7 @@ label Innposadero_3:
     Johan "Thank you very much! have a nice evening"
     Innkeeper "Yeah, same here... (Not as good as yours buying that kind of stuff... with the wife he's got, lucky motherfucker)"
     pause 0.26
-    $ player_location = "InnRooms"
+    call SetPlayerLocation("InnRooms") from _call_Innposadero_3_SetPlayerLocation
     pause 0.24
     Johan "Well... I'm going to open it, I can't help it anymore"
     play sound "audio/Equip2.ogg" volume 0.9 noloop
@@ -91,7 +91,7 @@ label InnSueojohanpart2_0:
     Johan "Hmm? The festival? Yeah yeah right... Let's go"
     scene black with dissolve
     $ johan_dream = 2
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_InnSueojohanpart2_0_SetPlayerLocation
     # fade in
     return
 
@@ -107,7 +107,7 @@ label Inninicionochefiesta_0:
     Johan "Sure, I'll be right here"
     scene black with dissolve
     hide expresion_gui_o_lengua
-    $ player_location = "InnNight"
+    call SetPlayerLocation("InnNight") from _call_Inninicionochefiesta_0_SetPlayerLocation
     # fade in
     pause 0.2
     Johan "Fuck, it's taking forever! What's she doing?"
@@ -121,18 +121,18 @@ label Inninicionochefiesta_0:
     Johan "Of course, I can't wait to show off my woman. Let's go for a walk around town and grab some dinner!"
     scene black with dissolve
     hide cambioropa
-    $ player_location = "TownFestivalNight"
+    call SetPlayerLocation("TownFestivalNight") from _call_Inninicionochefiesta_0_SetPlayerLocation_1
     # fade in
     pause 0.24
     $ ritual = 3
     return
 
-label InneventoJohanyalexa_0(menu_choice = None):
+label InneventoJohanyalexa_0:
     scene pantallanegro:
         xsize 979
         ysize 720
     "Meanwhile Johan was on his way to continue his work"
-    $ player_location = "Path"
+    call SetPlayerLocation("Path") from _call_InneventoJohanyalexa_0_SetPlayerLocation
     hide pantallanegro
     pause 0.2
     Johan "At the end I got nervous at the bar watching Leyna surrounded by men and being semi naked...."
@@ -150,7 +150,7 @@ label InneventoJohanyalexa_0(menu_choice = None):
         hide johanfollar9
     Johan "Anyway, enough of this nonsense... I should go to the festival. I'm meeting the mayor for the interview"
     scene black with dissolve
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_InneventoJohanyalexa_0_SetPlayerLocation_1
     # fade in
     pause 0.28
     pause 0.2
@@ -232,7 +232,7 @@ label InneventoJohanyalexa_0(menu_choice = None):
             Alexa "Work?...I see"
             scene black with dissolve
             hide johanxalexa12
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_InneventoJohanyalexa_0_SetPlayerLocation_2
             show pantallanegro with dissolve:
                 xsize 979
                 ysize 720
@@ -246,7 +246,7 @@ label InneventoJohanyalexa_0(menu_choice = None):
             Johan "I'm sorry..."
             scene black with dissolve
             hide pantallanegro
-            $ player_location = "Path"
+            call SetPlayerLocation("Path") from _call_InneventoJohanyalexa_0_SetPlayerLocation_3
             # fade in
             pause 0.28
             pause 0.2
@@ -255,7 +255,7 @@ label InneventoJohanyalexa_0(menu_choice = None):
             scene pantallanegro:
                 xsize 979
                 ysize 720
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_InneventoJohanyalexa_0_SetPlayerLocation_4
             "The next day..."
             hide pantallanegro
             Leyna "Well... one more day! Johan has already left to continue with his interviews... I should go to work at the bar now"
@@ -264,7 +264,7 @@ label InneventoJohanyalexa_0(menu_choice = None):
 
 label InnToInn_0:
     scene black with dissolve
-    $ player_location = "Inn"
+    call SetPlayerLocation("Inn") from _call_InnEV016_0_SetPlayerLocation
     # fade in
     pause 0.2
     Johan "Hey Leyna, good morning..."
@@ -290,7 +290,7 @@ label InnToInn_0:
     scene black with dissolve
     $ set_switch("breakfast", True)
     pause 0.26
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_InnEV016_0_SetPlayerLocation_1
     # fade in
     return
 

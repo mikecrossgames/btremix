@@ -13,7 +13,7 @@ label TownNightEhhhYouuuuuuuuu_0:
     $ bottle_event = 1
     return
 
-label TownNightEhhhYouuuuuuuuu_2(menu_choice = None):
+label TownNightEhhhYouuuuuuuuu_2:
     YoungVillager "Good night guys"
     Johan "We got the bottles! Your grandmother almost catches us"
     play sound "audio/Recovery.ogg" volume 0.9 noloop

@@ -1,4 +1,4 @@
-label MassageParlorICantWaitToHaveARelaxingMassage_0(menu_choice = None):
+label MassageParlorICantWaitToHaveARelaxingMassage_0:
     play music "audio/Theme2.ogg" loop volume 0.9
     pause 0.24
     pause 0.2
@@ -114,7 +114,7 @@ label MassageParlorICantWaitToHaveARelaxingMassage_0(menu_choice = None):
         hide masagefruta9
         hide masagefruta10
         hide masagefruta11
-        $ player_location = "Festival"
+        call SetPlayerLocation("Festival") from _call_MassageParlorEV003_0_SetPlayerLocation
         # fade in
         pause 0.26
         $ set_switch("massage_sex", True)
@@ -159,7 +159,7 @@ label MassageParlorICantWaitToHaveARelaxingMassage_0(menu_choice = None):
         $ set_switch("massage_masturbation", True)
         scene black with dissolve
         hide masagemastur5
-        $ player_location = "MassageParlor"
+        call SetPlayerLocation("MassageParlor") from _call_MassageParlorEV003_0_SetPlayerLocation_1
         # fade in
         pause 0.36
         Johan "Mmm, where is Leyna? she should have finished already. Should I go see her? ... I don't want to interrupt the massage"
@@ -179,7 +179,7 @@ label MassageParlorICantWaitToHaveARelaxingMassage_0(menu_choice = None):
                 pause 0.2
                 Johan "(.. I'm going to pretend that I haven't seen anything.. I'll stay here so no one can see her and wait for her to finish.. Leyna..)"
                 scene black with dissolve
-                $ player_location = "Festival"
+                call SetPlayerLocation("Festival") from _call_MassageParlorEV003_0_SetPlayerLocation_2
                 # fade in
                 pause 0.26
                 Leyna "I feel soooo good and relaxed..."
@@ -189,7 +189,7 @@ label MassageParlorICantWaitToHaveARelaxingMassage_0(menu_choice = None):
                 Johan "Nah, I don't want to interrupt"
                 Johan "I'll just wait here"
                 scene black with dissolve
-                $ player_location = "Festival"
+                call SetPlayerLocation("Festival") from _call_MassageParlorEV003_0_SetPlayerLocation_3
                 # fade in
                 pause 0.26
                 Leyna "I feel soooo good and relaxed..."
@@ -200,7 +200,7 @@ label MassageParlorICantWaitToHaveARelaxingMassage_0(menu_choice = None):
     if not switch("ate_the_fruit"):
         $ corruption = corruption + 2
     scene black with dissolve
-    $ player_location = "InnNight"
+    call SetPlayerLocation("InnNight") from _call_MassageParlorEV003_0_SetPlayerLocation_4
     # fade in
     return
 

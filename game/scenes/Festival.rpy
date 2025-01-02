@@ -1,3 +1,23 @@
+label Festivalworkerdentrofestival_0:
+    Worker "Hey guys!"
+    Johan "Hi! We already have the festival clothes"
+    Worker "The opening will be tomorrow, at the moment there's nothing interesting here,but you can take a look"
+    Leyna "Thank you! We won't bother you for long"
+    Worker "Let me know when you're done, I have to close the access"
+    $ elder_festival = 7
+    return
+
+label Festivalworkerdentrofestival_1:
+    Worker "It's getting late, we must go now"
+    Worker "Go to rest, see you tomorrow at the inauguration"
+    Leyna "Thanks for everything"
+    pause 0.26
+    scene black with dissolve
+    call SetPlayerLocation("Path") from _call_Festivalworkerdentrofestival_1_SetPlayerLocation
+    # fade in
+    $ elder_festival = 8
+    return
+
 label Festivalintrofestival_0:
     Leyna "Is he the worker we helped yesterday?"
     Johan "Yes! Let's talk with him and see if he can guide us a bit"
@@ -16,9 +36,24 @@ label Festivalintrofestival_0:
     Worker "Perfect! Follow me then"
     pause 0.26
     scene black with dissolve
-    $ player_location = "Mountains"
+    call SetPlayerLocation("Mountains") from _call_Festivalintrofestival_0_SetPlayerLocation
     # fade in
     $ elder_festival = 10
+    return
+
+label Festivalintrosorteo_0:
+    scene black with dissolve
+    # fade in
+    if switch("ate_the_fruit"):
+        Leyna "(I feel... weird...are these the effects of the strange fruit?)"
+    pause 0.24
+    Worker "Okay guys, follow me. We're late for the opening"
+    Leyna "Y..Yeah"
+    pause 0.52
+    pause 0.50
+    scene black with dissolve
+    call SetPlayerLocation("Casino") from _call_Festivalintrosorteo_0_SetPlayerLocation
+    # fade in
     return
 
 label FestivalFoodStand_0:
@@ -189,7 +224,7 @@ label FestivalPhotoSession_0:
         Johan "Yeah yeah..."
         scene black with dissolve
         hide festivalfotos11
-        $ player_location = "Festival"
+        call SetPlayerLocation("Festival") from _call_FestivalPhotoSession_0_SetPlayerLocation
         # fade in
         pause 0.28
         Johan "Moron!"
@@ -211,7 +246,7 @@ label FestivalPhotoSession_0:
         Johan "Yeah yeah..."
         scene black with dissolve
         hide festivalfotos11
-        $ player_location = "Festival"
+        call SetPlayerLocation("Festival") from _call_FestivalPhotoSession_0_SetPlayerLocation_1
         # fade in
         pause 0.28
         Johan "Moron!"
@@ -224,7 +259,7 @@ label FestivalPhotoSession_0:
         $ corruption = corruption + 2
     return
 
-label Festivaliniciacionadolescencia_0(menu_choice = None):
+label Festivaliniciacionadolescencia_0:
     pause 0.26
     pause 0.2
     Worker "Great to see you guys, you're just in time!"
@@ -305,13 +340,26 @@ label Festivaliniciacionadolescencia_0(menu_choice = None):
     Leyna "(well let's get this over with, I'm hungry)"
     scene black with dissolve
     hide pantallanegro
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Festivaliniciacionadolescencia_0_SetPlayerLocation
     # fade in
     $ set_switch("find_youth", True)
     Leyna "Well... let's find that young man and give him the damn kiss"
     return
 
-label FestivalButtPlugEvent_1(menu_choice = None):
+label Festivaliniciacionadolescencia_2:
+    pause 0.2
+    pause 0.22
+    pause 0.22
+    Johan "Leyna! How did the ritual go?"
+    Leyna "....Good...."
+    Johan "??? Are you ok?"
+    Leyna "Yes... let's take a walk"
+    scene black with dissolve
+    $ ritual = 2
+    # fade in
+    return
+
+label FestivalButtPlugEvent_1:
     scene analcomida1
     Leyna "Hello sir, what do you need?"
     "Fat Villager: (WOw who is this girl? I was expecting the same guy as always) Ehm yeah, a beer and some marinated meat thanks"
@@ -543,8 +591,7 @@ label FestivalButtPlugEvent_1(menu_choice = None):
     scene black with dissolve
     $ butt_plug = 4
     hide analcomida24
-    $ player_location = "Festival"
-    $ tint_screen((68, -34, -34, 0), 60, True)
+    call SetPlayerLocation("Festival") from _call_FestivalButtPlugEvent_1_SetPlayerLocation
     # fade in
     play sound "audio/Crow.ogg" volume 0.9 noloop
     Leyna "Well, it's getting late, the other stalls are opening for the party tonight, we should be closing"
@@ -569,9 +616,8 @@ label FestivalButtPlugEvent_1(menu_choice = None):
     # fade in
     Leyna "Well... I've finished what I had to do, time to look for Johan, he should be here at the festival"
     scene black with dissolve
-    $ player_location = "FestivalNight"
+    call SetPlayerLocation("FestivalNight") from _call_FestivalButtPlugEvent_1_SetPlayerLocation_1
     # fade in
-    $ tint_screen((-68, -68, 0, 68), 60, True)
     Leyna "It seems that many of the food stall workers have not yet arrived"
     Leyna "I'm sure Johan is having a drink with his new friends, better go find him quickly before he drinks too much"
     Leyna "Shit, I can't go dressed like this, can I? and less so with this stuff stuffed in the back"

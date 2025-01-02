@@ -1,4 +1,4 @@
-label FestivalNightLeynaropa(menu_choice = None):
+label FestivalNightLeynaropa:
     scene festivalnoche1:
         xsize 814
         ysize 625
@@ -210,7 +210,7 @@ label FestivalNightLeynaropa(menu_choice = None):
                     scene black with dissolve
                     hide pantallanegro
                     stop music fadeout 1
-                    $ player_location = "Glade"
+                    call SetPlayerLocation("Glade") from _call_FestivalNightLeynaropa_SetPlayerLocation
                     # fade in
                 "I can't do it":
                     Johan "I-I'm sorry, I can't... I love Leyna"
@@ -230,7 +230,7 @@ label FestivalNightLeynaropa(menu_choice = None):
                     scene black with dissolve
                     hide pantallanegro
                     stop music fadeout 1
-                    $ player_location = "Glade"
+                    call SetPlayerLocation("Glade") from _call_FestivalNightLeynaropa_SetPlayerLocation_1
                     # fade in
         "Change clothes":
             $ festival_clothes = 2
@@ -408,7 +408,7 @@ label FestivalNightLeynaropa(menu_choice = None):
                     scene black with dissolve
                     hide pantallanegro
                     stop music fadeout 1
-                    $ player_location = "Glade"
+                    call SetPlayerLocation("Glade") from _call_FestivalNightLeynaropa_SetPlayerLocation_2
                     # fade in
                 "I can't do it":
                     Johan "I-I'm sorry, I can't... I love Leyna very much"
@@ -428,7 +428,7 @@ label FestivalNightLeynaropa(menu_choice = None):
                     scene black with dissolve
                     hide pantallanegro
                     stop music fadeout 1
-                    $ player_location = "Glade"
+                    call SetPlayerLocation("Glade") from _call_FestivalNightLeynaropa_SetPlayerLocation_3
                     # fade in
     return
 

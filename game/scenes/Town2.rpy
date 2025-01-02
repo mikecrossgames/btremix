@@ -51,7 +51,7 @@ label Town2MeetPhotographer_0:
     $ set_switch("johan_photo", True)
     return
 
-label Town2ToRiverEvent_1(menu_choice = None):
+label Town2ToRiverEvent_1:
     Johan "I don't know if I want to go in there, you know they force us to go naked... and I don't like the idea of them seeing you naked"
     Leyna "Well... since we arrived, they have already seen me naked, right? just because they see me again shouldn't be a problem"
     Johan "I guess you're right... but I guess I still don't like the idea of them seeing you naked, you're my wife"
@@ -198,7 +198,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
                 Leyna "Y-yes (waste of time? but you just cummed inside me... you came so fast... were you liking it johan?)"
                 scene black with dissolve
                 hide riosexo23
-                $ player_location = "Town2"
+                call SetPlayerLocation("Town2") from _call_Town2ToRiverEvent_1_SetPlayerLocation
                 # fade in
                 pause 0.26
                 play sound "audio/Computer.ogg" volume 0.9 noloop
@@ -264,7 +264,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
                 hide riosexo24
                 hide riosexo25
                 hide riosexo26
-                $ player_location = "Town2"
+                call SetPlayerLocation("Town2") from _call_Town2ToRiverEvent_1_SetPlayerLocation_1
                 # fade in
                 pause 0.26
                 play sound "audio/Computer.ogg" volume 0.9 noloop
@@ -281,7 +281,7 @@ label Town2ToRiverEvent_1(menu_choice = None):
             pause 0.24
     return
 
-label Town2LeynaJohanSex_0(menu_choice = None):
+label Town2LeynaJohanSex_0:
     pause 0.28
     pause 0.2
     Johan "(... why do I feel this way?... I can't stop thinking about what just happened)"
@@ -292,11 +292,11 @@ label Town2LeynaJohanSex_0(menu_choice = None):
     Leyna "Su-sure"
     pause 0.26
     scene black with dissolve
-    $ player_location = "Inn"
+    call SetPlayerLocation("Inn") from _call_Town2LeynaJohanSex_0_SetPlayerLocation
     # fade in
     pause 0.26
     scene black with dissolve
-    $ player_location = "InnRooms"
+    call SetPlayerLocation("InnRooms") from _call_Town2LeynaJohanSex_0_SetPlayerLocation_1
     # fade in
     pause 0.30
     scene johanfollar1
@@ -338,7 +338,7 @@ label Town2LeynaJohanSex_0(menu_choice = None):
             $ flash_screen(wait=True)
             Johan "(Shit why do I have to think about that now?)"
             Leyna "Johan? are you okay? you feel a little... strange..."
-            hide fotoerotica8
+            scene johanfollar9
             Johan "Y-yes, I'm fine!"
             Johan "Pu-put yourself like this!"
             pause
@@ -368,7 +368,7 @@ label Town2LeynaJohanSex_0(menu_choice = None):
             $ set_switch("johan_and_leyna_sex", True)
             $ johan_leyna_sex = 1
             hide johanfollar14
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Town2LeynaJohanSex_0_SetPlayerLocation_2
             # fade in
             pause 0.26
             Leyna "Would you like a beer?"
@@ -426,11 +426,11 @@ label Town2LeynaJohanSex_0(menu_choice = None):
             $ set_switch("johan_and_leyna_sex", True)
             $ johan_leyna_sex = 2
             hide johanfollar12
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Town2LeynaJohanSex_0_SetPlayerLocation_3
             # fade in
     return
 
-label Town2chicoencontrado_0(menu_choice = None):
+label Town2chicoencontrado_0:
     Leyna "I found you!"
     scene mamada1
     YoungVillager "Right and now comes the best part, go ahead and give me a kiss"
@@ -571,13 +571,23 @@ label Town2chicoencontrado_0(menu_choice = None):
             scene black with dissolve
             hide mamada26
     $ ritual = 1
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Town2chicoencontrado_0_SetPlayerLocation
     # fade in
     $ set_switch("find_youth", False)
     return
 
 label Town2musicapueblo_2:
     play music "audio/Town1.ogg" loop volume 0.9
+    return
+
+label Town2chicofestival_0:
+    YoungVillager "it's not me but if you want to kiss me, go ahead"
+    Leyna "No, thanks"
+    return
+
+label Town2NPCAnotherFestivalBoy_0:
+    YoungVillager "Hey! ready for the kiss?"
+    Leyna "You are not the guy I have to find!"
     return
 
 label Town2eventoflashback_0:
@@ -630,7 +640,7 @@ label Town2JohanIWasLookingForYou_1:
     Leyna "Give me a second and I'll put it on right away, honey... I'll be right back"
     Johan "Of course! (WOw I can't believe this is happening)"
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Town2EV070_1_SetPlayerLocation
     hide expresion_neutral_mujer
     # fade in
     pause 0.32
@@ -658,7 +668,7 @@ label Town2JohanIWasLookingForYou_1:
     Barman "Perfect, thank you very much for understanding me guys, Leyna I have your uniform for the festival I will accompany you there"
     Leyna "Sure..."
     scene black with dissolve
-    $ player_location = "Path"
+    call SetPlayerLocation("Path") from _call_Town2EV070_1_SetPlayerLocation_1
     # fade in
     Leyna "The boss has already entered the locker room but forgot to give me my uniform"
     Leyna "It's a good thing I'm wearing my festival clothes underneath so I can get in without a problem"
@@ -727,7 +737,7 @@ label Town2JohanIWasLookingForYou_1:
         Leyna "(better not to think too much about it and go to the food stand as soon as possible)"
     scene black with dissolve
     hide cambiandose10
-    $ player_location = "Festival"
+    call SetPlayerLocation("Festival") from _call_Town2EV070_1_SetPlayerLocation_2
     $ butt_plug = 3
     # fade in
     Leyna "All right, I have to go to the food stand to start working!"
@@ -769,7 +779,7 @@ label Town2finalfiestafestival_0:
         ysize 624
     Leyna "Hahaha yeah, I'm fine.... I'm still a little drunk and the beers we had with our friend didn't help hahaha"
     Johan "Friend?...ah, this guy?"
-    hide reencuentro3
+    scene reencuentro2
     Villager "zzzzz...."
     Johan "It looks like he's out of action..."
     Alexa "Yes... our friend here is out cold... he hasn't been able to sleep much tonight hehehehehehe"
@@ -782,7 +792,8 @@ label Town2finalfiestafestival_0:
     Alexa "Well guys, see you later"
     Leyna "Of course! see you later!"
     scene black with dissolve
-    $ player_location = "Town2"
+    hide reencuentro2
+    call SetPlayerLocation("Town2") from _call_Town2finalfiestafestival_0_SetPlayerLocation
     pause 0.24
     # fade in
     Johan "Well, what could we do today?"
@@ -794,14 +805,14 @@ label Town2finalfiestafestival_0:
 
 label Town2ToPath_v2_0:
     play sound "audio/Move1.ogg" volume 0.9 noloop
-    $ player_location = "Path"
+    call SetPlayerLocation("Path") from _call_Town2EV080_0_SetPlayerLocation
     return
 
 label Town2ToPath_v2_1:
     Leyna "I have to find that guy"
     return
 
-label Town2fotografo_1(menu_choice = None):
+label Town2fotografo_1:
     OldMan "Well, are you ready to work?"
     Leyna "Yes, if you don't mind my husband will join us at this session"
     OldMan "Of course, no problem. You have a beautiful wife like few others, you are very lucky"
@@ -820,7 +831,7 @@ label Town2fotografo_1(menu_choice = None):
     OldMan "Perfect, let's start"
     scene black with dissolve
     hide expresion_gota
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Town2fotografo_1_SetPlayerLocation
     # fade in
     pause 0.2
     pause 0.24
@@ -907,7 +918,7 @@ label Town2fotografo_1(menu_choice = None):
             Johan "Right..."
             scene black with dissolve
             hide publico13
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Town2fotografo_1_SetPlayerLocation_1
             $ set_switch("johan_intervened", True)
             # fade in
             pause 0.26
@@ -947,7 +958,7 @@ label Town2fotografo_1(menu_choice = None):
             Johan "(Thank goodness it's already over...)"
             scene black with dissolve
             hide publico16
-            $ player_location = "Town2"
+            call SetPlayerLocation("Town2") from _call_Town2fotografo_1_SetPlayerLocation_2
             $ set_switch("johan_silent", True)
             # fade in
             pause 0.26
@@ -960,7 +971,7 @@ label Town2fotografo_1(menu_choice = None):
     $ photograph_3 = 1
     return
 
-label Town2fotografo_4(menu_choice = None):
+label Town2fotografo_4:
     OldMan "Good morning beautiful, the magazine has contacted me  and they are delighted with the last thing we sent"
     show expresion_gota
     Leyna "Ah... yes? that's interesting"
@@ -1089,7 +1100,7 @@ label Town2fotografo_4(menu_choice = None):
             $ masks = 1
     return
 
-label Town2fotografo_5(menu_choice = None):
+label Town2fotografo_5:
     OldMan "Have you changed your mind?"
     menu:
         "Yes":
@@ -1202,7 +1213,7 @@ label Town2fotografo_5(menu_choice = None):
             OldMan "Of course, I'll be waiting here if you change your mind"
     return
 
-label Town2fotografo_10(menu_choice = None):
+label Town2fotografo_10:
     OldMan "Good evening Leyna, I wanted to talk to you... I... I didn't expect you to come with your husband."
     show plano_mujer_sorpresa_lado:
         xsize 1600
@@ -1378,7 +1389,7 @@ label Town2fotografo_10(menu_choice = None):
                     scene black with dissolve
                     $ set_switch("erotic_photos_together", True)
                     hide fotoerotica23
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Town2fotografo_10_SetPlayerLocation
                     # fade in
                     pause 0.26
                     Johan "..."
@@ -1451,7 +1462,7 @@ label Town2fotografo_10(menu_choice = None):
                     scene black with dissolve
                     $ set_switch("erotic_photos_together", True)
                     hide fotoerotica23
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Town2fotografo_10_SetPlayerLocation_1
                     # fade in
                     pause 0.26
                     Johan "..."
@@ -1461,7 +1472,7 @@ label Town2fotografo_10(menu_choice = None):
             Johan "Yeah..."
     return
 
-label Town2fotografo_11(menu_choice = None):
+label Town2fotografo_11:
     OldMan "have you changed your mind?"
     menu:
         "Do it":
@@ -1612,7 +1623,7 @@ label Town2fotografo_11(menu_choice = None):
                     scene black with dissolve
                     $ set_switch("erotic_photos_together", True)
                     hide fotoerotica23
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Town2fotografo_11_SetPlayerLocation
                     # fade in
                     pause 0.26
                     Johan "..."
@@ -1685,7 +1696,7 @@ label Town2fotografo_11(menu_choice = None):
                     scene black with dissolve
                     $ set_switch("erotic_photos_together", True)
                     hide fotoerotica23
-                    $ player_location = "Town2"
+                    call SetPlayerLocation("Town2") from _call_Town2fotografo_11_SetPlayerLocation_1
                     # fade in
                     pause 0.26
                     Johan "..."
@@ -1695,7 +1706,7 @@ label Town2fotografo_11(menu_choice = None):
             Johan "Yeah..."
     return
 
-label Town2fotografo_13(menu_choice = None):
+label Town2fotografo_13:
     OldMan "Great to see you guys!"
     Johan "OH... hey how's it going?"
     OldMan "Great! the magazine is looking forward to receiving more material from us!"
@@ -1718,7 +1729,7 @@ label Town2fotografo_13(menu_choice = None):
             Leyna "Well, let's go"
             OldMan "Yes! better not to keep them waiting"
             scene black with dissolve
-            $ player_location = "HotSpringsExterior"
+            call SetPlayerLocation("HotSpringsExterior") from _call_Town2fotografo_13_SetPlayerLocation
             pause 0.22
             # fade in
             Johan "Well... here we are... ( Jesus, what am I thinking, no matter how much I try to pretend that I'm ok with this...)"
@@ -2066,7 +2077,7 @@ label Town2fotografo_13(menu_choice = None):
                     Villager "You're telling me..."
                     scene black with dissolve
                     $ set_switch("johan_does_nothing", True)
-                    $ player_location = "Path"
+                    call SetPlayerLocation("Path") from _call_Town2fotografo_13_SetPlayerLocation_1
                     pause 0.28
                     hide photohot36
                     $ set_switch("hotsprings_photo_session", True)
@@ -2132,7 +2143,7 @@ label Town2fotografo_13(menu_choice = None):
                     Leyna "Y-yes"
                     scene black with dissolve
                     $ set_switch("johan_rejects", True)
-                    $ player_location = "Path"
+                    call SetPlayerLocation("Path") from _call_Town2fotografo_13_SetPlayerLocation_2
                     pause 0.26
                     hide photohot40
                     # fade in
@@ -2175,7 +2186,7 @@ label Town2fotografo_13(menu_choice = None):
     return
 
 label Town2ToGlade_v2:
-    $ player_location = "Glade"
+    call SetPlayerLocation("Glade") from _call_Town2EV084_SetPlayerLocation
     return
 
 label Town2Flashback_0:
@@ -2274,7 +2285,7 @@ label Town2Flashback_0:
         Leyna "(Will it be like this for the rest of our lives?...)"
     scene black with dissolve
     hide flash2
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_Town2Flashback_0_SetPlayerLocation
     pause 0.24
     # fade in
     Johan "Leyna? are you all right?"
@@ -2370,10 +2381,10 @@ label Town2HeySweetieDoYouWantToHaveAGoodTime_0:
     return
 
 label Town2ToTownEntrance_v2:
-    $ player_location = "TownEntrance"
+    call SetPlayerLocation("TownEntrance") from _call_Town2EV096_SetPlayerLocation
     return
 
 label Town2ToTownEntrance_v3:
-    $ player_location = "TownEntrance"
+    call SetPlayerLocation("TownEntrance") from _call_Town2EV097_SetPlayerLocation
     return
 

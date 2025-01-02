@@ -8,6 +8,23 @@ label InnRoomsDEJANDOlasmaletas_0:
     $ set_switch("suitcases", True)
     return
 
+label InnRoomsSleep_0:
+    "Do you want to wait until night?"
+    menu:
+        "Yes":
+            scene black with dissolve
+            if not renpy.in_rollback():
+                $ _saved_bgm = renpy.music.get_playing()
+            play music "audio/Inn.ogg" volume 0.9 noloop
+            if _saved_bgm is not None and not renpy.in_rollback():
+                queue music _saved_bgm
+                $ _saved_bgm = None
+            call SetPlayerLocation("InnRoomsNight") from _call_InnRoomsSleep_0_SetPlayerLocation
+            # fade in
+        "No":
+            pass
+    return
+
 label InnRoomssueojohan_0:
     pause 0.42
     Leyna "Time to sleep"
@@ -75,7 +92,7 @@ label InnRoomssueojohan_0:
     stop music fadeout 1
     stop bgs fadeout 1
     hide sue_o7
-    $ player_location = "InnRooms"
+    call SetPlayerLocation("InnRooms") from _call_InnRoomssueojohan_0_SetPlayerLocation
     # fade in
     pause 0.22
     Johan "LEYNA!!"
@@ -86,13 +103,13 @@ label InnRoomssueojohan_0:
     Johan "Where is Leyna?.."
     pause 0.32
     $ johan_dream = 1
-    $ player_location = "Inn"
+    call SetPlayerLocation("Inn") from _call_InnRoomssueojohan_0_SetPlayerLocation_1
     return
 
 label InnRoomsescenadildo_0:
     pause 0.28
     scene black with dissolve
-    $ player_location = "InnRooms"
+    call SetPlayerLocation("InnRooms") from _call_InnRoomsescenadildo_0_SetPlayerLocation
     pause 0.24
     # fade in
     Leyna "...Well, what do you want to talk to me about?"
@@ -113,12 +130,12 @@ label InnRoomsescenadildo_0:
     Johan "YES YES! relax, I have to go for a walk so I'll be out for the rest of the afternoon... ahem I.... well let me know how it goes"
     Leyna "Haahahahaha sure Johan... see you later"
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_InnRoomsescenadildo_0_SetPlayerLocation_1
     # fade in
     Johan "WOw, I can't believe she said yes!...."
     Johan "I'm a little nervous about it... but I can't wait to try it out"
     scene black with dissolve
-    $ player_location = "InnRooms"
+    call SetPlayerLocation("InnRooms") from _call_InnRoomsescenadildo_0_SetPlayerLocation_2
     # fade in
     pause 0.2
     Leyna "Well... I guess now is as good a time as any to try this sucker...."
@@ -166,12 +183,12 @@ label InnRoomsescenadildo_0:
     pause
     scene black with dissolve
     hide dildo9
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_InnRoomsescenadildo_0_SetPlayerLocation_3
     # fade in
     Leyna "Hahahahaha I feel great... I'm like new... I could go back to work right now and I wouldn't get tired of it"
     Leyna "can't wait to tell Johan about it hehehehe"
     scene black with dissolve
-    $ player_location = "Town2"
+    call SetPlayerLocation("Town2") from _call_InnRoomsescenadildo_0_SetPlayerLocation_4
     # fade in
     pause 0.2
     Johan "Another failed attempt to enter the castle... at this rate we won't be able to visit it before going back to the city... anyway..."
